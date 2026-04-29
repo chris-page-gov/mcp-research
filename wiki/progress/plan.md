@@ -31,7 +31,8 @@ Status: started.
 
 - Start with `sources/official-specs.md`.
 - Then update `paper/02-mcp-in-a-nutshell.md`.
-- Fill TODO source gaps before prose drafting.
+- Exact source extraction and BibTeX cleanup are closed for resources, prompts, lifecycle, published-server versioning, and registry moderation/aggregator limits.
+- Roots and tasks still need exact quotations before prose drafting.
 - Use the [Parallel Work Plan](parallel-work-plan.md) for disjoint source-note lanes.
 
 ## Phase 3 - Criticism And Defence
@@ -39,8 +40,8 @@ Status: started.
 Status: started in parallel.
 
 - `paper/04-technical-critiques-and-mitigations.md` has a skeleton and matrix.
-- `sources/discourse-and-criticism.md` now has working notes for criticism, context bloat, discovery friction, token-reduction leads, and positive product assessments.
-- Exact source extraction remains required before final context-bloat, discovery, and positive-vendor claims.
+- `sources/discourse-and-criticism.md` now has working notes and BibTeX-backed citations for distributed-systems criticism, context bloat, project-scoping friction, token-reduction leads, and positive product assessments.
+- Remaining blockers are broader discourse sampling and a correct source for practitioner discovery/private-registry friction.
 
 ## Phase 4 - Ecosystem, Timeline, Alternatives
 
@@ -48,15 +49,16 @@ Status: started in parallel.
 
 - `sources/vendor-adoption.md` and `sources/fastmcp.md` now contain working source-note drafts.
 - `sources/alternatives-skills-agents.md` and `paper/06-mcp-vs-alternatives.md` now contain a source-first alternatives skeleton.
-- Raw-page recovery and exact-source verification remain blockers for final prose.
+- Raw-page recovery is closed for the main vendor/FastMCP leads captured so far; independent adoption, conformance, control-depth, portability, and procurement evidence remain blockers for final prose.
 
 ## Phase 5 - Government / Local Authority Analysis
 
-Status: pending.
+Status: started skeleton.
 
 - Build architecture options.
 - Build risk register.
 - Map controls to public-sector guidance.
+- Do not write recommendations until sections 02, 04, 06, and vendor-control notes are source-ready.
 
 ## Phase 6 - Consolidation
 

@@ -4,7 +4,7 @@
 
 Source-backed skeleton only. This section is not draft-ready prose.
 
-`sources/official-specs.md` now contains accepted notes for several core primitives and TODO/candidate notes for resources, prompts, lifecycle, and server versioning. Treat TODO-prefixed citations as blockers, not evidence.
+`sources/official-specs.md` now contains accepted exact-extraction notes for resources, prompts, lifecycle/initialization/capability negotiation, published-server versioning, registry limitation wording, and the specification overview. The temporary TODO citation placeholders from the extraction lane have been replaced with BibTeX-backed keys.
 
 ## Purpose
 
@@ -14,29 +14,29 @@ Explain the Model Context Protocol at a level suitable for senior technical and 
 
 - Primary source notes for this section: `sources/official-specs.md`.
 - Imported report prose and opaque Deep Research citation markers must not be cited directly.
-- No external browsing in this section unless a later task explicitly reopens source discovery.
-- TODO citation keys may mark gaps but must not be treated as factual support.
+- This retest used only official MCP pages directly implied by local notes/imports; all fetched pages are recorded in `sources/official-specs.md` with Date accessed 2026-04-29.
+- TODO marker names may mark evidence gaps. Where exact extraction is complete, use the non-TODO BibTeX key recorded in `sources/official-specs.md`.
 
 ## Acceptance Criteria
 
 - Defines MCP without vendor marketing language.
 - Covers hosts/clients, servers, tools, resources, prompts, roots, sampling, elicitation, tasks, transports, initialization/capability negotiation, authorization, discovery/registry, and versioning at skeleton level.
 - Separates facts, reported opinions, and analysis.
-- Uses only citation keys present in `latex/references.bib`, or plain-text TODO key names where a BibTeX entry does not yet exist.
+- Uses only citation keys present in `latex/references.bib`, or plain-text TODO marker names where evidence extraction is still incomplete.
 - Calls out what MCP does not provide: business workflow, policy enforcement, source vetting, enterprise registry governance, complete IAM, or public-sector assurance by itself.
-- Leaves TODO placeholders where official spec notes are incomplete.
+- Leaves TODO placeholders where BibTeX, roots/tasks quotations, or non-official evidence remain incomplete.
 
 ## Section-Level Acceptance Criteria
 
 | Section | Evidence gate before prose | Acceptance check |
 | --- | --- | --- |
-| Definition and scope | Use official intro/specification source notes only. | Reader can distinguish MCP from a workflow engine, agent framework, or governance platform. |
-| Architecture and lifecycle | Architecture can use accepted official docs; lifecycle/initialization/capability negotiation needs exact source extraction. | Host/client/server roles and local-vs-remote deployment are clear without overstating lifecycle details. |
-| Server primitives | Tools are source-ready; resources and prompts remain TODO until exact source text is captured. | Tools, resources, and prompts are defined separately and not collapsed into generic "plugins". |
+| Definition and scope | Use official intro/specification source notes only; exact overview wording is now extracted. | Reader can distinguish MCP from a workflow engine, agent framework, or governance platform. |
+| Architecture and lifecycle | Architecture can use accepted official docs; exact lifecycle/initialization/capability-negotiation source text is now extracted and backed by `mcp-lifecycle-2025-11-25`. | Host/client/server roles and local-vs-remote deployment are clear without overstating lifecycle or policy semantics. |
+| Server primitives | Tools, resources, and prompts now have exact official source notes and BibTeX-backed citation keys. | Tools, resources, and prompts are defined separately and not collapsed into generic "plugins". |
 | Client-side primitives | Roots, sampling, elicitation, and tasks use accepted notes, with roots/tasks caveats preserved. | Client responsibilities are visible, especially where servers request model calls or user input. |
 | Transports and authorization | Use versioned transports and authorization notes. | STDIO, Streamable HTTP, and optional HTTP authorization are described without implying complete IAM. |
-| Discovery and registry | Registry notes can support public discovery and preview status; limitations need exact extraction. | Public registry, private registry, and enterprise curation are not treated as the same thing. |
-| Versioning and maturity | Existing notes are insufficient for protocol-version semantics and server-version controls. | Versioning remains a TODO unless a sourced distinction is added. |
+| Discovery and registry | Registry notes now support public discovery, preview status, private-server limits, downstream aggregation, direct-host-consumption limits, moderation limits, and durability limits; some exact limitation pages need BibTeX. | Public registry, private registry, and enterprise curation are not treated as the same thing. |
+| Versioning and maturity | Published-server registry versioning is now extracted; protocol-version negotiation is separately sourced by lifecycle. | Versioning claims specify whether they mean protocol version, server metadata version, package/API version, capability set, or registry metadata. |
 | Public-sector implications | Analysis must reason only from facts above. | Section ends with architecture questions, not procurement recommendations. |
 
 ## Draft Skeleton
@@ -46,7 +46,9 @@ Explain the Model Context Protocol at a level suitable for senior technical and 
 #### Facts
 
 - MCP is an open protocol for connecting AI applications to external context and capabilities. [@mcp-intro]
-- The 2025-11-25 specification overview source note supports the high-level framing that MCP standardizes sharing contextual information and exposing tools/capabilities. [@mcp-specification-2025-11-25]
+- The 2025-11-25 specification says MCP integrates LLM applications with external data sources and tools, and standardizes sharing contextual information, exposing tools/capabilities, and building composable integrations/workflows. [@mcp-specification-2025-11-25]
+- The specification describes MCP communication between hosts, clients, and servers using JSON-RPC 2.0. [@mcp-specification-2025-11-25]
+- The specification separates server features (resources, prompts, tools) from client features (sampling, roots, elicitation). [@mcp-specification-2025-11-25]
 - Tools are model-controlled server capabilities. [@mcp-tools-2025-11-25]
 
 #### Reported Opinions
@@ -60,8 +62,8 @@ Explain the Model Context Protocol at a level suitable for senior technical and 
 
 #### Section Acceptance
 
-- TODO: Final prose must define "capability" using official wording or avoid the term if unsupported.
-- TODO: Extract exact definition wording from the specification overview before final prose.
+- CLOSED: Exact overview wording extracted in `sources/official-specs.md` OS-016.
+- Final prose may use "capabilities" as an official term, but should not invent a broader governance meaning for it.
 
 ### 2. Architecture and Lifecycle
 
@@ -69,7 +71,10 @@ Explain the Model Context Protocol at a level suitable for senior technical and 
 
 - Official architecture learning material describes MCP architecture and deployment patterns. [@mcp-architecture]
 - The accepted architecture note supports distinguishing local and remote MCP server patterns, including remote servers over Streamable HTTP. [@mcp-architecture]
-- TODO: Exact lifecycle, initialization, capability-negotiation, and state-management wording remains incomplete in local notes. [@TODO-official-mcp-architecture]
+- Exact lifecycle extraction records initialization, operation, and shutdown as the lifecycle phases. [@mcp-lifecycle-2025-11-25]
+- Initialization is the first client-server interaction. The client sends `initialize` with protocol version, capabilities, and client implementation information; the server responds with protocol version, capabilities, server information, and optional instructions; the client then sends `notifications/initialized`. [@mcp-lifecycle-2025-11-25]
+- Lifecycle version negotiation and capability negotiation establish protocol-version compatibility and which optional features are available during the session. [@mcp-lifecycle-2025-11-25]
+- During operation, both parties must respect the negotiated protocol version and only use successfully negotiated capabilities. [@mcp-lifecycle-2025-11-25]
 
 #### Reported Opinions
 
@@ -82,16 +87,20 @@ Explain the Model Context Protocol at a level suitable for senior technical and 
 
 #### Section Acceptance
 
-- TODO: Add exact initialization sequence only after the lifecycle page is extracted.
-- TODO: Avoid saying capability negotiation enforces policy; current notes support negotiation/state management as lifecycle concerns, not policy sufficiency.
+- CLOSED: Exact initialization sequence and capability-negotiation wording extracted in `sources/official-specs.md` OS-020.
+- CLOSED: lifecycle facts now cite `mcp-lifecycle-2025-11-25`.
+- Keep caveat: capability negotiation does not equal policy enforcement, authorization sufficiency, or enterprise approval.
 
 ### 3. Server Primitives: Tools, Resources, Prompts
 
 #### Facts
 
 - Tools are designed to be model-controlled and can carry annotations such as read-only, destructive, idempotent, or open-world behavior. [@mcp-tools-2025-11-25]
-- TODO: Resources are supported only at skeleton level by the local source note: servers expose resources to clients. The durable resource URL and exact semantics still need extraction. [@TODO-mcp-resources]
-- TODO: Prompts remain under-sourced. Existing local notes point to official server concepts and imported-report orientation, but not enough exact text for final prose. [@TODO-mcp-prompts]
+- Server-feature overview separates prompts, resources, and tools, and describes their control hierarchy as user-controlled, application-controlled, and model-controlled respectively. [@mcp-specification-2025-11-25]
+- Exact resources extraction records resources as server-exposed data for model context, identified by URI, application-driven by the host, and discoverable/readable through `resources/list`, `resources/read`, and `resources/templates/list`. [@mcp-resources-2025-11-25]
+- Resources capability sub-features `subscribe` and `listChanged` are optional; the resources page also records URI validation, access controls for sensitive resources, binary encoding, and permission checks as security considerations. [@mcp-resources-2025-11-25]
+- Exact prompts extraction records prompts as server-exposed prompt templates, user-controlled by explicit selection, discoverable with `prompts/list`, retrievable with `prompts/get`, and customizable with arguments. [@mcp-prompts-2025-11-25]
+- Prompt messages can contain text, image, audio, or embedded resource content; implementations must validate prompt inputs and outputs against injection and unauthorized resource access. [@mcp-prompts-2025-11-25]
 
 #### Reported Opinions
 
@@ -100,13 +109,16 @@ Explain the Model Context Protocol at a level suitable for senior technical and 
 #### Analysis Placeholders
 
 - Tools create action risk because a model may select an operation; resources create data-exposure risk because server-provided context may enter the host/model path; prompts create instruction-shaping risk because reusable prompt templates can steer model behavior.
-- TODO: The previous analysis sentence is a conceptual classification; verify each primitive's official semantics before final wording.
+- The preceding classification is analysis from the official control hierarchy and exact primitive semantics, not a quoted MCP taxonomy.
 
 #### Section Acceptance
 
 - Final tools prose must identify which controls are specified by MCP and which belong to the host/deployment policy.
-- Final resources prose must cover data classification, provenance, and access control only after exact resource semantics are extracted.
-- Final prompts prose must not imply prompts are tools or resources unless an official source supports the relationship.
+- CLOSED: Exact resources and prompts semantics extracted in `sources/official-specs.md` OS-017 and OS-019.
+- CLOSED: resources facts now cite `mcp-resources-2025-11-25`.
+- CLOSED: prompts facts now cite `mcp-prompts-2025-11-25`.
+- Final resources prose may discuss data classification, provenance, and access control as deployment analysis, grounded in the resource-content and resource-security facts.
+- Final prompts prose must not imply prompts are tools or resources; embedded resources in prompts should be described only as prompt-message content.
 
 ### 4. Client-Side Primitives: Roots, Sampling, Elicitation, Tasks
 
@@ -160,8 +172,15 @@ Explain the Model Context Protocol at a level suitable for senior technical and 
 
 - The MCP Registry launched in preview as an open catalog and API for discovering publicly available MCP servers. [@mcp-registry-preview-2025-09-08]
 - The registry is the official centralized metadata repository for publicly accessible MCP servers. [@mcp-registry-about]
+- Current registry documentation says the registry is in preview and may have breaking changes or data resets before general availability. [@mcp-registry-about]
+- Registry metadata points to code/binaries in package registries or remote server URLs; the registry hosts metadata, not the server packages themselves. [@mcp-registry-about]
+- The registry does not support private servers; it recommends hosting a private MCP registry for servers on private networks or private package registries. [@mcp-registry-about]
+- The registry is intended primarily for downstream aggregators, its metadata is deliberately unopinionated, and host applications are not intended to consume it directly. [@mcp-registry-about]
+- Registry security scanning is delegated to underlying package registries and downstream aggregators; the registry focuses on namespace authentication and metadata hosting. [@mcp-registry-about]
+- Exact moderation-policy extraction says consumers should assume minimal-to-no moderation and that the official registry generally will not remove low-quality, buggy, vulnerable, duplicate-function, or adult-content servers. [@mcp-registry-moderation-policy]
+- Exact aggregator extraction says aggregators should persist their own copy and that the official registry does not provide uptime or data-durability guarantees. [@mcp-registry-aggregators]
 - The roadmap identifies enterprise-managed authorization, audit trails, gateway/proxy patterns, configuration portability, and other enterprise-readiness themes. [@mcp-roadmap-2026-03-05]
-- The transport-future source associates remote MCP deployments with Streamable HTTP and notes future transport/discovery concerns in local notes; exact wording still needs extraction for final prose. [@mcp-transport-future-2025-12-19]
+- The transport-future source identifies remote-scale challenges including sticky routing, stateful connections, routing complexity, backend-storage burden, ambiguous session scope, and server-card exploration; server cards remain roadmap direction, not stable protocol behavior in this source. [@mcp-transport-future-2025-12-19]
 
 #### Reported Opinions
 
@@ -174,16 +193,19 @@ Explain the Model Context Protocol at a level suitable for senior technical and 
 
 #### Section Acceptance
 
-- TODO: Extract exact official wording before stating registry moderation, durability, direct-host-consumption, or private-registry limitations.
-- TODO: Do not describe server cards as stable protocol behavior until an accepted source note supports that status.
+- CLOSED: Exact official wording extracted for private-server limits, direct-host-consumption limits, moderation limits, data-durability limits, downstream aggregation, and security-scanning delegation.
+- CLOSED: moderation and aggregator facts now cite `mcp-registry-moderation-policy` and `mcp-registry-aggregators`.
+- Do not describe server cards as stable protocol behavior; current accepted notes support only roadmap/exploration wording.
 
 ### 7. Versioning and Maturity
 
 #### Facts
 
-- The local notes include an official page title, "Versioning Published MCP Servers", but not enough URL/text detail for final claims.
-- TODO: Add exact server-versioning evidence before citing versioning claims. [@TODO-mcp-server-versioning]
-- TODO: Do not conflate server package/version labels, MCP protocol versions, and lifecycle capability negotiation without separate evidence.
+- Exact published-server versioning extraction records registry-publication guidance, not protocol-version negotiation. [@mcp-server-versioning]
+- Published MCP servers must define a version string in `server.json`; the version string must be unique for each publication, and once published the version string and other metadata cannot be changed. [@mcp-server-versioning]
+- The registry recommends semantic versioning, supports other version-string formats, parses semantic versions for sorting/latest marking where possible, and prohibits version strings that appear to be version ranges. [@mcp-server-versioning]
+- Best-practice guidance says local-server versions should align with underlying package versions, remote-server versions should align with remote API versions, and registry-only metadata updates should use prerelease versions. [@mcp-server-versioning]
+- Protocol-version negotiation is separately sourced in the lifecycle page: the client sends a supported protocol version in `initialize`; the server either replies with that version or another supported version; unsupported server replies should lead the client to disconnect. [@mcp-lifecycle-2025-11-25]
 
 #### Reported Opinions
 
@@ -192,9 +214,13 @@ Explain the Model Context Protocol at a level suitable for senior technical and 
 #### Analysis Placeholders
 
 - A public-sector hub will need version pinning, compatibility testing, rollback, and dependency review, whether those are supplied by MCP standards or by local governance.
+- Treat registry metadata immutability as useful for inventory and rollback review, but not as proof that an implementation is secure, compatible, or approved.
 
 #### Section Acceptance
 
+- CLOSED: Exact published-server versioning URL/text extracted in `sources/official-specs.md` OS-021.
+- CLOSED: published-server versioning facts now cite `mcp-server-versioning`.
+- CLOSED: protocol-version lifecycle facts now cite `mcp-lifecycle-2025-11-25`.
 - Final prose must state which kind of versioning is being discussed: protocol version, server implementation version, package version, capability set, or registry metadata version.
 
 ### 8. What MCP Does Not Provide
@@ -202,6 +228,7 @@ Explain the Model Context Protocol at a level suitable for senior technical and 
 #### Facts
 
 - Authorization is optional in the protocol. [@mcp-authorization-2025-11-25]
+- The specification overview says MCP itself cannot enforce its security principles at protocol level; implementors should build consent, authorization, access-control, and data-protection flows around it. [@mcp-specification-2025-11-25]
 - The registry sources support discovery metadata, not full enterprise curation or approval. [@mcp-registry-preview-2025-09-08] [@mcp-registry-about]
 - The roadmap source identifies enterprise-readiness themes as continuing work rather than already-finished control-plane guarantees. [@mcp-roadmap-2026-03-05]
 
@@ -220,9 +247,11 @@ Explain the Model Context Protocol at a level suitable for senior technical and 
 
 ## Evidence Gaps
 
-- TODO: Extract exact overview wording for `mcp-specification-2025-11-25` before final prose.
-- TODO: Replace `TODO-mcp-resources` with an accepted resources citation after exact URL/text extraction.
-- TODO: Replace `TODO-mcp-prompts` with an accepted prompts citation after exact URL/text extraction.
-- TODO: Replace `TODO-official-mcp-architecture` with accepted lifecycle/initialization/capability-negotiation citation(s).
-- TODO: Replace `TODO-mcp-server-versioning` with accepted server-versioning source text and URL.
-- TODO: Extract exact registry limitation wording before final prose on moderation, durability, direct host consumption, or private registries. [@TODO-mcp-registry-limitations]
+- CLOSED: Exact overview wording for `mcp-specification-2025-11-25` extracted.
+- CLOSED: Exact Resources URL/text extracted and cited as `mcp-resources-2025-11-25`.
+- CLOSED: Exact Prompts URL/text extracted and cited as `mcp-prompts-2025-11-25`.
+- CLOSED: Exact lifecycle/initialization/capability-negotiation URL/text extracted and cited as `mcp-lifecycle-2025-11-25`.
+- CLOSED: Exact published-server versioning URL/text extracted and cited as `mcp-server-versioning`.
+- CLOSED: Exact registry limitation wording extracted for moderation, durability, direct host consumption, private registries, and downstream aggregation; moderation and durability now use `mcp-registry-moderation-policy` and `mcp-registry-aggregators`.
+- TODO: Add exact roots quotation before final prose.
+- TODO: Add exact tasks quotation before describing cancellation, tracing, or audit expectations.

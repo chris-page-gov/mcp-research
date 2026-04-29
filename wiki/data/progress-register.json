@@ -5,25 +5,15 @@
       "path": "paper/02-mcp-in-a-nutshell.md",
       "status": "started",
       "next_source_file": "sources/official-specs.md",
-      "blocked_by": [
-        "TODO-mcp-resources",
-        "TODO-mcp-prompts",
-        "TODO-official-mcp-architecture",
-        "TODO-mcp-server-versioning",
-        "TODO-mcp-registry-limitations"
-      ]
+      "blocked_by": []
     },
     {
       "path": "paper/04-technical-critiques-and-mitigations.md",
       "status": "started",
       "next_source_file": "sources/discourse-and-criticism.md",
       "blocked_by": [
-        "TODO-context-bloat-token-reduction",
         "TODO-discourse-criticism-source-notes",
-        "TODO-discourse-discovery-criticism",
-        "TODO-discourse-context-bloat",
-        "TODO-official-mcp-architecture",
-        "TODO-vendor-adoption-source-notes"
+        "TODO-discourse-discovery-criticism"
       ]
     },
     {
@@ -31,11 +21,15 @@
       "status": "started",
       "next_source_file": "sources/alternatives-skills-agents.md",
       "blocked_by": [
-        "TODO-semantic-kernel-source-note",
-        "TODO-openai-tools-taxonomy",
         "TODO-framework-portability-evidence",
         "TODO-proprietary-connector-procurement-evidence"
       ]
+    },
+    {
+      "path": "paper/09-government-local-authority-ai-hub.md",
+      "status": "started",
+      "next_source_file": "sources/security-research.md",
+      "blocked_by": []
     }
   ]
 }

@@ -27,7 +27,7 @@ Define the research question, intended audience, evidence hierarchy, source cut-
 
 - Use Pandoc citations: `[@citation-key]`.
 - Use grouped citations for claims supported by multiple sources: `[@key1; @key2]`.
-- Use `@TODO-...` keys only when a source is known from notes but the BibTeX metadata still needs completion.
+- Use `@TODO-...` keys only when a source gap blocks final prose; do not use TODO keys for facts whose non-TODO BibTeX entry already exists.
 - Every citation key must appear in `latex/references.bib`.
 - Do not invent citations or cite sources not represented in `sources/`.
 

@@ -29,7 +29,7 @@ related:
 
 - Define MCP from official source notes only.
 - Cover host/client/server, tools, resources, prompts, roots, sampling, elicitation, transports, lifecycle, versioning, discovery, and authorization at skeleton level.
-- Avoid claims about resources, prompts, lifecycle, and versioning until source notes are added.
+- Resources, prompts, lifecycle, published-server versioning, registry moderation, and registry aggregator claims are now source-backed; roots and tasks still need exact quotation before final prose.
 
 ### `paper/04-technical-critiques-and-mitigations.md`
 
@@ -41,8 +41,15 @@ related:
 
 - Compare alternatives by decision criteria, not marketing labels.
 - Preserve the distinction between facts, reported opinions, and analysis.
-- Keep Semantic Kernel, OpenAI tools taxonomy, framework portability, and proprietary-connector procurement claims as TODO-grade until exact source evidence is accepted.
+- Semantic Kernel and OpenAI tools taxonomy claims are now source-backed; framework portability and proprietary-connector procurement claims remain TODO-grade unless kept explicitly analysis/provisional.
 - Treat MCP, direct APIs/function calling, agent frameworks, Skills, proprietary app ecosystems, and hybrid models as layerable unless a source supports a mutually exclusive framing.
+
+### `paper/09-government-local-authority-ai-hub.md`
+
+- Build architecture options and a risk-register skeleton before writing recommendations.
+- Use public-sector security guidance, official MCP notes, and accepted section 04 risk evidence.
+- Keep procurement and vendor-platform claims provisional until vendor-control and procurement evidence is accepted.
+- Do not recommend production adoption unless controls are mapped to identity, registry, approval, audit, data classification, incident response, and supplier ownership.
 
 ## Completion States
 

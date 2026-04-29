@@ -36,7 +36,9 @@ REQUIRED_WIKI_FILES = [
     WIKI / "guidance" / "citation-conventions.md",
     WIKI / "guidance" / "source-discipline.md",
     WIKI / "guidance" / "section-acceptance.md",
+    WIKI / "guidance" / "session-close.md",
     WIKI / "progress" / "plan.md",
+    WIKI / "progress" / "parallel-work-plan.md",
     WIKI / "progress" / "phase-log.md",
     WIKI / "evals" / "wiki-evaluation-plan.md",
     WIKI / "templates" / "source-note.md",
@@ -51,6 +53,11 @@ INLINE_CODE_RE = re.compile(r"`[^`\n]*`")
 CITATION_RE = re.compile(r"(?<![\w@])@([A-Za-z0-9][A-Za-z0-9:_-]*)")
 BIB_ENTRY_RE = re.compile(r"@\w+\s*\{\s*([^,\s]+)\s*,", re.MULTILINE)
 SOURCE_ROW_RE = re.compile(r"^\|\s*`([^`]+)`\s*\|\s*([^|]+)\|", re.MULTILINE)
+SOURCE_NOTE_KEY_LINE_RE = re.compile(
+    r"^\s*-\s*(?:Citation key|Proposed citation key|Proposed citation keys):\s*(.+)$",
+    re.MULTILINE,
+)
+BACKTICK_KEY_RE = re.compile(r"`([^`]+)`")
 
 
 class Issue(TypedDict):
@@ -209,6 +216,29 @@ def check_source_register(errors: list[Issue], warnings: list[Issue], summary: d
             warnings.append(issue("started_source_without_entries", file=source_path))
 
 
+def check_source_note_citation_keys(errors: list[Issue], summary: dict[str, int]) -> None:
+    keys = bib_keys()
+    checked = 0
+    for path in sorted((ROOT / "sources").glob("*.md")):
+        if path == SOURCE_REGISTER:
+            continue
+        text = path.read_text(encoding="utf-8")
+        for line in SOURCE_NOTE_KEY_LINE_RE.findall(text):
+            for key in BACKTICK_KEY_RE.findall(line):
+                if key.startswith("TODO-"):
+                    continue
+                checked += 1
+                if key not in keys:
+                    errors.append(
+                        issue(
+                            "source_note_key_missing_bib",
+                            file=rel(path),
+                            blocker=key,
+                        )
+                    )
+    summary["source_note_citation_keys_checked"] = checked
+
+
 def check_progress_register(errors: list[Issue], warnings: list[Issue], summary: dict[str, int]) -> None:
     data = load_json(PROGRESS_REGISTER, errors)
     if not isinstance(data, dict):
@@ -279,6 +309,35 @@ def check_progress_register(errors: list[Issue], warnings: list[Issue], summary:
             errors.append(
                 issue("paper_section_with_todos_not_tracked", file=section_path, blockers=", ".join(sorted(todos)))
             )
+
+
+def check_section_acceptance_coverage(errors: list[Issue], summary: dict[str, int]) -> None:
+    acceptance_path = WIKI / "guidance" / "section-acceptance.md"
+    data = load_json(PROGRESS_REGISTER, errors)
+    if not acceptance_path.exists() or not isinstance(data, dict):
+        return
+    sections = data.get("sections")
+    if not isinstance(sections, list):
+        return
+
+    acceptance = acceptance_path.read_text(encoding="utf-8")
+    tracked = 0
+    for item in sections:
+        if not isinstance(item, dict):
+            continue
+        section_path = item.get("path")
+        if not isinstance(section_path, str):
+            continue
+        tracked += 1
+        if f"`{section_path}`" not in acceptance:
+            errors.append(
+                issue(
+                    "tracked_section_missing_acceptance_criteria",
+                    file=section_path,
+                    target=rel(acceptance_path),
+                )
+            )
+    summary["acceptance_tracked_sections"] = tracked
 
 
 def check_build_freshness(errors: list[Issue], warnings: list[Issue], summary: dict[str, int]) -> None:
@@ -356,7 +415,9 @@ def build_report() -> Report:
     check_ds_store(warnings)
     check_wiki_links(errors, summary)
     check_source_register(errors, warnings, summary)
+    check_source_note_citation_keys(errors, summary)
     check_progress_register(errors, warnings, summary)
+    check_section_acceptance_coverage(errors, summary)
     check_build_freshness(errors, warnings, summary)
 
     return {

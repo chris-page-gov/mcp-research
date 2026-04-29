@@ -1,8 +1,8 @@
 # Alternatives: Skills and Agents
 
-Date accessed for local imported source set: 2026-04-29.
+Date accessed for local imported source set and targeted official documentation checks: 2026-04-29.
 
-Status: source-note draft. This file converts locally imported research material into structured source notes. It does not rely on live browsing. Several entries need BibTeX records before section 06 can cite them in Pandoc form.
+Status: source-note draft. This file converts locally imported research material into structured source notes and records targeted verification against official vendor documentation already present in, or directly implied by, the local imports. The exact Semantic Kernel, OpenAI tools, and OpenAI app-submission entries now have BibTeX records.
 
 ## Purpose
 
@@ -14,8 +14,11 @@ Capture sources on direct APIs/function calling, agent frameworks, skills, propr
   - `import/MCP as an integration backbone for enterprise and government AI.md`
   - `import/Citations from MCP as an integration backbone for enterprise and government AI`
   - `sources/official-specs.md`
+- Targeted official documentation checks, all accessed 2026-04-29:
+  - OpenAI developer docs only for OpenAI taxonomy, Apps SDK, and app submission evidence.
+  - Microsoft Learn pages already present in, or directly implied by, local Microsoft source leads.
 - The imported report is used only for orientation and gap-finding. Final paper prose should cite durable source notes and BibTeX keys, not Deep Research turn markers.
-- Entries marked "candidate" have enough local signal to preserve as source leads, but still need exact page verification before final prose.
+- Future entries marked "candidate" have enough local signal to preserve as source leads, but still need exact page verification before final prose.
 
 ## Acceptance Criteria
 
@@ -70,24 +73,32 @@ Capture sources on direct APIs/function calling, agent frameworks, skills, propr
   - `06-mcp-vs-alternatives.md`
   - `09-government-local-authority-ai-hub.md`
 
-### ASA-003 - Plugins in Semantic Kernel (candidate)
+### ASA-003 - Plugins in Semantic Kernel
 
 - Proposed citation key: `semantic-kernel-plugins-2024-12-10`
 - Title: Plugins in Semantic Kernel
 - Author/organisation: Microsoft
-- Publication/update date: 2024-12-10, according to local citation snippet
+- Publication/update date: 2024-12-10
 - Date accessed: 2026-04-29
-- URL: TODO: exact URL not captured in local imports; local snippets place this under `learn.microsoft.com`.
-- Source type: primary (candidate source note)
+- URL: https://learn.microsoft.com/en-us/semantic-kernel/concepts/plugins/
+- Source type: primary
 - Key claims:
-  - Local citation snippets say Semantic Kernel plugins are used through a three-step process: define a plugin, add the plugin to a kernel, and then use it.
-  - Local citation snippets also identify Semantic Kernel as a development kit for building AI agents and integrating models.
-  - The imported report records Semantic Kernel plugins as grouped functions invoked through model function calling.
-- Direct quotation under 25 words: TODO: extract exact quotation before final prose.
+  - Facts:
+    - Microsoft describes plugins as a way to encapsulate existing APIs into a collection that an AI can use.
+    - The page says Semantic Kernel uses function calling behind the scenes and marshals model requests to functions in the codebase.
+    - It defines a plugin as a group of functions exposed to AI apps and services, and says those functions can be invoked automatically with function calling.
+    - It says plugins can be imported from native code, OpenAPI specifications, or an MCP Server.
+    - It verifies the local snippet's three-step process: define a plugin, add it to the kernel, then invoke plugin functions with function calling.
+  - Reported opinions:
+    - Microsoft says plugins are valuable in enterprise scenarios because they mirror how enterprise developers build services and APIs.
+  - Analysis:
+    - This closes the exact Semantic Kernel plugin URL and wording blocker for framework-plugin facts.
+    - It does not provide independent evidence that Semantic Kernel is more portable, secure, or procurement-ready than MCP.
+- Direct quotation under 25 words: "group of functions"
 - Relevance to Government / Local Authority AI Hub decision-making:
-  - Preserves a Microsoft framework source lead for comparing framework-native plugins with MCP. Do not rely on this entry in final prose until the exact URL and wording are verified.
+  - Supports comparing framework-native plugin/function abstractions with MCP tool publication. Treat Microsoft enterprise-value statements as vendor positioning.
 - Reliability assessment:
-  - Medium until URL and exact wording are verified. Likely high once matched to the official Microsoft documentation page.
+  - High for Microsoft's Semantic Kernel product documentation. Low for independent comparison with MCP.
 - Sections where this source may be cited:
   - `06-mcp-vs-alternatives.md`
   - `09-government-local-authority-ai-hub.md`
@@ -125,10 +136,15 @@ Capture sources on direct APIs/function calling, agent frameworks, skills, propr
 - URL: https://developers.openai.com/apps-sdk/
 - Source type: primary
 - Key claims:
-  - Local snippets say the Apps SDK is a framework for building apps for ChatGPT.
-  - Local snippets state that building an app for ChatGPT with the Apps SDK requires an MCP server that defines the app's tools and capabilities.
-  - Local snippets state that, within the Apps SDK, MCP keeps the server, model, and UI in sync.
-  - Local OpenAI API snippets list built-in tools, function calling, tool search, and remote MCP servers as different ways to extend model capabilities.
+  - Facts:
+    - Local snippets say the Apps SDK is a framework for building apps for ChatGPT.
+    - Local snippets state that building an app for ChatGPT with the Apps SDK requires an MCP server that defines the app's tools and capabilities.
+    - Local snippets state that, within the Apps SDK, MCP keeps the server, model, and UI in sync.
+    - Targeted verification of the Apps SDK landing page says the current submission flow is the path to public distribution, and that an approved published app appears in the ChatGPT apps store while OpenAI creates a Codex plugin.
+  - Reported opinions:
+    - OpenAI presents the Apps SDK as a supported way to build and distribute ChatGPT apps.
+  - Analysis:
+    - Supports the proprietary app ecosystem comparison: vendor-hosted app layers can build on MCP while still creating host-specific packaging, review, UX, and distribution concerns.
 - Direct quotation under 25 words: "MCP is the backbone"
 - Relevance to Government / Local Authority AI Hub decision-making:
   - Supports the proprietary app ecosystem comparison: vendor-hosted app layers can build on MCP while still creating host-specific packaging, review, UX, and distribution concerns.
@@ -139,24 +155,32 @@ Capture sources on direct APIs/function calling, agent frameworks, skills, propr
   - `07-hype-vs-substance.md`
   - `09-government-local-authority-ai-hub.md`
 
-### ASA-006 - Extend Agent Actions with MCP in Copilot Studio (candidate)
+### ASA-006 - Extend Agent Actions with MCP in Copilot Studio
 
 - Proposed citation key: `microsoft-copilot-studio-mcp`
-- Title: Microsoft Copilot Studio MCP action documentation; exact page title TODO
+- Title: Extend your agent with Model Context Protocol
 - Author/organisation: Microsoft
-- Publication/update date: Current documentation page; no stable publication date captured in local imports
+- Publication/update date: 2026-04-17
 - Date accessed: 2026-04-29
 - URL: https://learn.microsoft.com/en-us/microsoft-copilot-studio/agent-extend-action-mcp
-- Source type: primary (candidate source note)
+- Source type: primary
 - Key claims:
-  - The imported report records Microsoft Copilot Studio as having MCP integration.
-  - The imported report records Microsoft product positioning around reuse across agent platforms, consistent permissions, auditability, and simplified development.
-  - This entry supports proprietary-platform comparison, but exact page wording remains TODO.
-- Direct quotation under 25 words: TODO: extract exact quotation before final prose.
+  - Facts:
+    - Microsoft says Copilot Studio can extend an agent with tools by using MCP.
+    - The page says MCP connects existing knowledge servers and data sources inside Copilot Studio.
+    - It says Copilot Studio currently supports MCP tools and resources.
+    - It says connected MCP server tools and resources are automatically available in Copilot Studio and dynamically reflect server-side updates or removal.
+    - It includes an optional step to publish an MCP connector so it can be used across tenants.
+  - Reported opinions:
+    - Microsoft positions MCP as a way to connect existing knowledge servers and data sources directly within Copilot Studio.
+  - Analysis:
+    - This entry supports Microsoft proprietary-platform integration evidence.
+    - It does not, by itself, prove tenant audit retention, public-sector procurement readiness, or control adequacy.
+- Direct quotation under 25 words: "extend your agent with tools"
 - Relevance to Government / Local Authority AI Hub decision-making:
   - Relevant to procurement where a Microsoft-controlled agent platform may expose MCP capabilities through existing enterprise administration, permission, and audit patterns.
 - Reliability assessment:
-  - Medium-high. Official Microsoft URL is captured locally, but exact title and claim text need verification before final prose.
+  - High for Microsoft product documentation. Medium for governance and procurement claims unless paired with tenant-control, audit, support, and licensing evidence.
 - Sections where this source may be cited:
   - `06-mcp-vs-alternatives.md`
   - `07-hype-vs-substance.md`
@@ -167,19 +191,28 @@ Capture sources on direct APIs/function calling, agent frameworks, skills, propr
 - Proposed citation key: `microsoft-dynamics365-mcp-2026-03-11`
 - Title: Use Model Context Protocol for finance and operations apps
 - Author/organisation: Microsoft
-- Publication/update date: 2026-03-11, according to local citation snippet
+- Publication/update date: Local citation snippet captured 2026-03-11; targeted verification found Microsoft Learn last updated 2026-04-27.
 - Date accessed: 2026-04-29
 - URL: https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/copilot/copilot-mcp
 - Source type: primary
 - Key claims:
-  - Local snippets describe using an MCP server to create and extend agents for Microsoft Dynamics 365 finance and operations apps.
-  - The imported report records Microsoft Dynamics 365 as evidence for reuse, consistent permissions, auditability, and avoiding bespoke custom connectors or APIs for every integration.
-  - This source supports the claim that MCP can appear inside proprietary enterprise application platforms, not only in standalone AI clients.
-- Direct quotation under 25 words: "create and extend agents"
+  - Facts:
+    - Microsoft says MCP defines a common language for agents and applications to interact with enterprise data and business logic.
+    - The page says the common protocol enables agent access across multiple apps, agent reuse across ERP systems, access from any compatible agent platform, simplified development, and consistent data access, permissions, and auditability.
+    - It says the Dynamics 365 ERP MCP server lets agents perform data operations and access business logic without custom code, connectors, or APIs.
+    - It says dynamic context is based on the agent's security permissions, application configuration, extensions, and personalization.
+    - It says customers choose which agent platforms can access the MCP server, with default access for Microsoft Copilot Studio and Visual Studio Code.
+    - It records licensing and billing differences between Copilot Studio and other agent clients, plus known limitations.
+  - Reported opinions:
+    - Microsoft frames MCP standardization as producing consistency, context, control, and a simplified development experience.
+  - Analysis:
+    - This source supports the claim that MCP can appear inside proprietary enterprise application platforms, not only in standalone AI clients.
+    - It supplies some procurement-relevant product evidence around allowed clients, billing, prerequisites, and limitations, but it is not public-sector procurement guidance.
+- Direct quotation under 25 words: "any compatible agent platform"
 - Relevance to Government / Local Authority AI Hub decision-making:
-  - Useful for comparing direct API integration with vendor-platform MCP integration in an enterprise line-of-business system. Exact permission and audit behavior must be verified before final public-sector recommendations.
+  - Useful for comparing direct API integration with vendor-platform MCP integration in an enterprise line-of-business system. Treat permission and auditability claims as Microsoft product documentation, not independent assurance.
 - Reliability assessment:
-  - High for Microsoft product documentation. Medium for comparative claims until exact wording on permissions, auditability, and custom connectors is extracted.
+  - High for Microsoft product documentation. Medium for comparative and procurement claims because the source is vendor-reported and product-specific.
 - Sections where this source may be cited:
   - `06-mcp-vs-alternatives.md`
   - `07-hype-vs-substance.md`
@@ -231,14 +264,107 @@ Capture sources on direct APIs/function calling, agent frameworks, skills, propr
   - `09-government-local-authority-ai-hub.md`
   - `10-open-questions-and-future-directions.md`
 
+### ASA-010 - Introduction to Semantic Kernel
+
+- Proposed citation key: `semantic-kernel-overview-2024-06-24`
+- Title: Introduction to Semantic Kernel
+- Author/organisation: Microsoft
+- Publication/update date: 2024-06-24
+- Date accessed: 2026-04-29
+- URL: https://learn.microsoft.com/en-us/semantic-kernel/overview/
+- Source type: primary
+- Key claims:
+  - Facts:
+    - Microsoft describes Semantic Kernel as a lightweight, open-source development kit for building AI agents and integrating models into C#, Python, or Java codebases.
+    - The page describes Semantic Kernel as middleware that translates a model's request into a function call and passes results back to the model.
+    - It says Semantic Kernel combines prompts with existing APIs to perform actions.
+    - It says adding existing code as a plugin lets developers integrate AI services through connectors and share extensions through OpenAPI specifications.
+  - Reported opinions:
+    - Microsoft calls Semantic Kernel enterprise-ready, modular, observable, and future proof.
+  - Analysis:
+    - This closes the exact Semantic Kernel framework URL and wording blocker for treating Semantic Kernel as an agent/application framework.
+    - It does not provide independent evidence for portability, lock-in, or public-sector suitability.
+- Direct quotation under 25 words: "lightweight, open-source development kit"
+- Relevance to Government / Local Authority AI Hub decision-making:
+  - Useful as a primary-source baseline for comparing a framework/middleware approach with a neutral connector protocol.
+- Reliability assessment:
+  - High for Microsoft's own framework description. Vendor positioning claims require corroboration before final recommendations.
+- Sections where this source may be cited:
+  - `06-mcp-vs-alternatives.md`
+  - `09-government-local-authority-ai-hub.md`
+
+### ASA-011 - Using Tools | OpenAI API
+
+- Proposed citation key: `openai-using-tools`
+- Title: Using tools
+- Author/organisation: OpenAI
+- Publication/update date: Current documentation page; no stable publication date captured
+- Date accessed: 2026-04-29
+- URL: https://developers.openai.com/api/docs/guides/tools
+- Related official OpenAI verification URL for tool support matrix: https://developers.openai.com/api/docs/models/gpt-5.5-pro
+- Source type: primary
+- Key claims:
+  - Facts:
+    - The Using tools page says model responses or agents can extend capabilities using built-in tools, function calling, tool search, and remote MCP servers.
+    - The same page has separate examples or sections for web search, file search, tool search, function calling, and remote MCP.
+    - The OpenAI API documentation navigation lists Tools entries for MCP and Connectors, Skills, Shell, Computer use, File search/retrieval, Tool search, and other tools.
+    - The official OpenAI model page tool-support matrix lists Skills and MCP separately under tools.
+  - Reported opinions:
+    - OpenAI positions these as ways to extend model or agent capabilities inside the OpenAI API product surface.
+  - Analysis:
+    - This closes `TODO-openai-tools-taxonomy` for the claim that OpenAI distinguishes built-in tools, function calling, tool search, and remote MCP servers.
+    - It supports saying OpenAI documentation treats Skills and MCP as separate tool categories, but final prose should not imply that the Using tools intro sentence itself lists Skills.
+- Direct quotation under 25 words: "built-in tools, function calling, tool search, and remote MCP servers"
+- Relevance to Government / Local Authority AI Hub decision-making:
+  - Supports treating OpenAI-hosted tool categories, Skills, remote MCP, and function calling as layerable product options rather than a single mutually exclusive architecture.
+- Reliability assessment:
+  - High for OpenAI API product taxonomy as of access date. Product taxonomy may change and should be rechecked before final publication.
+- Sections where this source may be cited:
+  - `06-mcp-vs-alternatives.md`
+  - `09-government-local-authority-ai-hub.md`
+
+### ASA-012 - OpenAI Apps SDK Submission and Review Evidence
+
+- Proposed citation keys: `openai-app-submission-guidelines`; `openai-app-submission-flow`
+- Titles: App submission guidelines; Submit and maintain your app
+- Author/organisation: OpenAI
+- Publication/update date: Current documentation pages; no stable publication date captured
+- Date accessed: 2026-04-29
+- URLs:
+  - https://developers.openai.com/apps-sdk/app-submission-guidelines
+  - https://developers.openai.com/apps-sdk/deploy/submission
+- Source type: primary
+- Key claims:
+  - Facts:
+    - The guidelines page sets minimum standards that developers must meet for a ChatGPT app to be considered for publication and remain available.
+    - OpenAI says MCP tool definitions make an app safer and easier for the model and users to understand.
+    - The guidelines say apps primarily functioning as unofficial connectors to third-party services, including pass-through middleware layers, cannot be approved.
+    - The guidelines require a published privacy policy and data-collection minimization.
+    - The submission flow says submitted apps enter a review queue and may receive automated scans or manual reviews.
+    - The submission flow says approved apps can be published in the dashboard and listed in the App Directory and Codex Plugin Directory.
+    - It says changes to published app information require a new draft and re-review, and that inactive, unstable, or non-compliant apps may be removed.
+  - Reported opinions:
+    - OpenAI frames the ChatGPT app ecosystem as built on trust and a fair, transparent process.
+  - Analysis:
+    - This narrows `TODO-proprietary-connector-procurement-evidence`: there is official vendor evidence for review, publication, directory, privacy, data-minimization, and connector restrictions.
+    - It does not close the public-sector procurement blocker because it is not public-sector supplier-assurance guidance, pricing terms, SLA evidence, audit-retention evidence, or data-residency procurement evidence.
+- Direct quotation under 25 words: "minimum standard"
+- Relevance to Government / Local Authority AI Hub decision-making:
+  - Useful for describing proprietary app-store style governance surfaces. Procurement recommendations still need public-sector and supplier-assurance sources.
+- Reliability assessment:
+  - High for OpenAI's current app submission and review process. Low for public-sector procurement sufficiency.
+- Sections where this source may be cited:
+  - `06-mcp-vs-alternatives.md`
+  - `09-government-local-authority-ai-hub.md`
+
 ## Known Alternatives Evidence Gaps
 
 These gaps should be filled before converting section 06 into final report prose.
 
 | Needed source or verification | Working TODO key | Blocks |
 | --- | --- | --- |
-| BibTeX entries for accepted alternative notes above | `TODO-alternatives-source-bibtex` | Any Pandoc citation to ASA-001 through ASA-008 |
-| Exact Semantic Kernel plugin and agent-framework URLs/wording | `TODO-semantic-kernel-source-note` | Final claims about Semantic Kernel as an alternative framework |
-| Exact OpenAI "Using tools" page key for remote MCP servers and Skills as separate tool categories | `TODO-openai-tools-taxonomy` | Claims that OpenAI separates remote MCP, Skills, built-in tools, and function calling |
-| Independent or non-vendor evidence comparing framework-only and MCP-based portability | `TODO-framework-portability-evidence` | Strong claims about portability, lock-in, or maintainability |
-| Public-sector procurement evidence for proprietary app-store style connectors | `TODO-proprietary-connector-procurement-evidence` | Procurement recommendations about app ecosystems |
+| BibTeX entries for accepted alternative notes above, especially newly verified ASA-003 and ASA-010 through ASA-012 | `TODO-alternatives-source-bibtex` | Closed for current accepted notes; `semantic-kernel-plugins-2024-12-10`, `semantic-kernel-overview-2024-06-24`, `openai-using-tools`, `openai-app-submission-guidelines`, and `openai-app-submission-flow` now exist |
+| Exact Semantic Kernel plugin and agent-framework URLs/wording | `TODO-semantic-kernel-source-note` | Closed for source-note evidence and BibTeX-backed section 06 citation |
+| Exact OpenAI "Using tools" page key for remote MCP servers and Skills as separate tool categories | `TODO-openai-tools-taxonomy` | Closed/narrowed: Using tools verifies built-in tools, function calling, tool search, and remote MCP; Skills/MCP separation is verified via OpenAI docs navigation and model tool matrix |
+| Independent or non-vendor evidence comparing framework-only and MCP-based portability | `TODO-framework-portability-evidence` | Still open and narrowed: allowed source set contains primary/vendor and official-protocol evidence but no independent direct comparison; blocks strong lock-in or portability claims |
+| Public-sector procurement evidence for proprietary app-store style connectors | `TODO-proprietary-connector-procurement-evidence` | Still open and narrowed: OpenAI/Microsoft vendor process, publication, licensing, and connector-control evidence exists, but no public-sector procurement-specific source in this lane; blocks procurement recommendations about app ecosystems |

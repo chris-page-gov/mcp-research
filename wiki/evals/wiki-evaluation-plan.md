@@ -33,14 +33,18 @@ Measure whether the wiki helps agents retrieve the right guidance and avoid cont
 - Wiki link validation through `scripts/check_links.py` and `scripts/validate_wiki_state.py`.
 - TODO citation key reporting through `scripts/check_citations.py`.
 - Wiki/repo alignment report through `scripts/validate_wiki_state.py`.
+- Source-note citation-key coverage: non-TODO `Citation key` and `Proposed citation key` entries in `sources/*.md` must exist in `latex/references.bib`.
+- Section-acceptance coverage: tracked paper sections in `wiki/data/progress-register.json` must appear in `wiki/guidance/section-acceptance.md`.
 - Parallel work-plan note for safe write scopes in `wiki/progress/parallel-work-plan.md`.
 
 ## Recorded Runs
 
 - [Next Step Parallelism Test](next-step-parallelism-test.md)
 - [Next Step Parallelism Retest](next-step-parallelism-retest.md)
+- [Drift Investigation](drift-investigation.md)
 
 ## Future Checks
 
 - Add an evaluation prompt set once sections 02 and 04 have first drafts.
-- Add source-note raw-page recovery tracking if exact extraction becomes hard to coordinate through section blockers alone.
+- Add raw-page recovery tracking if exact extraction becomes hard to coordinate through section blockers alone.
+- Track close-procedure failures as course-correction evidence.

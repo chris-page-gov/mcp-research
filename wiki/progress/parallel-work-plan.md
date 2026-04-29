@@ -17,16 +17,27 @@ related:
 
 Use this note when splitting paper work across agents. Keep each lane source-first and assign disjoint write sets.
 
-## Current Parallel Lanes
+## Completed Integration Lanes
+
+These lanes ran in parallel and have been integrated by the main thread. Their non-TODO citation keys have been normalized in `latex/references.bib`.
 
 | Lane | Write scope | Depends on | Can run in parallel? | Integration rule |
 | --- | --- | --- | --- | --- |
-| Official specs and section 02 | `sources/official-specs.md`, `paper/02-mcp-in-a-nutshell.md` | Local MCP specification notes and citation file | Yes | Main integrator updates shared citation/progress metadata after review. |
-| Criticism and section 04 | `sources/discourse-and-criticism.md`, `paper/04-technical-critiques-and-mitigations.md` | Security notes, official notes, local discourse notes | Yes | Preserve the criticism/evidence/mitigation/residual-risk matrix. |
-| Vendor and FastMCP notes | `sources/vendor-adoption.md`, `sources/fastmcp.md` | Local vendor and framework notes | Yes | Do not draft ecosystem claims until source notes are accepted. |
-| Alternatives notes and section 06 | `sources/alternatives-skills-agents.md`, `paper/06-mcp-vs-alternatives.md` | Local alternatives notes and imported citation file | Yes | Keep section 06 as a skeleton until source notes are accepted. |
-| Government/local authority analysis | `paper/09-government-local-authority-ai-hub.md` | Official, security, vendor, and alternatives notes | Partly | Risk-register structure can start; recommendations wait for accepted evidence. |
-| Consolidation | `paper/00-executive-summary.md`, `paper/11-glossary.md`, `latex/references.bib` | Stable section drafts and source registers | No | Run after source-backed sections settle. |
+| Official exact extraction | `sources/official-specs.md`, `paper/02-mcp-in-a-nutshell.md` | Official MCP notes and named official MCP pages | Done | Closed resources, prompts, lifecycle, versioning, and registry limitation placeholders. |
+| Criticism/discourse extraction | `sources/discourse-and-criticism.md`, `paper/04-technical-critiques-and-mitigations.md` | Security notes, official notes, named discourse leads | Done | Preserved the criticism/evidence/mitigation/residual-risk matrix. |
+| Vendor and FastMCP raw-page recovery | `sources/vendor-adoption.md`, `sources/fastmcp.md` | Named vendor, governance, and FastMCP leads | Done | Recovered exact URLs/text for main vendor and FastMCP leads. |
+| Alternatives verification | `sources/alternatives-skills-agents.md`, `paper/06-mcp-vs-alternatives.md` | Named alternatives notes and official vendor docs | Done | Verified Semantic Kernel, OpenAI tools taxonomy, and app-submission evidence; left portability/procurement blockers narrow. |
+| Government/local authority risk skeleton | `paper/09-government-local-authority-ai-hub.md` | Official, security, vendor, and alternatives notes | Done | Added risk-register structure only; recommendations wait for accepted evidence. |
+
+## Next Parallel Lanes
+
+| Lane | Write scope | Depends on | Can run in parallel? | Integration rule |
+| --- | --- | --- | --- | --- |
+| Roots/tasks official extraction | `sources/official-specs.md`, `paper/02-mcp-in-a-nutshell.md` | Versioned official MCP roots/tasks pages | Yes | Add exact quotations without broadening protocol claims. |
+| Discovery-friction discourse | `sources/discourse-and-criticism.md`, `paper/04-technical-critiques-and-mitigations.md` | Named imported leads or new accepted source notes | Yes | Replace the failed GitHub issue #1683 private-registry reading with correct evidence or remove the claim. |
+| Portability/procurement evidence | `sources/alternatives-skills-agents.md`, `paper/06-mcp-vs-alternatives.md` | Public-sector procurement and non-vendor portability evidence | Yes | Keep recommendations out unless evidence is specific enough. |
+| Vendor control-depth evidence | `sources/vendor-adoption.md`, `paper/09-government-local-authority-ai-hub.md` | Vendor admin/audit/security/licensing docs | Yes | Distinguish product controls from public-sector assurance. |
+| Consolidation | `paper/00-executive-summary.md`, `paper/11-glossary.md`, `latex/references.bib` | Stable section drafts and source registers | No | Run only after source-backed sections settle. |
 
 ## Shared Files
 
@@ -42,8 +53,9 @@ Only the main integrator should edit shared coordination files while worker lane
 ## Integration Checklist
 
 - Review worker diffs before staging.
-- Add missing BibTeX TODO keys only when cited in paper/source files.
+- Add missing non-TODO BibTeX keys recorded in source notes before replacing section placeholders.
 - Update `sources/source-register.md` status after source-note files change.
 - Update `wiki/data/progress-register.json` for section TODO blockers.
 - Run `uv run python scripts/validate_wiki_state.py --write-report`.
 - Run `make check`, `make lint`, and `make typecheck`.
+- Follow [Session Close Procedure](../guidance/session-close.md) before final response.

@@ -26,4 +26,4 @@ This folder is a guidance wiki for the MCP research paper. It is not a second pa
 
 ## Current Bias
 
-Prefer source-backed Markdown scaffolding over prose. The next drafting phase should start with `paper/02-mcp-in-a-nutshell.md` and `sources/official-specs.md`, then integrate the existing `paper/04-technical-critiques-and-mitigations.md` skeleton.
+Prefer source-backed Markdown scaffolding over prose. Current remaining blockers are roots/tasks quotation cleanup, discovery-friction discourse evidence, portability/procurement evidence, vendor control-depth evidence, and section 09 control mapping. Before ending a session, run the [Session Close Procedure](guidance/session-close.md).

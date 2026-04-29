@@ -223,8 +223,11 @@ This file records only specification and official-documentation sources that may
 - Source type: primary
 - Key claims:
   - The MCP Registry launched in preview as an open catalog and API for discovering publicly available MCP servers.
-  - The registry is relevant to discovery but should not be treated as a complete enterprise curation layer without further source support.
-  - The imported report attributes preview limitations to this source family, including possible breaking changes and lack of durability guarantees; exact wording still needs extraction before final prose.
+  - The launch post describes the registry as the official central registry and a primary source of truth for public-server metadata that sub-registries can build upon.
+  - The post separates public subregistries and private enterprise subregistries, and says downstream consumers can augment registry data for their end users.
+  - The post describes registry metadata as self-reported information that downstream consumers can massage and deliver.
+  - The post says community members can flag servers that violate moderation guidelines, with registry maintainers able to denylist and remove entries from public access.
+  - This source supports public discovery and registry intent; use OS-011, OS-022, and OS-023 for current limitation wording.
 - Direct quotation under 25 words: "an open catalog and API"
 - Relevance to Government / Local Authority AI Hub decision-making:
   - Supports discovery and registry analysis, especially the need for private or curated registries in regulated environments.
@@ -245,14 +248,21 @@ This file records only specification and official-documentation sources that may
 - URL: https://modelcontextprotocol.io/registry/about
 - Source type: primary
 - Key claims:
+  - The registry page says the MCP Registry is currently in preview and that breaking changes or data resets may occur before general availability.
   - The registry is the official centralized metadata repository for publicly accessible MCP servers.
-  - The saved citation snippets indicate the registry is backed by trusted contributors and intended for discovery metadata.
-  - The imported report attributes additional constraints to this source family: public-server scope, light moderation, downstream aggregation or private registry expectations, and caution against direct host consumption; exact language remains TODO before final prose.
+  - The registry provides publication metadata, namespace management through DNS verification, a REST API for clients and aggregators, and standardized installation/configuration information.
+  - The registry hosts metadata pointing to code/binaries in package registries; it is not itself the package registry.
+  - The registry supports open-source and closed-source servers only where installation or server access is public; it does not support private servers.
+  - The registry recommends a private MCP registry for private servers.
+  - The registry is intended primarily for downstream aggregators, and its metadata is deliberately unopinionated.
+  - Host applications are not intended to consume the official registry directly; they should consume downstream registries conforming to the OpenAPI spec.
+  - The registry delegates security scanning to underlying package registries and downstream aggregators, focusing on namespace authentication and metadata hosting.
+  - The official registry codebase is not designed for self-hosting; forks must be maintained independently.
 - Direct quotation under 25 words: "official centralized metadata repository"
 - Relevance to Government / Local Authority AI Hub decision-making:
   - Supports analysis of registry governance, discovery metadata, and the gap between public discovery and enterprise approval.
 - Reliability assessment:
-  - High for official registry description; final prose should verify current durability, moderation, and direct-consumption language.
+  - High for official registry description. Use OS-022 for moderation limits and OS-023 for durability/API-consumption limits.
 - Sections where this source may be cited:
   - `04-technical-critiques-and-mitigations.md`
   - `09-government-local-authority-ai-hub.md`
@@ -291,12 +301,18 @@ This file records only specification and official-documentation sources that may
 - Source type: primary
 - Key claims:
   - Streamable HTTP enabled remote MCP deployments.
-  - The imported report associates this source with unresolved scale concerns including sticky sessions, stateful connections, ambiguous session scope, server discovery, server cards, and statelessness; verify exact wording before final prose.
+  - The post says growing remote-server demand created practical challenges for enterprise-scale distributed deployments.
+  - Listed challenges include load-balancer/API-gateway routing complexity, sticky routing from stateful connections, backend-storage burden for simple tools, and ambiguous session scope.
+  - The post says MCP was originally designed as a stateful protocol with a capability/protocol-version handshake and fixed connection state.
+  - The transport working group was exploring stateless protocol changes, capability discovery, explicit session semantics, optional notification/caching improvements, and server cards.
+  - Server Cards are presented as a roadmap direction for structured metadata exposed at a well-known endpoint, not as already-stable protocol behavior in this source.
+  - The post says MCP will continue to support STDIO and Streamable HTTP as the only official transports for the current cycle, while specialized teams may use custom transports.
+  - The post says required SEPs were targeted for Q1 2026 and possible inclusion in the next specification release tentatively slated for June 2026.
 - Direct quotation under 25 words: "enabling remote MCP deployments"
 - Relevance to Government / Local Authority AI Hub decision-making:
   - Supports transport and operational complexity analysis for enterprise-scale remote MCP.
 - Reliability assessment:
-  - High for official project direction; final claims about specific unresolved issues should be checked against the page text before publication.
+  - High for official project direction and roadmap concerns; not a stable normative requirement source.
 - Sections where this source may be cited:
   - `04-technical-critiques-and-mitigations.md`
   - `05-timeline-and-evolution.md`
@@ -355,9 +371,12 @@ This file records only specification and official-documentation sources that may
 - URL: https://modelcontextprotocol.io/specification/2025-11-25
 - Source type: primary
 - Key claims:
-  - The imported citation scrape records the 2025-11-25 specification as saying MCP provides a standardized way for applications to share contextual information with language models and expose tools/capabilities to AI applications.
-  - Use this source only for high-level protocol scope unless the final drafting pass extracts exact text from the relevant primitive-specific pages.
-  - The imported report treats 2025-11-25 as the current stable spec at the April 2026 cut-off; verify against a current local source before final publication.
+  - The 2025-11-25 specification defines MCP as an open protocol integrating LLM applications with external data sources and tools.
+  - The specification says it defines authoritative protocol requirements based on the TypeScript schema.
+  - MCP standardizes sharing contextual information with language models, exposing tools/capabilities to AI systems, and building composable integrations/workflows.
+  - The specification describes communication between hosts, clients, and servers using JSON-RPC 2.0.
+  - The server feature list separates resources, prompts, and tools; the client feature list separates sampling, roots, and elicitation.
+  - Security principles include user consent/control, data privacy, tool safety, and LLM sampling controls; the spec says MCP cannot enforce those principles at protocol level.
 - Direct quotation under 25 words: "Share contextual information with language models"
 - Relevance to Government / Local Authority AI Hub decision-making:
   - Supports the neutral opening definition that MCP is an integration protocol for context and capabilities, not a complete governance or workflow layer.
@@ -369,22 +388,28 @@ This file records only specification and official-documentation sources that may
 
 ### OS-017 - Resources
 
-- Working placeholder citation key: `TODO-mcp-resources`
-- Future citation key after exact extraction: `mcp-resources-2025-06-18`
+- Citation key: `mcp-resources-2025-11-25`
 - Title: Resources
 - Author/organisation: Model Context Protocol project
-- Publication/update date: Version 2025-06-18
+- Publication/update date: Version 2025-11-25
 - Date accessed: 2026-04-29
-- URL: TODO: exact resource page URL is not present in the imported citation list; local scrape identifies an official Resources page dated 2025-06-18.
+- URL: https://modelcontextprotocol.io/specification/2025-11-25/server/resources
 - Source type: primary
 - Key claims:
-  - The imported citation scrape records an official Resources page saying MCP provides a standardized way for servers to expose resources to clients.
-  - The scrape snippet says resources allow servers to share something with clients, but the snippet is truncated; do not draft final prose about resource contents, URI templates, subscriptions, or listing semantics until exact text is extracted.
+  - MCP provides a standardized way for servers to expose resources to clients.
+  - Resources let servers share data that provides context to language models, such as files, database schemas, or application-specific information.
+  - Each resource is identified by a URI.
+  - Resources are application-driven; host applications decide how to incorporate context, and the protocol does not mandate a specific UI pattern.
+  - Servers supporting resources must declare the `resources` capability during initialization.
+  - Resource capability sub-features are optional: `subscribe` for individual resource-change subscriptions and `listChanged` for available-resource list notifications.
+  - Clients discover available resources with `resources/list`, read content with `resources/read`, and discover parameterized resources with `resources/templates/list`.
+  - Resources can contain text or binary data and can carry annotations for intended audience, priority, and last-modified time.
+  - Security considerations include validating resource URIs, access controls for sensitive resources, proper binary encoding, and permission checks before operations.
 - Direct quotation under 25 words: "servers to expose resources to clients"
 - Relevance to Government / Local Authority AI Hub decision-making:
   - Supports treating resources as a context-exposure primitive that needs data classification, provenance, access control, and audit decisions before government deployment.
 - Reliability assessment:
-  - Potentially high because it is an official specification page; current local note is incomplete because the durable URL and exact text were not captured.
+  - High. Versioned primary specification page. Does not by itself classify data sensitivity or prove access-control sufficiency.
 - Sections where this source may be cited:
   - `02-mcp-in-a-nutshell.md`
   - `04-technical-critiques-and-mitigations.md`
@@ -402,71 +427,164 @@ This file records only specification and official-documentation sources that may
 - Key claims:
   - The imported citation list includes this official learning page.
   - The imported report uses official docs/spec sources to define MCP servers as exposing capabilities such as tools, resources, and prompts.
-  - The local scrape does not contain exact prompt-specific wording from this page; use this source only as orientation until direct text is extracted.
+  - This source supports the broad server-feature taxonomy, but use OS-017 and OS-019 for exact versioned resources and prompts semantics.
 - Direct quotation under 25 words, if useful: TODO: extract exact quotation before final prose.
 - Relevance to Government / Local Authority AI Hub decision-making:
   - Supports the basic capability taxonomy for server review checklists, but should not be used alone for normative prompt semantics.
 - Reliability assessment:
-  - Medium-high. Official learning material, but exact local claim extraction remains incomplete.
+  - Medium-high. Official learning material; prefer versioned specification pages for normative primitive semantics.
 - Sections where this source may be cited:
   - `02-mcp-in-a-nutshell.md`
   - `09-government-local-authority-ai-hub.md`
 
-### OS-019 - Lifecycle
+### OS-019 - Prompts
 
-- Working placeholder citation key: `TODO-official-mcp-architecture`
-- Future citation key after exact extraction: `mcp-lifecycle-2025-03-26`
-- Title: Lifecycle
+- Citation key: `mcp-prompts-2025-11-25`
+- Title: Prompts
 - Author/organisation: Model Context Protocol project
-- Publication/update date: Version 2025-03-26
+- Publication/update date: Version 2025-11-25
 - Date accessed: 2026-04-29
-- URL: TODO: exact lifecycle page URL is not present in the imported citation list; local scrape identifies an official Lifecycle page dated 2025-03-26.
+- URL: https://modelcontextprotocol.io/specification/2025-11-25/server/prompts
 - Source type: primary
 - Key claims:
-  - The imported citation scrape records an official Lifecycle page saying MCP defines a lifecycle for client-server connections.
-  - The same snippet associates the lifecycle with capability negotiation and state management.
-  - This source is enough to keep lifecycle/capability negotiation in the skeleton, but not enough for final initialization sequence, message ordering, error handling, or protocol-version semantics.
-- Direct quotation under 25 words: "capability negotiation and state management"
+  - MCP provides a standardized way for servers to expose prompt templates to clients.
+  - Prompts provide structured messages and instructions for interacting with language models.
+  - Clients can discover available prompts, retrieve their contents, and provide arguments to customize them.
+  - Prompts are user-controlled and intended for explicit user selection; the protocol does not mandate a specific UI pattern.
+  - Servers supporting prompts must declare the `prompts` capability during initialization; `listChanged` indicates prompt-list change notifications.
+  - Clients retrieve available prompts with `prompts/list` and retrieve a specific prompt with `prompts/get`.
+  - Prompt definitions include name, optional title/description/icons, and optional arguments for customization.
+  - Prompt messages contain a role and content; supported content includes text, image, audio, and embedded resource content.
+  - Implementations must validate prompt inputs and outputs to prevent injection attacks or unauthorized resource access.
+- Direct quotation under 25 words: "servers to expose prompt templates to clients"
+- Relevance to Government / Local Authority AI Hub decision-making:
+  - Supports treating prompts as user-selected instruction templates that require review for instruction integrity, input validation, and access to embedded resources.
+- Reliability assessment:
+  - High. Versioned primary specification page.
+- Sections where this source may be cited:
+  - `02-mcp-in-a-nutshell.md`
+  - `04-technical-critiques-and-mitigations.md`
+  - `09-government-local-authority-ai-hub.md`
+
+### OS-020 - Lifecycle
+
+- Citation key: `mcp-lifecycle-2025-11-25`
+- Title: Lifecycle
+- Author/organisation: Model Context Protocol project
+- Publication/update date: Version 2025-11-25
+- Date accessed: 2026-04-29
+- URL: https://modelcontextprotocol.io/specification/2025-11-25/basic/lifecycle
+- Source type: primary
+- Key claims:
+  - MCP defines a lifecycle for client-server connections that includes initialization, operation, and shutdown.
+  - Initialization covers capability negotiation and protocol-version agreement; operation covers normal protocol communication; shutdown covers graceful termination.
+  - The initialization phase must be the first client-server interaction.
+  - During initialization, the parties establish protocol-version compatibility, exchange/negotiate capabilities, and share implementation details.
+  - The client initiates with an `initialize` request containing supported protocol version, client capabilities, and client implementation information.
+  - The server responds with its protocol version, server capabilities, server implementation information, and optional instructions.
+  - After successful initialization, the client sends a `notifications/initialized` notification before normal operation.
+  - If the server responds with a protocol version the client does not support, the client should disconnect.
+  - Client and server capabilities establish which optional protocol features are available during the session.
+  - During operation, both parties must respect the negotiated protocol version and only use successfully negotiated capabilities.
+  - Error cases include protocol-version mismatch, failure to negotiate required capabilities, and request timeouts.
+- Direct quotation under 25 words: "first interaction between client and server"
 - Relevance to Government / Local Authority AI Hub decision-making:
   - Supports treating connection setup, capability declaration, and state boundaries as architecture-review items rather than invisible implementation details.
 - Reliability assessment:
-  - Potentially high because it is an official specification page; current local note is incomplete because the durable URL and exact text were not captured.
+  - High. Versioned primary specification page. Does not by itself prove policy enforcement, authorization sufficiency, or enterprise approval semantics.
 - Sections where this source may be cited:
   - `02-mcp-in-a-nutshell.md`
   - `04-technical-critiques-and-mitigations.md`
 
-### OS-020 - Versioning Published MCP Servers
+### OS-021 - Versioning Published MCP Servers
 
-- Working placeholder citation key: `TODO-mcp-server-versioning`
-- Future citation key after exact extraction: `mcp-server-versioning`
+- Citation key: `mcp-server-versioning`
 - Title: Versioning Published MCP Servers
 - Author/organisation: Model Context Protocol project
 - Publication/update date: Current documentation page or specification-adjacent guidance; no stable publication date visible in local notes
 - Date accessed: 2026-04-29
-- URL: TODO: exact versioning page URL is not present in the imported citation list.
+- URL: https://modelcontextprotocol.io/registry/versioning
 - Source type: primary
 - Key claims:
-  - The imported citation scrape records an official page titled "Versioning Published MCP Servers".
-  - The snippet appears to discuss acceptable and recommended version-label formats for published MCP servers.
-  - This should not be used as evidence for protocol-version negotiation until exact page text and scope are extracted.
-- Direct quotation under 25 words, if useful: TODO: extract exact quotation before final prose.
+  - The MCP Registry versioning page is registry-publication guidance, not protocol-version negotiation.
+  - The page repeats that the MCP Registry is in preview and may have breaking changes or data resets before general availability.
+  - Published MCP servers must define a version string in `server.json`.
+  - The version string must be unique for each publication; once published, the version string and other metadata cannot be changed.
+  - The registry recommends semantic versioning but supports any version string format.
+  - When a server is published, the registry tries to parse its version as semantic versioning for sorting and latest-version marking.
+  - Version strings that appear to be version ranges are prohibited.
+  - Best-practice guidance says local-server versions should align with package versions, remote-server versions should align with remote API versions, and registry-only metadata updates should use prerelease versions.
+- Direct quotation under 25 words: "MCP servers MUST define a version string"
 - Relevance to Government / Local Authority AI Hub decision-making:
-  - Points to a future source for server inventory, version pinning, rollback, and supplier-change controls.
+  - Supports inventory, immutable metadata, version-pinning, rollback, and supplier-change review for published MCP server metadata.
 - Reliability assessment:
-  - Unknown until exact URL and page scope are captured.
+  - High for official registry publication guidance. Scope is published-server metadata/version strings, not MCP wire-protocol version negotiation.
 - Sections where this source may be cited:
   - `02-mcp-in-a-nutshell.md`
   - `09-government-local-authority-ai-hub.md`
 
+### OS-022 - MCP Registry Moderation Policy
+
+- Citation key: `mcp-registry-moderation-policy`
+- Title: The MCP Registry Moderation Policy
+- Author/organisation: Model Context Protocol project
+- Publication/update date: Current registry documentation page; no stable publication date visible in local notes
+- Date accessed: 2026-04-29
+- URL: https://modelcontextprotocol.io/registry/moderation-policy
+- Source type: primary
+- Key claims:
+  - The policy applies to the official registry at `registry.modelcontextprotocol.io`; subregistries may have their own moderation policies.
+  - The policy describes the registry as permissive and says it only removes illegal content, malware, spam, and completely broken servers.
+  - The registry does not make moderation guarantees, and consumers should assume minimal-to-no moderation.
+  - The project says it has limited active moderation capacity and relies largely on upstream package registries or downstream subregistries for deeper moderation.
+  - The policy says the registry generally will not remove low-quality or buggy servers, servers with security vulnerabilities, duplicate-function servers, or adult-content servers.
+  - When the registry removes a server, it usually sets status to `deleted` while metadata remains available via the API; extreme cases may overwrite or erase metadata.
+- Direct quotation under 25 words: "consumers should assume minimal-to-no moderation"
+- Relevance to Government / Local Authority AI Hub decision-making:
+  - Supports the conclusion that a public-sector hub needs its own curation, risk review, and approval layer rather than relying on public-registry moderation.
+- Reliability assessment:
+  - High for official registry policy; current page should be rechecked before final publication because moderation policy may change.
+- Sections where this source may be cited:
+  - `02-mcp-in-a-nutshell.md`
+  - `04-technical-critiques-and-mitigations.md`
+  - `09-government-local-authority-ai-hub.md`
+
+### OS-023 - MCP Registry Aggregators
+
+- Citation key: `mcp-registry-aggregators`
+- Title: MCP Registry Aggregators
+- Author/organisation: Model Context Protocol project
+- Publication/update date: Current registry documentation page; no stable publication date visible in local notes
+- Date accessed: 2026-04-29
+- URL: https://modelcontextprotocol.io/registry/registry-aggregators
+- Source type: primary
+- Key claims:
+  - Aggregators are downstream consumers that add value, such as ratings or security scanning.
+  - The official registry exposes an unauthenticated read-only REST API for aggregators to populate their own data stores.
+  - Aggregators are expected to scrape registry data on a regular but infrequent basis and persist the data in their own store.
+  - The MCP Registry does not provide uptime or data-durability guarantees.
+  - Server metadata is generally immutable except for the `status` field.
+  - A `deleted` status typically indicates violation of the permissive moderation policy, such as spam, malware, or illegal content.
+  - A subregistry can implement the registry OpenAPI spec and inject custom metadata, including user ratings, download counts, and security-scan results.
+- Direct quotation under 25 words: "does not provide uptime or data durability guarantees"
+- Relevance to Government / Local Authority AI Hub decision-making:
+  - Supports designing private or curated registry layers that persist, enrich, and risk-score upstream public-registry metadata.
+- Reliability assessment:
+  - High for official registry guidance; current page should be rechecked before final publication because registry API behavior may change during preview.
+- Sections where this source may be cited:
+  - `02-mcp-in-a-nutshell.md`
+  - `04-technical-critiques-and-mitigations.md`
+  - `09-government-local-authority-ai-hub.md`
+
 ## Known Official-Spec Gaps
 
-These gaps must be filled before final drafting. The placeholder keys exist in `latex/references.bib` only to keep citation checks honest. Source notes above marked with TODO URLs are not final evidence for prose until exact page text is extracted.
+These gaps must be filled before final drafting. Exact-extraction blockers for lifecycle, resources, prompts, published-server versioning, and registry moderation/aggregator limits are now closed and backed by BibTeX entries.
 
-| Needed source | Placeholder citation key | Required before |
+| Needed source or cleanup | Placeholder citation key | Current status |
 | --- | --- | --- |
-| Exact normative architecture / lifecycle / initialization wording | `TODO-official-mcp-architecture` | Describing lifecycle, initialization sequence, capability negotiation, state management, or protocol-version negotiation in final prose |
-| Durable Resources specification URL and exact text | `TODO-mcp-resources` | Drafting resources subsection beyond the minimal "servers expose resources to clients" skeleton |
-| Prompts specification or exact server-concepts wording | `TODO-mcp-prompts` | Drafting prompts subsection beyond "servers may expose prompts" |
-| Published-server versioning guidance | TODO: add `TODO-mcp-server-versioning` to `latex/references.bib` | Drafting version-pinning or server-version-control claims |
-| Registry limitations exact text | TODO: add `TODO-mcp-registry-limitations` to `latex/references.bib` if separate from current registry keys | Drafting claims about moderation, durability, private registries, or direct host consumption |
-| Evidence for token-reduction or context-bloat claims | `TODO-context-bloat-token-reduction` | Drafting context-bloat evidence |
+| Add BibTeX for exact lifecycle page | `TODO-official-mcp-architecture` | Closed; use `mcp-lifecycle-2025-11-25`. |
+| Add BibTeX for exact Resources page | `TODO-mcp-resources` | Closed; use `mcp-resources-2025-11-25`. |
+| Add BibTeX for exact Prompts page | `TODO-mcp-prompts` | Closed; use `mcp-prompts-2025-11-25`. |
+| Add BibTeX for published-server versioning guidance | `TODO-mcp-server-versioning` | Closed; use `mcp-server-versioning`. Scope is registry server-version metadata, not protocol-version negotiation. |
+| Add BibTeX for registry limitations | `TODO-mcp-registry-limitations` | Closed; use `mcp-registry-about`, `mcp-registry-moderation-policy`, and `mcp-registry-aggregators` depending on the claim. |
+| Evidence for token-reduction or context-bloat claims | `TODO-context-bloat-token-reduction` | Out of scope for official specs; use `sources/discourse-and-criticism.md` and `sources/vendor-adoption.md` for product or practitioner evidence. |
