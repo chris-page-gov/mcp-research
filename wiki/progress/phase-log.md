@@ -7,6 +7,7 @@ tags:
   - "phase-log"
 related:
   - "plan.md"
+  - "parallel-work-plan.md"
   - "../index.md"
 ---
 
@@ -24,3 +25,5 @@ related:
 | Imported citations file became available and was reconciled into official source notes. | Close official-source blockers without browsing. | Extract exact quotations for architecture, client best practices, roots, tasks, registry, and roadmap before final prose. |
 | Published the public GitHub repository and confirmed CI. | Make the project shareable and repeatable. | Keep local wiki and validation reports current before each push. |
 | Ran the next-step parallelism wiki evaluation. | Test whether the wiki can guide planning without loading broad context. | Consider adding a durable parallel work-plan note before starting multiple source-note workers. |
+| Added a parallel work-plan note. | Make source-note worker scopes explicit before running multiple agents. | Update after integration if safe write sets change. |
+| Ran four parallel source-note lanes. | Advance official specs, criticism, vendor/FastMCP, and alternatives without overlapping write scopes. | Integrate citation keys, source register status, and progress blockers before final prose. |

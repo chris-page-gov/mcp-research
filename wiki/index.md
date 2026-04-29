@@ -28,6 +28,7 @@ This wiki is the operating layer for the paper project. It keeps authoring guida
 - [Source Discipline](guidance/source-discipline.md)
 - [Section Acceptance Criteria](guidance/section-acceptance.md)
 - [Project Plan](progress/plan.md)
+- [Parallel Work Plan](progress/parallel-work-plan.md)
 - [Phase Log](progress/phase-log.md)
 - [Wiki Evaluation Plan](evals/wiki-evaluation-plan.md)
 - [Next Step Parallelism Test](evals/next-step-parallelism-test.md)

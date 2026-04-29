@@ -178,6 +178,8 @@ This file records only specification and official-documentation sources that may
 - Key claims:
   - The official learning material describes MCP architecture and deployment patterns.
   - The saved citation snippets include remote MCP server examples using Streamable HTTP.
+  - The imported citation scrape specifically records the Sentry hosted example as a "remote MCP server" using Streamable HTTP.
+  - This source can orient the report's host/client/server diagram, but it is not enough on its own for normative lifecycle, initialization, capability-negotiation, or protocol-version claims.
   - This source should be used for architecture orientation, while versioned spec pages should support normative protocol claims.
 - Direct quotation under 25 words: "commonly referred to as a remote MCP server"
 - Relevance to Government / Local Authority AI Hub decision-making:
@@ -222,6 +224,7 @@ This file records only specification and official-documentation sources that may
 - Key claims:
   - The MCP Registry launched in preview as an open catalog and API for discovering publicly available MCP servers.
   - The registry is relevant to discovery but should not be treated as a complete enterprise curation layer without further source support.
+  - The imported report attributes preview limitations to this source family, including possible breaking changes and lack of durability guarantees; exact wording still needs extraction before final prose.
 - Direct quotation under 25 words: "an open catalog and API"
 - Relevance to Government / Local Authority AI Hub decision-making:
   - Supports discovery and registry analysis, especially the need for private or curated registries in regulated environments.
@@ -244,6 +247,7 @@ This file records only specification and official-documentation sources that may
 - Key claims:
   - The registry is the official centralized metadata repository for publicly accessible MCP servers.
   - The saved citation snippets indicate the registry is backed by trusted contributors and intended for discovery metadata.
+  - The imported report attributes additional constraints to this source family: public-server scope, light moderation, downstream aggregation or private registry expectations, and caution against direct host consumption; exact language remains TODO before final prose.
 - Direct quotation under 25 words: "official centralized metadata repository"
 - Relevance to Government / Local Authority AI Hub decision-making:
   - Supports analysis of registry governance, discovery metadata, and the gap between public discovery and enterprise approval.
@@ -341,13 +345,128 @@ This file records only specification and official-documentation sources that may
   - `04-technical-critiques-and-mitigations.md`
   - `09-government-local-authority-ai-hub.md`
 
+### OS-016 - Specification Overview
+
+- Citation key: `mcp-specification-2025-11-25`
+- Title: Specification
+- Author/organisation: Model Context Protocol project
+- Publication/update date: Version 2025-11-25
+- Date accessed: 2026-04-29
+- URL: https://modelcontextprotocol.io/specification/2025-11-25
+- Source type: primary
+- Key claims:
+  - The imported citation scrape records the 2025-11-25 specification as saying MCP provides a standardized way for applications to share contextual information with language models and expose tools/capabilities to AI applications.
+  - Use this source only for high-level protocol scope unless the final drafting pass extracts exact text from the relevant primitive-specific pages.
+  - The imported report treats 2025-11-25 as the current stable spec at the April 2026 cut-off; verify against a current local source before final publication.
+- Direct quotation under 25 words: "Share contextual information with language models"
+- Relevance to Government / Local Authority AI Hub decision-making:
+  - Supports the neutral opening definition that MCP is an integration protocol for context and capabilities, not a complete governance or workflow layer.
+- Reliability assessment:
+  - High as a primary specification page, but local notes contain only a short scrape snippet.
+- Sections where this source may be cited:
+  - `02-mcp-in-a-nutshell.md`
+  - `05-timeline-and-evolution.md`
+
+### OS-017 - Resources
+
+- Working placeholder citation key: `TODO-mcp-resources`
+- Future citation key after exact extraction: `mcp-resources-2025-06-18`
+- Title: Resources
+- Author/organisation: Model Context Protocol project
+- Publication/update date: Version 2025-06-18
+- Date accessed: 2026-04-29
+- URL: TODO: exact resource page URL is not present in the imported citation list; local scrape identifies an official Resources page dated 2025-06-18.
+- Source type: primary
+- Key claims:
+  - The imported citation scrape records an official Resources page saying MCP provides a standardized way for servers to expose resources to clients.
+  - The scrape snippet says resources allow servers to share something with clients, but the snippet is truncated; do not draft final prose about resource contents, URI templates, subscriptions, or listing semantics until exact text is extracted.
+- Direct quotation under 25 words: "servers to expose resources to clients"
+- Relevance to Government / Local Authority AI Hub decision-making:
+  - Supports treating resources as a context-exposure primitive that needs data classification, provenance, access control, and audit decisions before government deployment.
+- Reliability assessment:
+  - Potentially high because it is an official specification page; current local note is incomplete because the durable URL and exact text were not captured.
+- Sections where this source may be cited:
+  - `02-mcp-in-a-nutshell.md`
+  - `04-technical-critiques-and-mitigations.md`
+  - `09-government-local-authority-ai-hub.md`
+
+### OS-018 - Server Concepts
+
+- Citation key: `mcp-server-concepts`
+- Title: Server Concepts
+- Author/organisation: Model Context Protocol project
+- Publication/update date: Current documentation page; no stable publication date visible in local notes
+- Date accessed: 2026-04-29
+- URL: https://modelcontextprotocol.io/docs/learn/server-concepts
+- Source type: primary
+- Key claims:
+  - The imported citation list includes this official learning page.
+  - The imported report uses official docs/spec sources to define MCP servers as exposing capabilities such as tools, resources, and prompts.
+  - The local scrape does not contain exact prompt-specific wording from this page; use this source only as orientation until direct text is extracted.
+- Direct quotation under 25 words, if useful: TODO: extract exact quotation before final prose.
+- Relevance to Government / Local Authority AI Hub decision-making:
+  - Supports the basic capability taxonomy for server review checklists, but should not be used alone for normative prompt semantics.
+- Reliability assessment:
+  - Medium-high. Official learning material, but exact local claim extraction remains incomplete.
+- Sections where this source may be cited:
+  - `02-mcp-in-a-nutshell.md`
+  - `09-government-local-authority-ai-hub.md`
+
+### OS-019 - Lifecycle
+
+- Working placeholder citation key: `TODO-official-mcp-architecture`
+- Future citation key after exact extraction: `mcp-lifecycle-2025-03-26`
+- Title: Lifecycle
+- Author/organisation: Model Context Protocol project
+- Publication/update date: Version 2025-03-26
+- Date accessed: 2026-04-29
+- URL: TODO: exact lifecycle page URL is not present in the imported citation list; local scrape identifies an official Lifecycle page dated 2025-03-26.
+- Source type: primary
+- Key claims:
+  - The imported citation scrape records an official Lifecycle page saying MCP defines a lifecycle for client-server connections.
+  - The same snippet associates the lifecycle with capability negotiation and state management.
+  - This source is enough to keep lifecycle/capability negotiation in the skeleton, but not enough for final initialization sequence, message ordering, error handling, or protocol-version semantics.
+- Direct quotation under 25 words: "capability negotiation and state management"
+- Relevance to Government / Local Authority AI Hub decision-making:
+  - Supports treating connection setup, capability declaration, and state boundaries as architecture-review items rather than invisible implementation details.
+- Reliability assessment:
+  - Potentially high because it is an official specification page; current local note is incomplete because the durable URL and exact text were not captured.
+- Sections where this source may be cited:
+  - `02-mcp-in-a-nutshell.md`
+  - `04-technical-critiques-and-mitigations.md`
+
+### OS-020 - Versioning Published MCP Servers
+
+- Working placeholder citation key: `TODO-mcp-server-versioning`
+- Future citation key after exact extraction: `mcp-server-versioning`
+- Title: Versioning Published MCP Servers
+- Author/organisation: Model Context Protocol project
+- Publication/update date: Current documentation page or specification-adjacent guidance; no stable publication date visible in local notes
+- Date accessed: 2026-04-29
+- URL: TODO: exact versioning page URL is not present in the imported citation list.
+- Source type: primary
+- Key claims:
+  - The imported citation scrape records an official page titled "Versioning Published MCP Servers".
+  - The snippet appears to discuss acceptable and recommended version-label formats for published MCP servers.
+  - This should not be used as evidence for protocol-version negotiation until exact page text and scope are extracted.
+- Direct quotation under 25 words, if useful: TODO: extract exact quotation before final prose.
+- Relevance to Government / Local Authority AI Hub decision-making:
+  - Points to a future source for server inventory, version pinning, rollback, and supplier-change controls.
+- Reliability assessment:
+  - Unknown until exact URL and page scope are captured.
+- Sections where this source may be cited:
+  - `02-mcp-in-a-nutshell.md`
+  - `09-government-local-authority-ai-hub.md`
+
 ## Known Official-Spec Gaps
 
-These gaps must be filled before final drafting. The placeholder keys exist in `latex/references.bib` only to keep citation checks honest.
+These gaps must be filled before final drafting. The placeholder keys exist in `latex/references.bib` only to keep citation checks honest. Source notes above marked with TODO URLs are not final evidence for prose until exact page text is extracted.
 
 | Needed source | Placeholder citation key | Required before |
 | --- | --- | --- |
-| Exact normative architecture / lifecycle / initialization wording | `TODO-official-mcp-architecture` | Describing lifecycle and capability negotiation in final prose |
-| Resources specification | `TODO-mcp-resources` | Drafting resources subsection |
-| Prompts specification | `TODO-mcp-prompts` | Drafting prompts subsection |
+| Exact normative architecture / lifecycle / initialization wording | `TODO-official-mcp-architecture` | Describing lifecycle, initialization sequence, capability negotiation, state management, or protocol-version negotiation in final prose |
+| Durable Resources specification URL and exact text | `TODO-mcp-resources` | Drafting resources subsection beyond the minimal "servers expose resources to clients" skeleton |
+| Prompts specification or exact server-concepts wording | `TODO-mcp-prompts` | Drafting prompts subsection beyond "servers may expose prompts" |
+| Published-server versioning guidance | TODO: add `TODO-mcp-server-versioning` to `latex/references.bib` | Drafting version-pinning or server-version-control claims |
+| Registry limitations exact text | TODO: add `TODO-mcp-registry-limitations` to `latex/references.bib` if separate from current registry keys | Drafting claims about moderation, durability, private registries, or direct host consumption |
 | Evidence for token-reduction or context-bloat claims | `TODO-context-bloat-token-reduction` | Drafting context-bloat evidence |
