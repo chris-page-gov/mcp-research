@@ -1,0 +1,303 @@
+Research activity
+
+Evaluating structure and file creation options
+I noticed a conflict: the user's structure includes 12 sections, but the system suggests 4 to 8. I might need to condense the 12 into 6 major sections without missing details. The user wants Markdown files, which I could provide using available tools, but I need to ensure only the final report is handed over.
+
+Plotting report structure and research strategy
+I could use available tools to generate files, but the system requires me to deliver only the report. Maybe I can include file contents as markdown code within the report instead. This means I need extensive research, especially for claims that need citations, and I'll need to gather info from solid sources like official documentation and reputable websites such as GitHub and OpenAI.
+
+Balancing structure, citations, and entity references
+The system suggests having 6-8 sections, so I’ll keep that in mind for the report structure without numbering headers. I’ll mention file names but use H1 for the title and H2 for main sections. Citations will go at the end of paragraphs, and I'll carefully wrap references to entities like organizations or people—guidelines say no repetition. Images seem unnecessary for this research-based task.
+
+Clarifying structure and planning content
+I’m thinking about disambiguating organizations by wrapping them consistently throughout the report — maybe in a table or headings, but avoiding too many repetitions. Since the user wants a human-researcher approach, I’ll plan and revise transparently, including a methodology section. My report will separate facts, opinions, and analysis, likely using labels in the paragraphs or tables. I’ll also gather sources through thorough research.
+
+Clarifying research direction and date adjustment
+The current date is April 27, 2026, not November 2025 as the user's prompt suggested. I’ll make sure to clarify that my analysis uses this updated date. For research, I need to check the MCP official spec for details on architecture, transports, authentication, and updates to FastMCP and OpenAI's adoption timeline from Anthropic.
+
+Searching
+www.tomshardware.comwww.tomshardware.com
+modelcontextprotocol.iomodelcontextprotocol.io
+www.anthropic.comwww.anthropic.com
+blog.modelcontextprotocol.ioblog.modelcontextprotocol.io
+8 more
+Searching
+modelcontextprotocol.iomodelcontextprotocol.io
+blog.modelcontextprotocol.ioblog.modelcontextprotocol.io
+www.anthropic.comwww.anthropic.com
+Refining research direction
+The search results I found aren’t enough for the task. I need to directly access the official spec pages, possibly from the official site. Engaging with the key documentation will provide the accurate, detailed information I need to move forward effectively with the analysis.
+
+Searching
+modelcontextprotocol.iomodelcontextprotocol.io
+blog.modelcontextprotocol.ioblog.modelcontextprotocol.io
+registry.modelcontextprotocol.ioregistry.modelcontextprotocol.io
+prod.registry.modelcontextprotocol.ioprod.registry.modelcontextprotocol.io
+1 more
+Deciding on specific documentation focus
+I’m thinking I need to look for more specific pages on the spec, especially regarding roots and prompts. But maybe that's enough for now. The user mentioned gRPC as a protocol option, so I need to check if the spec includes transport protocols beyond stdio and HTTP. I’ll search for gRPC info on the site.
+
+Searching
+pypi.orgpypi.org
+gofastmcp.comgofastmcp.com
+github.comgithub.com
+jlowin.devjlowin.dev
+1 more
+Looking for official FastMCP docs
+I need to find the official FastMCP documentation and check the latest version. I'll search for that to make sure I have the most up-to-date and reliable information before diving into anything further. This will give me the specifics I need for the task.
+
+Opening FastMCP documentation
+I might need to open the FastMCP documentation pages directly to gather the needed information. This will help ensure I have all the necessary details on hand for the task. I'll check for spec updates and use the latest available information from the official docs.
+
+Opening MCP app extension pages
+I might need to open the official MCP app extension pages to gather details. This will allow me to confirm the correct functionality, supported features, and app specifications. I’ll make sure to explore the necessary pages to avoid missing critical information for the task.
+
+Searching
+modelcontextprotocol.iomodelcontextprotocol.io
+Searching
+blog.modelcontextprotocol.ioblog.modelcontextprotocol.io
+modelcontextprotocol.iomodelcontextprotocol.io
+Looking for spec evolution and release timeline
+I should probably check for the older spec dates and its evolution. I might search the official blog for a timeline about releases, especially March 2025, to understand the updates and changes better. It’s a good idea to gather all the relevant history to be thorough.
+
+Searching
+developers.openai.comdevelopers.openai.com
+docs.cloud.google.comdocs.cloud.google.com
+community.openai.comcommunity.openai.com
+cloud.google.comcloud.google.com
+12 more
+Looking into vendor adoption and collaborations
+I should search for information on vendor adoption, focusing on major players like ChatGPT, OpenAI, Microsoft, GitHub, Google, and VS Code. I'll dig into their involvement and how they're adopting or collaborating on relevant technologies to get an idea of their adoption strategies.
+
+Searching
+blogs.windows.comblogs.windows.com
+devblogs.microsoft.comdevblogs.microsoft.com
+learn.microsoft.comlearn.microsoft.com
+Searching for Microsoft Windows MCP registry details
+I’ll check official sources like Microsoft’s blog to gather information about the Windows MCP registry, including any updates or related details. This should give me a clearer understanding of the specifications and developments, ensuring I’m looking at accurate, up-to-date information directly from Microsoft.
+
+Searching
+docs.github.comdocs.github.com
+code.visualstudio.comcode.visualstudio.com
+learn.microsoft.comlearn.microsoft.com
+Searching GitHub docs for registry and allowlist details
+I’ll check GitHub’s official documentation for updates on registry and allowlist procedures to better understand how they're implemented. This should help in providing precise information while making sure the details are accurate and directly from GitHub’s resources. Let's see what’s in the docs!
+
+Searching
+developers.openai.comdevelopers.openai.com
+Searching
+platform.openai.complatform.openai.com
+developers.openai.comdevelopers.openai.com
+openai.comopenai.com
+help.openai.comhelp.openai.com
+1 more
+Looking up OpenAI Apps SDK docs
+I need to compare the Apps and Skills, so I’ll check out official OpenAI Apps SDK documentation. This should provide the details I need to understand the distinctions and how they’re implemented. It's time to dive into the docs for a clearer comparison!
+
+Searching
+cloud.google.comcloud.google.com
+ai.google.devai.google.dev
+developers.google.comdevelopers.google.com
+help.openai.comhelp.openai.com
+Searching for Google official support docs
+I need to check out Google’s official support documentation for more details. I’ll search their open docs for relevant information to make sure I’m on track. Hopefully, I can find clear and up-to-date support for what I need. Let's dive into that search!
+
+Searching
+www.anthropic.comwww.anthropic.com
+docs.anthropic.comdocs.anthropic.com
+Looking for Anthropic docs on Claude connectors
+I need to search for Anthropic’s official docs, particularly focusing on Claude connectors. These might hold the information I need to better understand how things work with their systems. Let’s check their official documentation to get the most reliable and up-to-date details.
+
+Searching
+www.tomshardware.comwww.tomshardware.com
+arxiv.orgarxiv.org
+trailofbits.comtrailofbits.com
+invariantlabs.aiinvariantlabs.ai
+6 more
+Looking for security criticisms and reviews
+I should search for security criticisms and reviews, focusing on potential vulnerabilities or concerns. It’s important to dive into reliable sources to understand how well the system holds up under scrutiny. I’ll make sure to search specifically to find any formal analysis or feedback on security.
+
+Searching
+blog.trailofbits.comblog.trailofbits.com
+invariantlabs.aiinvariantlabs.ai
+github.comgithub.com
+Searching for credible sources and security insights
+I should search for credible sources related to OX and any relevant papers, starting with arXiv and potentially exploring official or sanitized sources. I'll look into Anthropic's official response too, though it's unclear if I need that. For security best practices, I can check the Trail of Bits blog series.
+
+Searching
+invariantlabs.aiinvariantlabs.ai
+blog.trailofbits.comblog.trailofbits.com
+arxiv.orgarxiv.org
+www.ox.securitywww.ox.security
+Exploring security best practices
+I should check out the Trail of Bits blog for relevant insights. Also, I'll look into the invariant concept, as it could be useful for the task. I’m not entirely sure how they'll fit together, but they seem important for the security angle I'm considering.
+
+Searching
+www.tomshardware.comwww.tomshardware.com
+www.ox.securitywww.ox.security
+github.comgithub.com
+www.anthropic.comwww.anthropic.com
+8 more
+Looking for possible responses from Anthropic
+I should see if there’s anything from Anthropic regarding OX. I’m not sure if I’ll find something directly related, but it might help bring some clarity. Better to search for any official responses or insights so we can proceed with better understanding.
+
+Searching
+modelcontextprotocol.iomodelcontextprotocol.io
+github.comgithub.com
+Looking for security information from Anthropic or related sources
+I wonder if there’s an official security advisory or relevant details from Anthropic or perhaps the "modelcontextprotocol" site to clarify this. It would be good to have direct insight from an authoritative source. Time to search for something specific along those lines.
+
+Looking up security advisories and best practices
+I should search for official GitHub security advisories, particularly those that talk about vulnerabilities. It might also be helpful to find updates on security best practices following some criticisms, focusing on things like DNS rebinding from December 2025 and enterprise-managed authorization extensions—something official would be great. Time to check!
+
+Searching
+modelcontextprotocol.iomodelcontextprotocol.io
+blog.modelcontextprotocol.ioblog.modelcontextprotocol.io
+Searching
+www.anthropic.comwww.anthropic.com
+Searching
+medium.commedium.com
+modelcontextprotocol.iomodelcontextprotocol.io
+e-dialog.groupe-dialog.group
+dev.todev.to
+11 more
+Looking for discourse and formal quotes
+I need to search through platforms like Hacker News, Reddit, and blogs to find representative quotes and sentiment themes. I should focus on formal quotes from official and critical blogs rather than social comments for easier citation. For example, I could look for positive quotes from Anthropic about the "USB-C port for AI applications." Let’s find the exact line!
+
+Searching for USB-C information
+I think I should search the web broadly for any valuable insights or discussions involving USB-C, perhaps something I haven't come across yet. There might be trends or updates that’ll help me gather the most relevant information for what I need. I'll get to it!
+
+Searching
+www.tomshardware.comwww.tomshardware.com
+www.stackone.comwww.stackone.com
+www.anthropic.comwww.anthropic.com
+gofastmcp.comgofastmcp.com
+13 more
+Searching for criticism on context window bloat
+I should look up any critiques or reviews about context window bloat and its effect on performance. It's best to find opinions from both official sources and independent ones. This will help me better understand the potential issues and how they are addressed.
+
+Searching
+www.anthropic.comwww.anthropic.com
+github.comgithub.com
+gofastmcp.comgofastmcp.com
+www.jlowin.devwww.jlowin.dev
+Finding official sources on context growth
+I should search for official sources discussing context growth, particularly from Anthropic engineering and FastMCP. These sources would help clarify how they approach scaling context and managing performance. I'll focus on open materials so I can gather reliable and transparent insights.
+
+Searching
+aaif.ioaaif.io
+github.bloggithub.blog
+learn.microsoft.comlearn.microsoft.com
+www.stackone.comwww.stackone.com
+9 more
+Searching for discovery and registration concerns
+I should look into any issues related to discovery and registry concerns, possibly focusing on official roadmaps and vendor patterns. This research will help in understanding both current challenges and how companies are navigating them. I'll search for reliable sources that address these topics.
+
+Searching
+inference.shinference.sh
+resources.anthropic.comresources.anthropic.com
+smithery.aismithery.ai
+agentskills.ioagentskills.io
+7 more
+Searching for vendor-specific skills frameworks
+I should look for alternative skills frameworks specific to the vendors mentioned, like FastMCP's latest version, Context7, and possibly Claude Skills from Anthropic. This will help me gather up-to-date, official information about these frameworks. I'll prioritize finding the most reliable sources.
+
+Searching
+docs.anthropic.comdocs.anthropic.com
+claude.comclaude.com
+platform.claude.complatform.claude.com
+code.claude.comcode.claude.com
+1 more
+Looking for official Anthropic skills documentation
+I should check Anthropic’s official site and search specifically for a "skills" page. This should give me access to the most reliable documentation and details about their skills. I’ll prioritize finding official sources for complete and up-to-date information on their offerings.
+
+Searching
+github.comgithub.com
+cloud.google.comcloud.google.com
+skills.shskills.sh
+kiro.devkiro.dev
+3 more
+Searching for open standard skills specification
+I should look for an official open-source skills specification, perhaps on GitHub. I can search for a repository or link related to agent skills to ensure it’s from a reliable, community-supported source. This will help me confirm the standards followed for open skill frameworks.
+
+Searching
+developers.openai.comdevelopers.openai.com
+docs.langchain.comdocs.langchain.com
+learn.microsoft.comlearn.microsoft.com
+developers.googleblog.comdevelopers.googleblog.com
+8 more
+Comparing function calling and agent frameworks
+I need to explore different approaches, such as traditional function calling, agent frameworks, and relevant SDKs. I'll search for official documentation on OpenAI's function calling, the Agents SDK, Semantic Kernel, LangChain, and maybe function calling from Amazon A2A or Google. Comparing these frameworks will give me a broader perspective.
+
+Searching for official Microsoft Agent Framework docs
+I need to find official documentation on the Microsoft Agent Framework. This will help me understand how their framework works and how it compares to other agent frameworks. A quick search should give me the most up-to-date official docs for better reference.
+
+Searching
+learn.microsoft.comlearn.microsoft.com
+Searching
+docs.github.comdocs.github.com
+learn.microsoft.comlearn.microsoft.com
+developers.googleblog.comdevelopers.googleblog.com
+developers.openai.comdevelopers.openai.com
+Searching for official GitHub skills documentation
+I need to search for official GitHub skills documentation, as it could provide the best resources for understanding how skills are implemented and structured through GitHub. A quick search should locate the relevant and latest docs to guide any further plans for skill development or integration.
+
+Searching
+developers.openai.comdevelopers.openai.com
+learn.microsoft.comlearn.microsoft.com
+docs.langchain.comdocs.langchain.com
+Opening OpenAI function calling page
+I should probably open the OpenAI function calling page to gather detailed information on how that process works, especially since understanding the specifics around it could help clarify any uncertainties. I’ll check the official page to ensure I'm working with the most accurate and current details.
+
+Searching
+smithery.aismithery.ai
+www.pulsemcp.comwww.pulsemcp.com
+portkey.aiportkey.ai
+www.truefoundry.comwww.truefoundry.com
+4 more
+Looking into A2A and MCP complementarity
+I’m exploring the potential complementarity between A2A and MCP, and how they relate to OpenAI’s remote MCP and tool_search. I need to understand how these frameworks work in competition or cooperation. Also, I’ll be researching commercial options for things like MCP security, observability, and management to map out concrete features versus buzzwords. I'll focus on vendor docs and registries.
+
+Searching
+www.anthropic.comwww.anthropic.com
+www.linuxfoundation.orgwww.linuxfoundation.org
+modelcontextprotocol.iomodelcontextprotocol.io
+blog.modelcontextprotocol.ioblog.modelcontextprotocol.io
+8 more
+Focusing on search efficiency and case studies
+I need to be mindful of my search calls since I have only about four left. I'll look into case studies, especially from the public sector or authoritative enterprise pilots, and deeper academic analyses. I also want to explore foundations like the Linux Foundation or Agentic AI Foundation, as they could offer insights into important evolution and governance. I'll limit this to a single search query.
+
+Searching
+www.gov.ukwww.gov.uk
+www.comply.comwww.comply.com
+www.linkedin.comwww.linkedin.com
+www.techuk.orgwww.techuk.org
+17 more
+Searching for case studies and regulated analyses
+I need to search for case studies, particularly around the public sector or deeper analyses, but I don't have any files currently. It might be worth mentioning scarcity in this area. I'll aim for a single search query focused on case studies or regulated environments.
+
+Searching
+pypi.orgpypi.org
+gofastmcp.comgofastmcp.com
+Checking FastMCP latest version on PyPI
+I want to find the latest version of FastMCP as of April 2026. The gov.uk guidelines mention MCP, and though the site notes version 2.0.0, I need current details. I’ll search for FastMCP’s version on PyPI with a focused query. Just one more search for accuracy.
+
+Gathering specifications and protocol details
+I need to find official spec pages, especially for things like app, auth, and registry. It may be helpful to open some search results to get more details on protocol, lifecycle, and transport. I might check resources from the ModelContextProtocol site and use one call to open multiple references.
+
+Explaining research failure clearly and honestly
+The user is asking why the research failed after all this time, likely due to a prior plan being provided instead of a report, or exhaustion of web tools used. I should explain the failure succinctly, offering an honest response. Since they asked about the process, using a summary reader for clarity might be helpful.
+
+Explaining research failure and acknowledging mistakes
+The research didn’t fail due to MCP being unknowable, but because I mismanaged the workflow. Specifically: I gathered too many sources before drafting, didn’t regularly check progress, chased secondary themes without focusing on the core question, and neglected to pivot when we reached our web tool limit. I take full responsibility.
+
+Acknowledging missteps and offering next steps
+The research failed due to my choice to prioritize breadth and completeness over focused output, leading to delays and tool budget constraints. I should have provided a staged report sooner. The next step is offering an immediate concise executive summary if the user wants. I’ll be transparent about correcting course.
+
+Clarifying facts versus analysis
+If the user asks about my chain of thought, I should summarize instead of revealing the raw details. I’ll avoid mentioning entities like organizations. For this explanation, I’ll separate facts from analysis: - Facts: I collected official docs, vendor papers, and research material, but the web tool hit its call limit. - Analysis: The failure was not from a lack of evidence, but a process failure.
+
+Admitting mistakes and offering a response
+I realize I over-researched and under-synthesized, which delayed progress. My key mistake was waiting too long to produce a first draft. I should have created a skeleton report early, filling it in iteratively. Going forward, I'll focus on quick executive summaries, as needed. Apologies for the delay.
+
+Generated report
