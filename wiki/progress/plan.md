@@ -15,13 +15,14 @@ related:
 
 ## Phase 1 - Repository And Method
 
-Status: in progress.
+Status: complete.
 
 - Create paper skeleton.
 - Define citation rules.
 - Create LaTeX/Pandoc build path.
 - Create source register.
 - Create LLM-Wiki guidance layer.
+- Publish public GitHub repository with CI and repo hygiene.
 
 ## Phase 2 - Primary-Source Foundation
 

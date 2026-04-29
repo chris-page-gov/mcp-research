@@ -1,7 +1,7 @@
 ---
 title: "Wiki Evaluation Plan"
 note_type: "evaluation-plan"
-status: "draft"
+status: "active"
 tags:
   - "evals"
   - "llm-wiki"
@@ -27,9 +27,18 @@ Measure whether the wiki helps agents retrieve the right guidance and avoid cont
 - Course correction count: number of later edits caused by source-boundary errors.
 - Context efficiency: task can be completed from section file plus one or two wiki notes.
 
+## Implemented Checks
+
+- Structured progress register in `wiki/data/progress-register.json`.
+- Wiki link validation through `scripts/check_links.py` and `scripts/validate_wiki_state.py`.
+- TODO citation key reporting through `scripts/check_citations.py`.
+- Wiki/repo alignment report through `scripts/validate_wiki_state.py`.
+
+## Recorded Runs
+
+- [Next Step Parallelism Test](next-step-parallelism-test.md)
+
 ## Future Checks
 
-- Add a structured progress register in `wiki/data/`.
-- Extend `scripts/check_links.py` to report unresolved wiki links.
-- Extend `scripts/check_citations.py` to classify TODO citation keys.
 - Add an evaluation prompt set once sections 02 and 04 have first drafts.
+- Add a parallel work-plan note that records safe write sets for source-note workers.

@@ -30,6 +30,7 @@ This wiki is the operating layer for the paper project. It keeps authoring guida
 - [Project Plan](progress/plan.md)
 - [Phase Log](progress/phase-log.md)
 - [Wiki Evaluation Plan](evals/wiki-evaluation-plan.md)
+- [Next Step Parallelism Test](evals/next-step-parallelism-test.md)
 - [Wiki State Report](wiki-state-report.md)
 
 ## Paper Entry Points

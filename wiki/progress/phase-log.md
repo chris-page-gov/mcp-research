@@ -22,3 +22,5 @@ related:
 | Added LLM-Wiki guidance structure. | Keep agent context small and relevant. | Extend linting and metrics after first drafting pass. |
 | Parallelized section 04 skeleton. | Reduce context pressure and keep technical critique separate. | Reconcile TODO citations and source gaps. |
 | Imported citations file became available and was reconciled into official source notes. | Close official-source blockers without browsing. | Extract exact quotations for architecture, client best practices, roots, tasks, registry, and roadmap before final prose. |
+| Published the public GitHub repository and confirmed CI. | Make the project shareable and repeatable. | Keep local wiki and validation reports current before each push. |
+| Ran the next-step parallelism wiki evaluation. | Test whether the wiki can guide planning without loading broad context. | Consider adding a durable parallel work-plan note before starting multiple source-note workers. |
