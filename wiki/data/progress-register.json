@@ -1,0 +1,29 @@
+{
+  "generated": "2026-04-29",
+  "sections": [
+    {
+      "path": "paper/02-mcp-in-a-nutshell.md",
+      "status": "started",
+      "next_source_file": "sources/official-specs.md",
+      "blocked_by": [
+        "TODO-mcp-resources",
+        "TODO-mcp-prompts",
+        "TODO-official-mcp-architecture"
+      ]
+    },
+    {
+      "path": "paper/04-technical-critiques-and-mitigations.md",
+      "status": "started",
+      "next_source_file": "sources/discourse-and-criticism.md",
+        "blocked_by": [
+          "TODO-context-bloat-token-reduction",
+          "TODO-discourse-criticism-source-notes",
+          "TODO-discourse-discovery-criticism",
+          "TODO-discourse-context-bloat",
+          "TODO-governance-source-notes",
+          "TODO-official-mcp-architecture",
+          "TODO-vendor-adoption-source-notes"
+        ]
+      }
+  ]
+}

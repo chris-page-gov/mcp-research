@@ -1,0 +1,61 @@
+[project]
+name = "mcp-research"
+version = "0.1.0"
+description = "Markdown/LaTeX research paper and LLM-Wiki on Model Context Protocol for enterprise and government AI."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[dependency-groups]
+dev = [
+  "mypy>=1.18.2",
+  "pytest>=9.0.1",
+  "ruff>=0.14.8",
+]
+
+[tool.uv]
+package = false
+
+[tool.ruff]
+target-version = "py312"
+line-length = 120
+src = ["scripts"]
+
+[tool.ruff.lint]
+select = [
+  "A",
+  "B",
+  "C4",
+  "E",
+  "F",
+  "I",
+  "PERF",
+  "PIE",
+  "PTH",
+  "RET",
+  "RUF",
+  "SIM",
+  "UP",
+  "W",
+]
+ignore = [
+  "E501",
+]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "lf"
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+files = ["scripts"]
+warn_unused_ignores = true
+warn_redundant_casts = true
+pretty = true
+
+[tool.pytest.ini_options]
+minversion = "9.0"
+testpaths = ["tests"]
+addopts = "-ra --strict-config --strict-markers"

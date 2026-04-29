@@ -1,0 +1,63 @@
+---
+title: "MCP Research Project Plan"
+note_type: "plan"
+status: "active"
+tags:
+  - "plan"
+  - "progress"
+  - "mcp-research"
+related:
+  - "phase-log.md"
+  - "../guidance/section-acceptance.md"
+---
+
+# MCP Research Project Plan
+
+## Phase 1 - Repository And Method
+
+Status: in progress.
+
+- Create paper skeleton.
+- Define citation rules.
+- Create LaTeX/Pandoc build path.
+- Create source register.
+- Create LLM-Wiki guidance layer.
+
+## Phase 2 - Primary-Source Foundation
+
+Status: started.
+
+- Start with `sources/official-specs.md`.
+- Then update `paper/02-mcp-in-a-nutshell.md`.
+- Fill TODO source gaps before prose drafting.
+
+## Phase 3 - Criticism And Defence
+
+Status: started in parallel.
+
+- `paper/04-technical-critiques-and-mitigations.md` has a skeleton and matrix.
+- Populate `sources/discourse-and-criticism.md` before final context-bloat and discovery claims.
+
+## Phase 4 - Ecosystem, Timeline, Alternatives
+
+Status: pending.
+
+- Populate `sources/vendor-adoption.md`.
+- Populate `sources/fastmcp.md`.
+- Populate `sources/alternatives-skills-agents.md`.
+
+## Phase 5 - Government / Local Authority Analysis
+
+Status: pending.
+
+- Build architecture options.
+- Build risk register.
+- Map controls to public-sector guidance.
+
+## Phase 6 - Consolidation
+
+Status: pending.
+
+- Draft executive summary last.
+- Check citations and links.
+- Build PDF and/or TeX artefacts.
