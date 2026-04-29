@@ -37,6 +37,13 @@ related:
 - Cover discovery, context bloat, security and identity, operational complexity, and positive technical assessments.
 - Preserve caveats on vendor research, recent claims, and unpopulated discourse notes.
 
+### `paper/06-mcp-vs-alternatives.md`
+
+- Compare alternatives by decision criteria, not marketing labels.
+- Preserve the distinction between facts, reported opinions, and analysis.
+- Keep Semantic Kernel, OpenAI tools taxonomy, framework portability, and proprietary-connector procurement claims as TODO-grade until exact source evidence is accepted.
+- Treat MCP, direct APIs/function calling, agent frameworks, Skills, proprietary app ecosystems, and hybrid models as layerable unless a source supports a mutually exclusive framing.
+
 ## Completion States
 
 - `placeholder`: structure exists, evidence missing.

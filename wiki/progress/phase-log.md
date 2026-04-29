@@ -27,3 +27,4 @@ related:
 | Ran the next-step parallelism wiki evaluation. | Test whether the wiki can guide planning without loading broad context. | Consider adding a durable parallel work-plan note before starting multiple source-note workers. |
 | Added a parallel work-plan note. | Make source-note worker scopes explicit before running multiple agents. | Update after integration if safe write sets change. |
 | Ran four parallel source-note lanes. | Advance official specs, criticism, vendor/FastMCP, and alternatives without overlapping write scopes. | Integrate citation keys, source register status, and progress blockers before final prose. |
+| Ran the next-step parallelism retest. | Compare wiki guidance after the parallel source-note batch against the previous evaluation run. | Use targeted blocker-closure lanes before drafting final prose. |

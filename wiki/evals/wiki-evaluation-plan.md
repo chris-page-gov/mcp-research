@@ -33,12 +33,14 @@ Measure whether the wiki helps agents retrieve the right guidance and avoid cont
 - Wiki link validation through `scripts/check_links.py` and `scripts/validate_wiki_state.py`.
 - TODO citation key reporting through `scripts/check_citations.py`.
 - Wiki/repo alignment report through `scripts/validate_wiki_state.py`.
+- Parallel work-plan note for safe write scopes in `wiki/progress/parallel-work-plan.md`.
 
 ## Recorded Runs
 
 - [Next Step Parallelism Test](next-step-parallelism-test.md)
+- [Next Step Parallelism Retest](next-step-parallelism-retest.md)
 
 ## Future Checks
 
 - Add an evaluation prompt set once sections 02 and 04 have first drafts.
-- Add a parallel work-plan note that records safe write sets for source-note workers.
+- Add source-note raw-page recovery tracking if exact extraction becomes hard to coordinate through section blockers alone.

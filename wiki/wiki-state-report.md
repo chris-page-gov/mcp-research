@@ -13,7 +13,7 @@ related:
 
 # Wiki State Report
 
-- Generated: `2026-04-29T08:52:45+00:00`
+- Generated: `2026-04-29T09:00:50+00:00`
 - Status: `pass`
 - Errors: `0`
 - Warnings: `0`
@@ -24,7 +24,7 @@ related:
 - `build_artifacts_expected`: 3
 - `progress_sections`: 3
 - `source_register_rows`: 6
-- `wiki_internal_links_checked`: 34
+- `wiki_internal_links_checked`: 52
 
 ## Errors
 
