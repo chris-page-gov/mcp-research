@@ -36,6 +36,7 @@ Measure whether the wiki helps agents retrieve the right guidance and avoid cont
 - Source-note citation-key coverage: non-TODO `Citation key` and `Proposed citation key` entries in `sources/*.md` must exist in `latex/references.bib`.
 - Section-acceptance coverage: tracked paper sections in `wiki/data/progress-register.json` must appear in `wiki/guidance/section-acceptance.md`.
 - Parallel work-plan note for safe write scopes in `wiki/progress/parallel-work-plan.md`.
+- Completion dashboard for paper-section state, source-note state, active evidence blockers, and current parallel capacity.
 
 ## Recorded Runs
 
@@ -48,5 +49,4 @@ Measure whether the wiki helps agents retrieve the right guidance and avoid cont
 
 - Add an evaluation prompt set once sections 02 and 04 have first drafts.
 - Add raw-page recovery tracking if exact extraction becomes hard to coordinate through section blockers alone.
-- Add a durable completion dashboard if progress questions continue to require ad hoc synthesis from several wiki notes.
 - Track close-procedure failures as course-correction evidence.

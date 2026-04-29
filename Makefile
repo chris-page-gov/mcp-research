@@ -2,14 +2,17 @@ PYTHON ?= uv run python
 RUFF ?= uv run ruff
 MYPY ?= uv run mypy
 
-.PHONY: all build check check-links check-citations validate-wiki lint format typecheck clean
+.PHONY: all build check check-links check-citations validate-wiki lint format typecheck clean clean-metadata
 
 all: build
 
 build:
 	@./scripts/build.sh
 
-check: check-citations check-links validate-wiki
+check: clean-metadata check-citations check-links validate-wiki
+
+clean-metadata:
+	@find . -name .DS_Store -delete
 
 check-links:
 	@$(PYTHON) scripts/check_links.py

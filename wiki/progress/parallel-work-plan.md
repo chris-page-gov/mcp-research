@@ -28,12 +28,12 @@ These lanes ran in parallel and have been integrated by the main thread. Their n
 | Vendor and FastMCP raw-page recovery | `sources/vendor-adoption.md`, `sources/fastmcp.md` | Named vendor, governance, and FastMCP leads | Done | Recovered exact URLs/text for main vendor and FastMCP leads. |
 | Alternatives verification | `sources/alternatives-skills-agents.md`, `paper/06-mcp-vs-alternatives.md` | Named alternatives notes and official vendor docs | Done | Verified Semantic Kernel, OpenAI tools taxonomy, and app-submission evidence; left portability/procurement blockers narrow. |
 | Government/local authority risk skeleton | `paper/09-government-local-authority-ai-hub.md` | Official, security, vendor, and alternatives notes | Done | Added risk-register structure only; recommendations wait for accepted evidence. |
+| Roots/tasks official extraction | `sources/official-specs.md`, `paper/02-mcp-in-a-nutshell.md` | Versioned official MCP roots/tasks pages | Done | Closed roots/tasks quotation gaps and promoted section 02 to source-ready. |
 
 ## Next Parallel Lanes
 
 | Lane | Write scope | Depends on | Can run in parallel? | Integration rule |
 | --- | --- | --- | --- | --- |
-| Roots/tasks official extraction | `sources/official-specs.md`, `paper/02-mcp-in-a-nutshell.md` | Versioned official MCP roots/tasks pages | Yes | Add exact quotations without broadening protocol claims. |
 | Discovery-friction discourse | `sources/discourse-and-criticism.md`, `paper/04-technical-critiques-and-mitigations.md` | Named imported leads or new accepted source notes | Yes | Replace the failed GitHub issue #1683 private-registry reading with correct evidence or remove the claim. |
 | Portability/procurement evidence | `sources/alternatives-skills-agents.md`, `paper/06-mcp-vs-alternatives.md` | Public-sector procurement and non-vendor portability evidence | Yes | Keep recommendations out unless evidence is specific enough. |
 | Vendor control-depth evidence | `sources/vendor-adoption.md`, `paper/09-government-local-authority-ai-hub.md` | Vendor admin/audit/security/licensing docs | Yes | Distinguish product controls from public-sector assurance. |

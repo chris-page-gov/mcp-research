@@ -30,6 +30,7 @@ This wiki is the operating layer for the paper project. It keeps authoring guida
 - [Session Close Procedure](guidance/session-close.md)
 - [Project Plan](progress/plan.md)
 - [Parallel Work Plan](progress/parallel-work-plan.md)
+- [Completion Dashboard](progress/completion-dashboard.md)
 - [Phase Log](progress/phase-log.md)
 - [Wiki Evaluation Plan](evals/wiki-evaluation-plan.md)
 - [Drift Investigation](evals/drift-investigation.md)

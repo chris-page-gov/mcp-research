@@ -41,6 +41,7 @@ The main integrator owns these files during close:
 - `wiki/progress/plan.md`
 - `wiki/progress/phase-log.md`
 - `wiki/progress/parallel-work-plan.md`
+- `wiki/progress/completion-dashboard.md`
 - `wiki/evals/wiki-evaluation-plan.md`
 - generated wiki-state reports
 

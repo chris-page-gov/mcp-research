@@ -13,7 +13,7 @@ related:
 
 # Wiki State Report
 
-- Generated: `2026-04-29T10:08:53+00:00`
+- Generated: `2026-04-29T10:18:16+00:00`
 - Status: `pass`
 - Errors: `0`
 - Warnings: `0`
@@ -23,10 +23,13 @@ related:
 - `acceptance_tracked_sections`: 4
 - `bib_entries`: 103
 - `build_artifacts_expected`: 3
+- `completion_dashboard_paper_sections`: 12
+- `completion_dashboard_source_files`: 6
+- `completion_dashboard_tracked_sections`: 4
 - `progress_sections`: 4
 - `source_note_citation_keys_checked`: 62
 - `source_register_rows`: 6
-- `wiki_internal_links_checked`: 71
+- `wiki_internal_links_checked`: 78
 
 ## Errors
 

@@ -29,7 +29,7 @@ related:
 
 - Define MCP from official source notes only.
 - Cover host/client/server, tools, resources, prompts, roots, sampling, elicitation, transports, lifecycle, versioning, discovery, and authorization at skeleton level.
-- Resources, prompts, lifecycle, published-server versioning, registry moderation, and registry aggregator claims are now source-backed; roots and tasks still need exact quotation before final prose.
+- Resources, prompts, lifecycle, published-server versioning, registry moderation, registry aggregator, roots, and tasks claims are now source-backed.
 
 ### `paper/04-technical-critiques-and-mitigations.md`
 

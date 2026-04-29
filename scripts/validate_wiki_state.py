@@ -22,6 +22,7 @@ ROOT = Path(__file__).resolve().parents[1]
 WIKI = ROOT / "wiki"
 PROGRESS_REGISTER = WIKI / "data" / "progress-register.json"
 SOURCE_REGISTER = ROOT / "sources" / "source-register.md"
+DASHBOARD = WIKI / "progress" / "completion-dashboard.md"
 BIB = ROOT / "latex" / "references.bib"
 DIST_FILES = [
     ROOT / "dist" / "mcp-research-paper.md",
@@ -39,6 +40,7 @@ REQUIRED_WIKI_FILES = [
     WIKI / "guidance" / "session-close.md",
     WIKI / "progress" / "plan.md",
     WIKI / "progress" / "parallel-work-plan.md",
+    DASHBOARD,
     WIKI / "progress" / "phase-log.md",
     WIKI / "evals" / "wiki-evaluation-plan.md",
     WIKI / "templates" / "source-note.md",
@@ -340,6 +342,64 @@ def check_section_acceptance_coverage(errors: list[Issue], summary: dict[str, in
     summary["acceptance_tracked_sections"] = tracked
 
 
+def check_completion_dashboard_coverage(errors: list[Issue], summary: dict[str, int]) -> None:
+    if not DASHBOARD.exists():
+        return
+    dashboard = DASHBOARD.read_text(encoding="utf-8")
+
+    paper_paths = sorted(rel(path) for path in (ROOT / "paper").glob("*.md"))
+    errors.extend(
+        issue("completion_dashboard_missing_paper_section", file=paper_path, target=rel(DASHBOARD))
+        for paper_path in paper_paths
+        if f"`{paper_path}`" not in dashboard
+    )
+    summary["completion_dashboard_paper_sections"] = len(paper_paths)
+
+    if SOURCE_REGISTER.exists():
+        source_rows = SOURCE_ROW_RE.findall(SOURCE_REGISTER.read_text(encoding="utf-8"))
+        for source_path, _status in source_rows:
+            if f"`{source_path}`" not in dashboard:
+                errors.append(
+                    issue("completion_dashboard_missing_source_file", file=source_path, target=rel(DASHBOARD))
+                )
+        summary["completion_dashboard_source_files"] = len(source_rows)
+
+    data = load_json(PROGRESS_REGISTER, errors)
+    if not isinstance(data, dict):
+        return
+    sections = data.get("sections")
+    if not isinstance(sections, list):
+        return
+    tracked = 0
+    for item in sections:
+        if not isinstance(item, dict):
+            continue
+        section_path = item.get("path")
+        status = item.get("status")
+        if not isinstance(section_path, str):
+            continue
+        tracked += 1
+        if f"`{section_path}`" not in dashboard:
+            errors.append(
+                issue("completion_dashboard_missing_tracked_section", file=section_path, target=rel(DASHBOARD))
+            )
+        dashboard_lower = dashboard.lower()
+        if (
+            isinstance(status, str)
+            and status.lower() not in dashboard_lower
+            and status.replace("-", " ") not in dashboard_lower
+        ):
+            errors.append(
+                issue(
+                    "completion_dashboard_missing_tracked_status",
+                    file=section_path,
+                    target=rel(DASHBOARD),
+                    status=status,
+                )
+            )
+    summary["completion_dashboard_tracked_sections"] = tracked
+
+
 def check_build_freshness(errors: list[Issue], warnings: list[Issue], summary: dict[str, int]) -> None:
     source_paths: list[Path] = []
     for dirname in ("paper", "sources", "latex"):
@@ -418,6 +478,7 @@ def build_report() -> Report:
     check_source_note_citation_keys(errors, summary)
     check_progress_register(errors, warnings, summary)
     check_section_acceptance_coverage(errors, summary)
+    check_completion_dashboard_coverage(errors, summary)
     check_build_freshness(errors, warnings, summary)
 
     return {

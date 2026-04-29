@@ -32,4 +32,6 @@ related:
 | Started section 09 risk-register skeleton. | Implement the optional Government / Local Authority lane without drafting recommendations. | Promote only after section 02, 04, 06, and vendor-control evidence stabilize. |
 | Integrated parallel worker lanes and normalized BibTeX keys. | Workers closed exact extraction but left shared citation/register state to the integrator. | Keep `latex/references.bib`, source notes, and progress blockers synchronized during every close. |
 | Extended wiki-state validation for source-note citation keys. | Citation-key drift was a repeated handoff risk. | Non-TODO citation keys in `sources/*.md` now fail validation if missing from BibTeX. |
-| Ran next-step parallelism progress test. | Check whether the wiki can answer planning plus progress-to-completion questions after the close procedure. | Consider adding a completion dashboard if this question recurs. |
+| Ran next-step parallelism progress test. | Check whether the wiki can answer planning plus progress-to-completion questions after the close procedure. | Added completion dashboard after finding completion visibility was partial. |
+| Closed roots/tasks official extraction and promoted section 02. | Complete the next official-spec blocker from the progress test. | Use section 02 as the first source-ready section when drafting begins. |
+| Added completion dashboard. | Make progress-to-completion visible without ad hoc synthesis across several wiki notes. | Keep it synchronized during session close. |

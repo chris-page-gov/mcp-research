@@ -3,7 +3,7 @@
   "sections": [
     {
       "path": "paper/02-mcp-in-a-nutshell.md",
-      "status": "started",
+      "status": "source-ready",
       "next_source_file": "sources/official-specs.md",
       "blocked_by": []
     },

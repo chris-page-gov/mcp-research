@@ -2,7 +2,7 @@
 
 ## Status
 
-Source-backed skeleton only. This section is not draft-ready prose.
+Source-ready skeleton for official protocol basics. This section is not draft-ready prose.
 
 `sources/official-specs.md` now contains accepted exact-extraction notes for resources, prompts, lifecycle/initialization/capability negotiation, published-server versioning, registry limitation wording, and the specification overview. The temporary TODO citation placeholders from the extraction lane have been replaced with BibTeX-backed keys.
 
@@ -24,7 +24,7 @@ Explain the Model Context Protocol at a level suitable for senior technical and 
 - Separates facts, reported opinions, and analysis.
 - Uses only citation keys present in `latex/references.bib`, or plain-text TODO marker names where evidence extraction is still incomplete.
 - Calls out what MCP does not provide: business workflow, policy enforcement, source vetting, enterprise registry governance, complete IAM, or public-sector assurance by itself.
-- Leaves TODO placeholders where BibTeX, roots/tasks quotations, or non-official evidence remain incomplete.
+- Leaves TODO placeholders only where non-official or non-protocol evidence remains incomplete.
 
 ## Section-Level Acceptance Criteria
 
@@ -33,7 +33,7 @@ Explain the Model Context Protocol at a level suitable for senior technical and 
 | Definition and scope | Use official intro/specification source notes only; exact overview wording is now extracted. | Reader can distinguish MCP from a workflow engine, agent framework, or governance platform. |
 | Architecture and lifecycle | Architecture can use accepted official docs; exact lifecycle/initialization/capability-negotiation source text is now extracted and backed by `mcp-lifecycle-2025-11-25`. | Host/client/server roles and local-vs-remote deployment are clear without overstating lifecycle or policy semantics. |
 | Server primitives | Tools, resources, and prompts now have exact official source notes and BibTeX-backed citation keys. | Tools, resources, and prompts are defined separately and not collapsed into generic "plugins". |
-| Client-side primitives | Roots, sampling, elicitation, and tasks use accepted notes, with roots/tasks caveats preserved. | Client responsibilities are visible, especially where servers request model calls or user input. |
+| Client-side primitives | Roots, sampling, elicitation, and tasks use accepted notes; roots/tasks exact quotation gaps are closed. | Client responsibilities are visible, especially where servers request model calls, user input, workspace access, or long-running operations. |
 | Transports and authorization | Use versioned transports and authorization notes. | STDIO, Streamable HTTP, and optional HTTP authorization are described without implying complete IAM. |
 | Discovery and registry | Registry notes now support public discovery, preview status, private-server limits, downstream aggregation, direct-host-consumption limits, moderation limits, and durability limits; some exact limitation pages need BibTeX. | Public registry, private registry, and enterprise curation are not treated as the same thing. |
 | Versioning and maturity | Published-server registry versioning is now extracted; protocol-version negotiation is separately sourced by lifecycle. | Versioning claims specify whether they mean protocol version, server metadata version, package/API version, capability set, or registry metadata. |
@@ -124,10 +124,15 @@ Explain the Model Context Protocol at a level suitable for senior technical and 
 
 #### Facts
 
-- Roots define filesystem or workspace boundaries exposed by the client to the server; current accepted note is versioned 2025-06-18 rather than 2025-11-25. [@mcp-roots-2025-06-18]
+- Roots define filesystem boundaries exposed by the client to the server; the current accepted note is versioned 2025-06-18 rather than 2025-11-25. [@mcp-roots-2025-06-18]
+- Clients that support roots declare the `roots` capability during initialization, and servers can request root lists with `roots/list`. [@mcp-roots-2025-06-18]
+- Root URIs must be `file://` URIs in the accepted specification page; clients must expose only roots with appropriate permissions and servers should respect root boundaries. [@mcp-roots-2025-06-18]
 - Sampling allows servers to request LLM sampling through clients, while clients retain control over model access, model selection, and permissions. [@mcp-sampling-2025-11-25]
 - Elicitation allows servers to request structured user input through clients and explicitly forbids form-mode elicitation for sensitive information. [@mcp-elicitation-2025-11-25]
-- Tasks are recorded in the 2025-11-25 specification set for long-running or deferred work; exact operational semantics still need final extraction before prose. [@mcp-tasks-2025-11-25]
+- Tasks were introduced in MCP version 2025-11-25 and are described as experimental. [@mcp-tasks-2025-11-25]
+- Tasks support durable state for polling and deferred result retrieval, with a two-phase pattern: initial task data followed by the actual result through `tasks/result` after completion. [@mcp-tasks-2025-11-25]
+- Task operations include `tasks/get`, `tasks/list`, and `tasks/cancel`; terminal task states include completed, failed, and cancelled. [@mcp-tasks-2025-11-25]
+- Task security guidance includes binding tasks to the authorization context where available, using high-entropy task IDs where context binding is unavailable, rate limiting, and lifecycle audit logging. [@mcp-tasks-2025-11-25]
 
 #### Reported Opinions
 
@@ -137,11 +142,12 @@ Explain the Model Context Protocol at a level suitable for senior technical and 
 
 - Client-side primitives show that MCP is not only server tool calling; hosts mediate workspace scope, model calls, user-input requests, and potentially long-running operations.
 - Public-sector deployments should decide whether sampling and elicitation are disabled, allowed with approval, or routed through an enterprise-controlled host.
+- Public-sector deployments should decide whether roots are limited to managed workspaces and whether tasks require explicit audit, timeout, cancellation, and ownership controls.
 
 #### Section Acceptance
 
-- TODO: Add exact roots quotation before final prose.
-- TODO: Add exact tasks quotation before describing cancellation, tracing, or audit expectations.
+- CLOSED: Exact roots quotation and operational semantics extracted in `sources/official-specs.md` OS-014.
+- CLOSED: Exact tasks quotation and operational semantics extracted in `sources/official-specs.md` OS-015.
 
 ### 5. Transports and Authorization
 
@@ -253,5 +259,5 @@ Explain the Model Context Protocol at a level suitable for senior technical and 
 - CLOSED: Exact lifecycle/initialization/capability-negotiation URL/text extracted and cited as `mcp-lifecycle-2025-11-25`.
 - CLOSED: Exact published-server versioning URL/text extracted and cited as `mcp-server-versioning`.
 - CLOSED: Exact registry limitation wording extracted for moderation, durability, direct host consumption, private registries, and downstream aggregation; moderation and durability now use `mcp-registry-moderation-policy` and `mcp-registry-aggregators`.
-- TODO: Add exact roots quotation before final prose.
-- TODO: Add exact tasks quotation before describing cancellation, tracing, or audit expectations.
+- CLOSED: Exact roots quotation and operational semantics extracted in `sources/official-specs.md` OS-014.
+- CLOSED: Exact tasks quotation and operational semantics extracted in `sources/official-specs.md` OS-015.

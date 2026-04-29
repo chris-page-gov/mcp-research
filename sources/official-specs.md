@@ -328,13 +328,20 @@ This file records only specification and official-documentation sources that may
 - URL: https://modelcontextprotocol.io/specification/2025-06-18/client/roots
 - Source type: primary
 - Key claims:
-  - Roots define filesystem or workspace boundaries exposed by the client to the server.
-  - Roots are relevant to local server trust and workspace scoping.
-- Direct quotation under 25 words, if useful: TODO: extract exact quotation before final prose.
+  - MCP provides a standardized way for clients to expose filesystem roots to servers.
+  - Roots define filesystem boundaries for where servers can operate and what directories/files they can access.
+  - Servers can request roots from supporting clients and receive notifications when the root list changes.
+  - The protocol does not mandate a specific user interaction model for exposing roots.
+  - Clients that support roots must declare the `roots` capability during initialization; `listChanged` indicates whether they emit root-list change notifications.
+  - Servers retrieve roots with `roots/list`; clients that support `listChanged` send `notifications/roots/list_changed` when roots change.
+  - A root has a URI and optional human-readable name; the URI must be a `file://` URI in the current specification.
+  - Security considerations say clients must expose only roots with appropriate permissions, validate root URIs, implement access controls, and monitor accessibility.
+  - Servers should respect root boundaries and validate paths against provided roots.
+- Direct quotation under 25 words: "define the boundaries of where servers can operate"
 - Relevance to Government / Local Authority AI Hub decision-making:
   - Supports analysis of local filesystem boundaries and workspace trust for developer or back-office use cases.
 - Reliability assessment:
-  - High as versioned specification page, though the local citation file lists the 2025-06-18 version rather than the 2025-11-25 page.
+  - High as versioned specification page, though this note uses the 2025-06-18 page because that is the version recorded in the local citation set.
 - Sections where this source may be cited:
   - `02-mcp-in-a-nutshell.md`
   - `04-technical-critiques-and-mitigations.md`
@@ -349,13 +356,24 @@ This file records only specification and official-documentation sources that may
 - URL: https://modelcontextprotocol.io/specification/2025-11-25/basic/utilities/tasks
 - Source type: primary
 - Key claims:
-  - Tasks are an MCP utility for long-running or deferred work in the 2025-11-25 specification set.
-  - Tasks matter for operational design because long-running work requires state, tracing, cancellation, and audit decisions.
-- Direct quotation under 25 words, if useful: TODO: extract exact quotation before final prose.
+  - Tasks were introduced in MCP version 2025-11-25 and are described as experimental.
+  - Tasks let requestors augment requests with durable state machines for polling and deferred result retrieval.
+  - A requestor can be either client or server; the receiver executes the task and generates a unique task ID.
+  - Servers and clients supporting task-augmented requests must declare a `tasks` capability during initialization, structured by supported request category.
+  - Requestors should create tasks only when the receiver has declared support for the relevant task-augmented request type.
+  - Tool calls add finer-grained `execution.taskSupport` values of `required`, `optional`, or `forbidden`.
+  - Task-augmented requests use a two-phase response pattern: an initial `CreateTaskResult` with task data, then the actual result through `tasks/result` after completion.
+  - Requestors poll task state with `tasks/get`; task status notifications are optional and requestors must not rely on them.
+  - `tasks/list` supports pagination, and `tasks/cancel` is the explicit cancellation operation.
+  - Valid task states include `working`, `input_required`, `completed`, `failed`, and `cancelled`; completed, failed, and cancelled states are terminal.
+  - Receivers must include creation/update timestamps and TTL behavior in task responses; task results may be deleted after TTL expiry.
+  - Task-related requests, responses, and notifications must include related-task metadata except where the task ID is already the RPC parameter/source of truth.
+  - Security considerations say receivers must bind tasks to the authorization context when available, reject access from other contexts, use high-entropy task IDs when context-binding is unavailable, limit task listing, rate-limit task operations, and log task lifecycle events for audit.
+- Direct quotation under 25 words: "durable state machines"
 - Relevance to Government / Local Authority AI Hub decision-making:
   - Supports analysis of operational complexity where MCP-backed actions outlive a single interaction.
 - Reliability assessment:
-  - High. Versioned primary specification page.
+  - High as a versioned primary specification page. Task design is explicitly experimental in this version.
 - Sections where this source may be cited:
   - `02-mcp-in-a-nutshell.md`
   - `04-technical-critiques-and-mitigations.md`
@@ -588,3 +606,5 @@ These gaps must be filled before final drafting. Exact-extraction blockers for l
 | Add BibTeX for published-server versioning guidance | `TODO-mcp-server-versioning` | Closed; use `mcp-server-versioning`. Scope is registry server-version metadata, not protocol-version negotiation. |
 | Add BibTeX for registry limitations | `TODO-mcp-registry-limitations` | Closed; use `mcp-registry-about`, `mcp-registry-moderation-policy`, and `mcp-registry-aggregators` depending on the claim. |
 | Evidence for token-reduction or context-bloat claims | `TODO-context-bloat-token-reduction` | Out of scope for official specs; use `sources/discourse-and-criticism.md` and `sources/vendor-adoption.md` for product or practitioner evidence. |
+| Add exact roots quotation | plain-text section TODO | Closed; use OS-014. |
+| Add exact tasks quotation | plain-text section TODO | Closed; use OS-015. |

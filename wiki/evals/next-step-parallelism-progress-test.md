@@ -101,5 +101,11 @@ The wiki guidance answered the question well after the close procedure updates. 
 
 ## Follow-Up Options
 
-- Add a small `wiki/progress/completion-dashboard.md` that tracks paper-section state, source-note state, open evidence blockers, and validation metrics.
-- Consider adding `source-ready` promotion criteria for section 02 once roots/tasks quotations are closed.
+- DONE: Added [Completion Dashboard](../progress/completion-dashboard.md) to track paper-section state, source-note state, active evidence blockers, and current parallel capacity.
+- DONE: Promoted section 02 after roots/tasks quotations were closed.
+
+## Follow-Up Implementation
+
+- Closed the roots/tasks official extraction gap and promoted `paper/02-mcp-in-a-nutshell.md` to `source-ready`.
+- Added [Completion Dashboard](../progress/completion-dashboard.md).
+- Updated [Project Plan](../progress/plan.md), [Parallel Work Plan](../progress/parallel-work-plan.md), [Section Acceptance Criteria](../guidance/section-acceptance.md), and [Progress Register](../data/progress-register.json) so completion visibility no longer depends on this evaluation page alone.

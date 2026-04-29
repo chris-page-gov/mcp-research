@@ -27,12 +27,12 @@ Status: complete.
 
 ## Phase 2 - Primary-Source Foundation
 
-Status: started.
+Status: source-ready for section 02 official protocol basics.
 
 - Start with `sources/official-specs.md`.
 - Then update `paper/02-mcp-in-a-nutshell.md`.
 - Exact source extraction and BibTeX cleanup are closed for resources, prompts, lifecycle, published-server versioning, and registry moderation/aggregator limits.
-- Roots and tasks still need exact quotations before prose drafting.
+- Roots and tasks exact quotations are now closed.
 - Use the [Parallel Work Plan](parallel-work-plan.md) for disjoint source-note lanes.
 
 ## Phase 3 - Criticism And Defence
