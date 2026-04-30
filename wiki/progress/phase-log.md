@@ -46,3 +46,4 @@ related:
 | Added machine-readable source TODO register. | Source-note TODO markers were partly prose-only and hard to validate. | Keep `wiki/data/source-todo-register.json` synchronized whenever source TODO markers are added, narrowed, closed, or removed. |
 | Ran five targeted blocker-closure lanes. | Implement the wiki answer without starting full report prose. | Treat discourse, alternatives, vendor-control, section 09, and FastMCP blockers as narrowed unless residual evidence is explicitly found. |
 | Added BibTeX records for 2026-04-30 evidence lanes. | Workers added new source-note citation keys that needed normalized citation records. | Keep source-note citation keys validation green before each close. |
+| Ran post-integration next-step parallelism test. | Check whether the wiki answer changed after the five blocker lanes were integrated. | Add semantic guidance-alignment validation; structural validation does not catch stale current-bias prose. |

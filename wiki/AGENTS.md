@@ -26,4 +26,4 @@ This folder is a guidance wiki for the MCP research paper. It is not a second pa
 
 ## Current Bias
 
-Prefer source-backed Markdown scaffolding over prose. Current remaining blockers are discovery-friction discourse evidence, portability/procurement evidence, vendor control-depth evidence, and section 09 control mapping. Before ending a session, run the [Session Close Procedure](guidance/session-close.md).
+Prefer source-backed Markdown scaffolding over broad prose. Section 09 control mapping exists, but recommendations remain gated. Current remaining blockers are representative discourse sampling, analysis-grade portability/procurement decisions, vendor assurance residuals, independent adoption evidence, and FastMCP residuals. Before ending a session, run the [Session Close Procedure](guidance/session-close.md).

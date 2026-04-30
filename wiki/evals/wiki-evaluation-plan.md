@@ -47,10 +47,12 @@ Measure whether the wiki helps agents retrieve the right guidance and avoid cont
 - [Next Step Parallelism Retest](next-step-parallelism-retest.md)
 - [Next Step Parallelism Progress Test](next-step-parallelism-progress-test.md)
 - [Next Step Parallelism Completion Retest](next-step-parallelism-completion-retest.md)
+- [Next Step Parallelism Post-Integration Test](next-step-parallelism-post-integration-test.md)
 - [Drift Investigation](drift-investigation.md)
 
 ## Future Checks
 
 - Add an evaluation prompt set once sections 02 and 04 have first drafts.
 - Add raw-page recovery tracking if exact extraction becomes hard to coordinate through section blockers alone.
+- Add a guidance-alignment check that compares active blockers in the machine-readable registers with current-bias prose in `wiki/AGENTS.md`, the dashboard, and the parallel plan.
 - Track close-procedure failures as course-correction evidence.

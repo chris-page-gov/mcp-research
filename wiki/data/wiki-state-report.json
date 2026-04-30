@@ -1,6 +1,6 @@
 {
   "errors": [],
-  "generated": "2026-04-30T07:12:50+00:00",
+  "generated": "2026-04-30T10:36:25+00:00",
   "status": "pass",
   "summary": {
     "acceptance_tracked_sections": 12,
@@ -15,7 +15,7 @@
     "source_register_rows": 6,
     "source_todo_markers": 25,
     "source_todo_register_records": 25,
-    "wiki_internal_links_checked": 93
+    "wiki_internal_links_checked": 107
   },
   "warnings": []
 }

@@ -41,7 +41,7 @@ Status: started in parallel.
 
 - `paper/04-technical-critiques-and-mitigations.md` has a skeleton and matrix.
 - `sources/discourse-and-criticism.md` now has working notes and BibTeX-backed citations for distributed-systems criticism, context bloat, project-scoping friction, token-reduction leads, and positive product assessments.
-- Remaining blockers are broader discourse sampling and a correct source for practitioner discovery/private-registry friction.
+- Remaining blockers are broader discourse sampling and a decision on whether the narrowed issue-level discovery/private-registry evidence is sufficient.
 
 ## Phase 4 - Ecosystem, Timeline, Alternatives
 
@@ -57,7 +57,7 @@ Status: started skeleton.
 
 - Build architecture options.
 - Build risk register.
-- Map controls to public-sector guidance.
+- Control mapping exists for identity, registry, approval, audit, data classification, incident response, supplier ownership, and procurement/exit.
 - Do not write recommendations until sections 02, 04, 06, and vendor-control notes are source-ready.
 
 ## Phase 6 - Consolidation

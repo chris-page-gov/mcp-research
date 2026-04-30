@@ -13,7 +13,7 @@ related:
 
 # Wiki State Report
 
-- Generated: `2026-04-30T07:12:50+00:00`
+- Generated: `2026-04-30T10:36:25+00:00`
 - Status: `pass`
 - Errors: `0`
 - Warnings: `0`
@@ -32,7 +32,7 @@ related:
 - `source_register_rows`: 6
 - `source_todo_markers`: 25
 - `source_todo_register_records`: 25
-- `wiki_internal_links_checked`: 93
+- `wiki_internal_links_checked`: 107
 
 ## Errors
 
