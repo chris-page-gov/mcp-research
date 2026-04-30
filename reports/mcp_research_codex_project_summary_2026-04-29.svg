@@ -1,0 +1,54 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1920" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#07131E" />
+      <stop offset="0.52" stop-color="#0B1B34" />
+      <stop offset="1" stop-color="#07263A" />
+    </linearGradient>
+    <linearGradient id="panel" x1="50" y1="50" x2="1870" y2="1030" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#111C32" />
+      <stop offset="1" stop-color="#081225" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bg)" />
+  <rect x="50" y="50" width="1820" height="980" rx="28" fill="url(#panel)" stroke="#2B3F60" stroke-width="2" />
+
+  <text x="120" y="165" fill="#F4F8FF" font-family="Segoe UI, Arial, sans-serif" font-size="68" font-weight="700">Codex MCP-Research Summary</text>
+  <text x="120" y="225" fill="#A8B8D8" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="500">Using local Codex sessions filtered by mcp-research (2026-04-29 to 2026-04-29)</text>
+
+  <rect x="390" y="280" width="1140" height="270" rx="26" fill="#081225" stroke="#263754" stroke-width="2" />
+  <text x="960" y="346" text-anchor="middle" fill="#C8D8FF" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">Active Runtime</text>
+  <text x="960" y="500" text-anchor="middle" fill="#69F3D8" font-family="Segoe UI, Arial, sans-serif" font-size="140" font-weight="800">8.1h</text>
+  <text x="960" y="542" text-anchor="middle" fill="#9FB0D2" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="600">7.5h wall-clock session span</text>
+
+  <rect x="120" y="590" width="520" height="170" rx="22" fill="#081225" stroke="#263754" stroke-width="2" />
+  <text x="170" y="637" fill="#C8D8FF" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">Token Usage</text>
+  <text x="170" y="716" fill="#7FC9FF" font-family="Segoe UI, Arial, sans-serif" font-size="78" font-weight="800">73.4M</text>
+  <text x="170" y="753" fill="#9FB0D2" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="600">72.8M input + 423.7k output</text>
+
+  <rect x="700" y="590" width="520" height="170" rx="22" fill="#081225" stroke="#263754" stroke-width="2" />
+  <text x="750" y="637" fill="#C8D8FF" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">Cached Input Reused</text>
+  <text x="750" y="716" fill="#F5D66D" font-family="Segoe UI, Arial, sans-serif" font-size="78" font-weight="800">68.8M</text>
+  <text x="750" y="753" fill="#9FB0D2" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="600">Context reused across the run</text>
+
+  <rect x="1280" y="590" width="520" height="170" rx="22" fill="#081225" stroke="#263754" stroke-width="2" />
+  <text x="1330" y="637" fill="#C8D8FF" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">Tool Calls</text>
+  <text x="1330" y="716" fill="#FF86A4" font-family="Segoe UI, Arial, sans-serif" font-size="78" font-weight="800">1,352</text>
+  <text x="1330" y="753" fill="#9FB0D2" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="600">1,056 shell calls + 119 patches</text>
+
+  <rect x="120" y="790" width="520" height="170" rx="22" fill="#081225" stroke="#263754" stroke-width="2" />
+  <text x="170" y="837" fill="#C8D8FF" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">Patch Volume</text>
+  <text x="170" y="916" fill="#A393FF" font-family="Segoe UI, Arial, sans-serif" font-size="78" font-weight="800">8.9k</text>
+  <text x="170" y="953" fill="#9FB0D2" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="600">Approximate lines added by apply_patch</text>
+
+  <rect x="700" y="790" width="520" height="170" rx="22" fill="#081225" stroke="#263754" stroke-width="2" />
+  <text x="750" y="837" fill="#C8D8FF" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">Peak Single Step</text>
+  <text x="750" y="916" fill="#8FEA90" font-family="Segoe UI, Arial, sans-serif" font-size="78" font-weight="800">249,903</text>
+  <text x="750" y="953" fill="#9FB0D2" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="600">Tokens in one turn</text>
+
+  <rect x="1280" y="790" width="520" height="170" rx="22" fill="#081225" stroke="#263754" stroke-width="2" />
+  <text x="1330" y="837" fill="#C8D8FF" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">Context Compactions</text>
+  <text x="1330" y="916" fill="#FFAE63" font-family="Segoe UI, Arial, sans-serif" font-size="78" font-weight="800">8</text>
+  <text x="1330" y="953" fill="#9FB0D2" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="600">Automatic context management events</text>
+</svg>

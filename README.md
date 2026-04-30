@@ -12,6 +12,7 @@ The current state is a rigorous skeleton, not the full report. Source notes, cit
 - `scripts/`: build and validation scripts.
 - `wiki/`: Obsidian-friendly LLM-Wiki for guidance, progress, and evaluation planning.
 - `import/`: imported Deep Research artefacts for orientation only.
+- `reports/`: generated project telemetry summaries.
 - `dist/`: generated build artefacts.
 
 ## Authoring Rules
@@ -85,6 +86,20 @@ Developer quality checks:
 make lint
 make typecheck
 ```
+
+Generate the Codex project summary card and supporting report:
+
+```bash
+make codex-summary
+```
+
+Output:
+
+- `reports/mcp_research_codex_project_summary_<date>.md`
+- `reports/mcp_research_codex_project_summary_<date>.json`
+- `reports/mcp_research_codex_project_summary_<date>.svg`
+- `reports/mcp_research_codex_project_summary_<date>.pdf`
+- `reports/mcp_research_codex_project_summary_<date>.png`
 
 To write a browsable validation report:
 

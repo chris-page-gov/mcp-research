@@ -8,6 +8,7 @@ Icon?
 .Trashes/
 .vscode/
 .idea/
+.obsidian/
 *.swp
 *.swo
 *~
