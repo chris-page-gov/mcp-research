@@ -43,6 +43,7 @@ Measure whether the wiki helps agents retrieve the right guidance and avoid cont
 - [Next Step Parallelism Test](next-step-parallelism-test.md)
 - [Next Step Parallelism Retest](next-step-parallelism-retest.md)
 - [Next Step Parallelism Progress Test](next-step-parallelism-progress-test.md)
+- [Next Step Parallelism Completion Retest](next-step-parallelism-completion-retest.md)
 - [Drift Investigation](drift-investigation.md)
 
 ## Future Checks

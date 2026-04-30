@@ -26,7 +26,7 @@ Use this note for quick progress answers. It is a navigation and status dashboar
 | --- | --- | --- | --- |
 | Repository and method | Complete | CI, build, citation, link, wiki-state, and Node 24 workflow checks pass. | Keep validation green before each push. |
 | Source-note base | Started | 6/6 source note files have structured entries. | Promote source files only after open evidence blockers are resolved or explicitly scoped out. |
-| Priority sections | In progress | 1 source-ready, 3 started. | Move sections 04, 06, and 09 toward source-ready. |
+| Priority sections | In progress | 1 source-ready, 3 started; 3 priority sections still have evidence or control-mapping blockers. | Move sections 04, 06, and 09 toward source-ready. |
 | Citation mechanics | Green | 0 TODO citation keys in paper citations. | Keep source-note citation keys synchronized with BibTeX. |
 | Final prose | Not started | Executive summary and consolidation remain pending. | Wait until source-ready sections are stable. |
 
@@ -43,7 +43,7 @@ Use this note for quick progress answers. It is a navigation and status dashboar
 | MCP vs alternatives | `paper/06-mcp-vs-alternatives.md` | Started | Portability and procurement evidence | Close or explicitly scope `TODO-framework-portability-evidence` and `TODO-proprietary-connector-procurement-evidence`. |
 | Hype vs substance | `paper/07-hype-vs-substance.md` | Placeholder | Evidence sections incomplete | Draft after sections 03, 04, 05, and 06 stabilize. |
 | Deeper analyses and case studies | `paper/08-deeper-analyses-and-case-studies.md` | Placeholder | Case-study selection incomplete | Select cases from accepted vendor/security/source notes. |
-| Government and Local Authority AI Hub | `paper/09-government-local-authority-ai-hub.md` | Started | Control mapping and vendor-control evidence | Map controls; do not write recommendations yet. |
+| Government and Local Authority AI Hub | `paper/09-government-local-authority-ai-hub.md` | Started | Control mapping, vendor-control evidence, and procurement evidence | Map controls; do not write recommendations yet. |
 | Open questions and future directions | `paper/10-open-questions-and-future-directions.md` | Placeholder | Depends on unresolved evidence list | Draft after blocker closure decisions. |
 | Glossary | `paper/11-glossary.md` | Partial | AI Hub definition incomplete | Update when section 09 terminology stabilizes. |
 

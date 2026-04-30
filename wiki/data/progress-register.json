@@ -29,7 +29,11 @@
       "path": "paper/09-government-local-authority-ai-hub.md",
       "status": "started",
       "next_source_file": "sources/security-research.md",
-      "blocked_by": []
+      "blocked_by": [
+        "TODO-vendor-adoption-independent-use",
+        "TODO-product-control-depth",
+        "TODO-proprietary-connector-procurement-evidence"
+      ]
     }
   ]
 }

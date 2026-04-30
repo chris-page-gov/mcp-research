@@ -61,7 +61,7 @@ Translate the technical assessment into architecture options, governance control
 | Unclear trust boundary | AI Hub architecture owner | Define broker, host, registry, IdP, server, and upstream-system responsibilities. | Supported by protocol/security facts; final design needs source-ready section 02 and 04. |
 | Weak identity and authorization | IAM owner and service owner | Mandatory local auth profile; audience-bound tokens; least-privilege scopes; no token passthrough. | Supported by MCP authorization/security guidance. |
 | Unsafe tool invocation | Product owner and host/client owner | Read/write/destructive tool tiers; approvals; user-visible tool invocation; policy checks before execution. | Supported by tools spec and security notes. |
-| Discovery and registry trust | Platform owner | Private registry or allowlist; owner verification; change review; server inventory. | Still depends on exact registry limitation extraction. |
+| Discovery and registry trust | Platform owner | Private registry or allowlist; owner verification; change review; server inventory. | Official public-registry limitations are now source-backed; AI Hub control mapping remains analysis-stage. |
 | Prompt/tool poisoning | Security owner | Metadata review; signing/provenance; red-team tests; cross-server dataflow restrictions. | Supported by security notes; mitigation strength remains implementation-dependent. |
 | Context bloat and cost | Platform owner | Progressive discovery; toolset consolidation; context budgets; code-mediated access where justified. | Product-specific token-saving evidence exists; independent/cross-vendor corroboration remains open. |
 | Supply chain and local servers | Security and endpoint owners | Dependency pinning; SBOMs; sandboxing; endpoint policy; kill switches. | Supported by advisories and public-sector secure-development guidance. |
@@ -78,7 +78,8 @@ Translate the technical assessment into architecture options, governance control
 
 ## Evidence Gaps
 
-- Exact registry limitation wording is needed before specifying private-registry requirements as more than an analysis condition.
-- Product-control evidence is needed before relying on managed vendor MCP offerings for audit, data residency, incident response, or procurement claims.
-- Procurement-specific evidence is needed before making recommendations about proprietary app ecosystems.
+- Official registry limitation wording is now available for public registry scope; section 09 still needs an AI Hub control mapping for private registry, allowlist, ownership, and change-review requirements.
+- Product-control evidence is needed before relying on managed vendor MCP offerings for audit, data residency, incident response, or procurement claims: `TODO-product-control-depth`.
+- Independent adoption evidence is needed before relying on broad vendor-adoption claims for public-sector decisions: `TODO-vendor-adoption-independent-use`.
+- Procurement-specific evidence is needed before making recommendations about proprietary app ecosystems: `TODO-proprietary-connector-procurement-evidence`.
 - Section 09 should become source-ready only after the main technical and alternatives sections have stabilized.
