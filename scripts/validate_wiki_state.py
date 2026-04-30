@@ -21,6 +21,7 @@ from urllib.parse import unquote, urlparse
 ROOT = Path(__file__).resolve().parents[1]
 WIKI = ROOT / "wiki"
 PROGRESS_REGISTER = WIKI / "data" / "progress-register.json"
+SOURCE_TODO_REGISTER = WIKI / "data" / "source-todo-register.json"
 SOURCE_REGISTER = ROOT / "sources" / "source-register.md"
 DASHBOARD = WIKI / "progress" / "completion-dashboard.md"
 BIB = ROOT / "latex" / "references.bib"
@@ -47,6 +48,7 @@ REQUIRED_WIKI_FILES = [
     WIKI / "templates" / "source-note.md",
     WIKI / "templates" / "section-skeleton.md",
     PROGRESS_REGISTER,
+    SOURCE_TODO_REGISTER,
 ]
 REQUIRED_DOC_FILES = [
     ROOT / "README.md",
@@ -65,6 +67,7 @@ SOURCE_NOTE_KEY_LINE_RE = re.compile(
     re.MULTILINE,
 )
 BACKTICK_KEY_RE = re.compile(r"`([^`]+)`")
+SOURCE_TODO_STATUSES = {"open", "blocked", "narrowed", "closed", "out-of-scope"}
 
 
 class Issue(TypedDict):
@@ -249,6 +252,71 @@ def check_source_note_citation_keys(errors: list[Issue], summary: dict[str, int]
     summary["source_note_citation_keys_checked"] = checked
 
 
+def check_source_todo_register(errors: list[Issue], summary: dict[str, int]) -> None:
+    data = load_json(SOURCE_TODO_REGISTER, errors)
+    if not isinstance(data, dict):
+        return
+    records = data.get("source_todos")
+    if not isinstance(records, list):
+        errors.append(
+            issue(
+                "source_todo_register_shape",
+                file=rel(SOURCE_TODO_REGISTER),
+                message="source_todos must be a list",
+            )
+        )
+        return
+
+    actual: dict[str, set[str]] = {}
+    for path in sorted((ROOT / "sources").glob("*.md")):
+        if path == SOURCE_REGISTER:
+            continue
+        for marker in all_todo_markers(path):
+            actual.setdefault(marker, set()).add(rel(path))
+
+    registered: set[str] = set()
+    for record in records:
+        if not isinstance(record, dict):
+            errors.append(issue("source_todo_register_shape", file=rel(SOURCE_TODO_REGISTER)))
+            continue
+        todo_id = record.get("id")
+        status = record.get("status")
+        source_files = record.get("source_files")
+        if not isinstance(todo_id, str) or not todo_id.startswith("TODO-"):
+            errors.append(issue("source_todo_invalid_id", file=rel(SOURCE_TODO_REGISTER), blocker=str(todo_id)))
+            continue
+        if todo_id in registered:
+            errors.append(issue("source_todo_duplicate_id", file=rel(SOURCE_TODO_REGISTER), blocker=todo_id))
+        registered.add(todo_id)
+        if status not in SOURCE_TODO_STATUSES:
+            errors.append(
+                issue("source_todo_invalid_status", file=rel(SOURCE_TODO_REGISTER), blocker=todo_id, status=str(status))
+            )
+        if not isinstance(source_files, list) or not source_files or not all(isinstance(item, str) for item in source_files):
+            errors.append(issue("source_todo_invalid_source_files", file=rel(SOURCE_TODO_REGISTER), blocker=todo_id))
+            continue
+        for source_file in source_files:
+            path = ROOT / source_file
+            if not path.exists():
+                errors.append(issue("source_todo_missing_source_file", file=source_file, blocker=todo_id))
+                continue
+            if todo_id not in all_todo_markers(path):
+                errors.append(issue("source_todo_not_in_declared_file", file=source_file, blocker=todo_id))
+
+    for todo_id, source_files in sorted(actual.items()):
+        if todo_id not in registered:
+            errors.append(
+                issue(
+                    "source_todo_missing_from_register",
+                    file=", ".join(sorted(source_files)),
+                    blocker=todo_id,
+                )
+            )
+
+    summary["source_todo_markers"] = len(actual)
+    summary["source_todo_register_records"] = len(records)
+
+
 def check_progress_register(errors: list[Issue], warnings: list[Issue], summary: dict[str, int]) -> None:
     data = load_json(PROGRESS_REGISTER, errors)
     if not isinstance(data, dict):
@@ -319,6 +387,13 @@ def check_progress_register(errors: list[Issue], warnings: list[Issue], summary:
             errors.append(
                 issue("paper_section_with_todos_not_tracked", file=section_path, blockers=", ".join(sorted(todos)))
             )
+
+    paper_paths = {rel(path) for path in (ROOT / "paper").glob("*.md")}
+    errors.extend(
+        issue("paper_section_missing_from_progress_register", file=section_path)
+        for section_path in sorted(paper_paths - progress_paths)
+    )
+    summary["paper_sections"] = len(paper_paths)
 
 
 def check_section_acceptance_coverage(errors: list[Issue], summary: dict[str, int]) -> None:
@@ -484,6 +559,7 @@ def build_report() -> Report:
     check_wiki_links(errors, summary)
     check_source_register(errors, warnings, summary)
     check_source_note_citation_keys(errors, summary)
+    check_source_todo_register(errors, summary)
     check_progress_register(errors, warnings, summary)
     check_section_acceptance_coverage(errors, summary)
     check_completion_dashboard_coverage(errors, summary)

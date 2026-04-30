@@ -1,0 +1,180 @@
+{
+  "generated": "2026-04-30",
+  "source_todos": [
+    {
+      "id": "TODO-official-mcp-architecture",
+      "status": "closed",
+      "source_files": ["sources/official-specs.md"],
+      "blocks": [],
+      "decision_rule": "Use mcp-lifecycle-2025-11-25 for lifecycle/architecture claims."
+    },
+    {
+      "id": "TODO-mcp-resources",
+      "status": "closed",
+      "source_files": ["sources/official-specs.md"],
+      "blocks": [],
+      "decision_rule": "Use mcp-resources-2025-11-25 for resources claims."
+    },
+    {
+      "id": "TODO-mcp-prompts",
+      "status": "closed",
+      "source_files": ["sources/official-specs.md"],
+      "blocks": [],
+      "decision_rule": "Use mcp-prompts-2025-11-25 for prompts claims."
+    },
+    {
+      "id": "TODO-mcp-server-versioning",
+      "status": "closed",
+      "source_files": ["sources/official-specs.md"],
+      "blocks": [],
+      "decision_rule": "Use mcp-server-versioning for published-server registry metadata claims."
+    },
+    {
+      "id": "TODO-mcp-registry-limitations",
+      "status": "closed",
+      "source_files": ["sources/official-specs.md"],
+      "blocks": [],
+      "decision_rule": "Use registry about, moderation-policy, or aggregator keys depending on the claim."
+    },
+    {
+      "id": "TODO-context-bloat-token-reduction",
+      "status": "narrowed",
+      "source_files": ["sources/official-specs.md", "sources/discourse-and-criticism.md"],
+      "blocks": ["paper/04-technical-critiques-and-mitigations.md"],
+      "decision_rule": "Use product-specific token-reduction evidence only as vendor-reported unless independent corroboration is added."
+    },
+    {
+      "id": "TODO-discourse-criticism-source-notes",
+      "status": "narrowed",
+      "source_files": ["sources/discourse-and-criticism.md"],
+      "blocks": ["paper/03-perceptions-and-discourse.md", "paper/04-technical-critiques-and-mitigations.md"],
+      "decision_rule": "Add broader representative sampling or keep discourse claims scoped to named examples."
+    },
+    {
+      "id": "TODO-discourse-discovery-criticism",
+      "status": "narrowed",
+      "source_files": ["sources/discourse-and-criticism.md"],
+      "blocks": ["paper/04-technical-critiques-and-mitigations.md"],
+      "decision_rule": "Use only issue-level evidence from registry/private-registry/discoverability sources; do not restore the rejected GitHub issue #1683 reading."
+    },
+    {
+      "id": "TODO-discourse-context-bloat",
+      "status": "narrowed",
+      "source_files": ["sources/discourse-and-criticism.md"],
+      "blocks": ["paper/04-technical-critiques-and-mitigations.md"],
+      "decision_rule": "Treat single-issue context-bloat evidence as configuration-specific unless reproduced or broadened."
+    },
+    {
+      "id": "TODO-vendor-adoption-source-notes",
+      "status": "closed",
+      "source_files": ["sources/discourse-and-criticism.md"],
+      "blocks": [],
+      "decision_rule": "Use accepted vendor-adoption notes for broad adoption claims, not this discourse file."
+    },
+    {
+      "id": "TODO-alternatives-source-bibtex",
+      "status": "closed",
+      "source_files": ["sources/alternatives-skills-agents.md"],
+      "blocks": [],
+      "decision_rule": "Current accepted alternatives notes have BibTeX-backed keys."
+    },
+    {
+      "id": "TODO-semantic-kernel-source-note",
+      "status": "closed",
+      "source_files": ["sources/alternatives-skills-agents.md"],
+      "blocks": [],
+      "decision_rule": "Use semantic-kernel-plugins-2024-12-10 and semantic-kernel-overview-2024-06-24."
+    },
+    {
+      "id": "TODO-openai-tools-taxonomy",
+      "status": "closed",
+      "source_files": ["sources/alternatives-skills-agents.md"],
+      "blocks": [],
+      "decision_rule": "Use openai-using-tools with caveats about Skills/MCP separation evidence."
+    },
+    {
+      "id": "TODO-framework-portability-evidence",
+      "status": "narrowed",
+      "source_files": ["sources/alternatives-skills-agents.md"],
+      "blocks": ["paper/06-mcp-vs-alternatives.md"],
+      "decision_rule": "Use GOV.UK open-standards evidence as the public-sector portability baseline; keep direct framework-vs-MCP comparison analysis-grade."
+    },
+    {
+      "id": "TODO-proprietary-connector-procurement-evidence",
+      "status": "narrowed",
+      "source_files": ["sources/alternatives-skills-agents.md"],
+      "blocks": ["paper/06-mcp-vs-alternatives.md", "paper/09-government-local-authority-ai-hub.md"],
+      "decision_rule": "Use NCSC/NIST app approval and vetting evidence only as a local-control baseline; do not claim AI connector marketplace procurement readiness."
+    },
+    {
+      "id": "TODO-alternatives-public-sector-bibtex",
+      "status": "closed",
+      "source_files": ["sources/alternatives-skills-agents.md"],
+      "blocks": [],
+      "decision_rule": "BibTeX now exists for GOV.UK open standards, NCSC third-party app guidance, and NIST SP 800-163r1."
+    },
+    {
+      "id": "TODO-vendor-adoption-independent-use",
+      "status": "narrowed",
+      "source_files": ["sources/vendor-adoption.md"],
+      "blocks": ["paper/05-timeline-and-evolution.md", "paper/07-hype-vs-substance.md", "paper/09-government-local-authority-ai-hub.md"],
+      "decision_rule": "Use independent preprints for ecosystem and production-readiness evidence only; do not claim audited vendor product adoption or public-sector deployment metrics."
+    },
+    {
+      "id": "TODO-vendor-adoption-raw-pages",
+      "status": "narrowed",
+      "source_files": ["sources/vendor-adoption.md"],
+      "blocks": ["paper/05-timeline-and-evolution.md"],
+      "decision_rule": "Use recovered exact URLs; keep unrecovered Google Cloud Assist title caveated or remove it."
+    },
+    {
+      "id": "TODO-governance-source-notes",
+      "status": "narrowed",
+      "source_files": ["sources/vendor-adoption.md"],
+      "blocks": ["paper/05-timeline-and-evolution.md"],
+      "decision_rule": "Do not make foundation governance/process claims beyond recovered donation and launch evidence."
+    },
+    {
+      "id": "TODO-product-control-depth",
+      "status": "narrowed",
+      "source_files": ["sources/vendor-adoption.md"],
+      "blocks": ["paper/07-hype-vs-substance.md", "paper/09-government-local-authority-ai-hub.md"],
+      "decision_rule": "Use vendor control evidence conditionally by product path; keep SLA, incident, UK/EU public-sector terms, retention, strict enforcement, and independent assurance as residual gaps."
+    },
+    {
+      "id": "TODO-fastmcp-official-sdk-confirmation",
+      "status": "narrowed",
+      "source_files": ["sources/fastmcp.md"],
+      "blocks": ["paper/05-timeline-and-evolution.md"],
+      "decision_rule": "Treat incorporation history as FastMCP project/maintainer-reported unless official historical confirmation is found."
+    },
+    {
+      "id": "TODO-fastmcp-release-url-recovery",
+      "status": "closed",
+      "source_files": ["sources/fastmcp.md"],
+      "blocks": [],
+      "decision_rule": "Use recovered PyPI, GitHub release, FastMCP 3.0, Code Mode, 2.10, Apps, and repository/adoption leads."
+    },
+    {
+      "id": "TODO-fastmcp-version-date-reconcile",
+      "status": "closed",
+      "source_files": ["sources/fastmcp.md"],
+      "blocks": [],
+      "decision_rule": "Treat 2026-04-13 local snippet as a timezone/display artifact for the 2026-04-14 release."
+    },
+    {
+      "id": "TODO-fastmcp-conformance-evidence",
+      "status": "narrowed",
+      "source_files": ["sources/fastmcp.md"],
+      "blocks": ["paper/06-mcp-vs-alternatives.md", "paper/07-hype-vs-substance.md"],
+      "decision_rule": "Treat FastMCP conformance as project-reported unless independent tests or certification are found."
+    },
+    {
+      "id": "TODO-fastmcp-adoption-evidence",
+      "status": "narrowed",
+      "source_files": ["sources/fastmcp.md"],
+      "blocks": ["paper/05-timeline-and-evolution.md", "paper/07-hype-vs-substance.md"],
+      "decision_rule": "Treat stars, forks, downloads, and maintainer posts as popularity signals, not production adoption."
+    }
+  ]
+}

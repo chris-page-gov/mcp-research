@@ -1,18 +1,21 @@
 {
   "errors": [],
-  "generated": "2026-04-30T06:46:17+00:00",
+  "generated": "2026-04-30T07:12:50+00:00",
   "status": "pass",
   "summary": {
-    "acceptance_tracked_sections": 4,
-    "bib_entries": 103,
+    "acceptance_tracked_sections": 12,
+    "bib_entries": 138,
     "build_artifacts_expected": 3,
     "completion_dashboard_paper_sections": 12,
     "completion_dashboard_source_files": 6,
-    "completion_dashboard_tracked_sections": 4,
-    "progress_sections": 4,
-    "source_note_citation_keys_checked": 62,
+    "completion_dashboard_tracked_sections": 12,
+    "paper_sections": 12,
+    "progress_sections": 12,
+    "source_note_citation_keys_checked": 101,
     "source_register_rows": 6,
-    "wiki_internal_links_checked": 91
+    "source_todo_markers": 25,
+    "source_todo_register_records": 25,
+    "wiki_internal_links_checked": 93
   },
   "warnings": []
 }

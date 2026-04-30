@@ -1,6 +1,6 @@
 # Discourse and Criticism
 
-Status: working source notes from local security notes, official notes, and imported-report leads only. These notes are not yet a complete discourse sample.
+Status: working source notes from local security notes, official notes, imported-report leads, and targeted 2026-04-30 discovery-friction extraction. These notes are not a statistically representative discourse sample.
 
 ## Purpose
 
@@ -17,6 +17,18 @@ Capture reported opinions, practitioner criticism, and discourse patterns separa
 - Use only local source notes, imported materials under `import/`, `sources/security-research.md`, `sources/official-specs.md`, and named source URLs already present in those local/imported leads.
 - Do not treat imported Deep Research citation markers as final citations. Convert useful leads into source notes and keep TODO markers where exact extraction is incomplete.
 - Forum and issue evidence is evidence of a reported problem in that thread only, not population-level evidence.
+- 2026-04-30 exception for this lane: targeted primary/source URLs were browsed directly for the discovery/private-registry blocker. Record `Date accessed: 2026-04-30` on those notes.
+
+## Sampling / Representativeness Notes
+
+- Facts:
+  - The source set now includes official MCP project documentation/blog posts, official MCP GitHub issue/proposal threads, GitHub product documentation/changelog pages, product-specific GitHub issues, security research notes, and named practitioner commentary.
+  - The 2026-04-30 discovery-friction pass sampled official `modelcontextprotocol/registry` issues for private package registries, enterprise registry deployment, and registry-to-aggregator discoverability mismatches, plus a protocol proposal for pre-connection server discovery.
+- Reported opinions:
+  - Issue reporters describe enterprise private-registry needs, internal deployment friction, and discoverability mismatches between the official registry API and GitHub MCP UI/search.
+- Analysis:
+  - This is a purposive sample for known blocker themes, not a random or exhaustive discourse sample.
+  - It improves representativeness by adding official-project issue evidence for discovery/private-registry friction, but final prose should still avoid prevalence claims such as "enterprises generally" unless supported by broader sampling.
 
 ## Source Notes
 
@@ -231,6 +243,140 @@ Capture reported opinions, practitioner criticism, and discourse patterns separa
   - `04-technical-critiques-and-mitigations.md`
   - `09-government-local-authority-ai-hub.md`
 
+### DC-008 - MCP Registry issue on private package registries
+
+- Citation key: `mcp-registry-private-package-registries-issue-812-2025-12-02`
+- Title: Support for Private Package Registries
+- Author/organisation: modelcontextprotocol/registry GitHub issue participants
+- Publication/update date: opened 2025-12-02; open as of 2026-04-30 source extraction
+- Date accessed: 2026-04-30
+- URL: https://github.com/modelcontextprotocol/registry/issues/812
+- Source type: forum
+- Key claims:
+  - Facts:
+    - The issue is an open enhancement request in the official `modelcontextprotocol/registry` repository.
+    - The reporter describes an enterprise running a sub-registry that needs package resolution from an enterprise package manager such as Artifactory.
+    - The issue says the MCP Registry does not currently support private package registries or authentication.
+    - The requested solution is phased support for private anonymous package registries first, followed by authenticated package registry support.
+  - Reported opinions:
+    - The reporter argues that enterprises will require private package registry usage to run MCP sub-registries.
+  - Analysis:
+    - This is correct practitioner/private-registry evidence, but only for package-registry backing of enterprise MCP sub-registries.
+    - It does not prove that the public MCP Registry is unusable, and it should not be merged with the unrelated GitHub MCP Server issue #1683.
+- Direct quotation under 25 words: "doesn't support private Package registries or authentication"
+- Relevance:
+  - Supports the section 04 discovery/private-registry criticism in narrow issue-level form.
+  - Supports mitigation notes around internal registries, package-registry integration, and authenticated enterprise package sources.
+- Reliability assessment:
+  - Low-medium. Primary issue evidence from the official registry repository; useful for a concrete reported need, not for prevalence.
+- Sections where this source may be cited:
+  - `04-technical-critiques-and-mitigations.md`
+  - `09-government-local-authority-ai-hub.md`
+
+### DC-009 - MCP Registry issue on enterprise deployment assumptions
+
+- Citation key: `mcp-registry-enterprise-deployment-issue-816-2025-12-03`
+- Title: Guidance for Deploying MCP Registry in Enterprise Environments
+- Author/organisation: modelcontextprotocol/registry GitHub issue participants
+- Publication/update date: opened 2025-12-03; closed as not planned as of 2026-04-30 source extraction
+- Date accessed: 2026-04-30
+- URL: https://github.com/modelcontextprotocol/registry/issues/816
+- Source type: forum
+- Key claims:
+  - Facts:
+    - The issue is in the official `modelcontextprotocol/registry` repository and is closed as not planned.
+    - The reporter says they are exploring how to run an internal MCP Registry inside an enterprise environment.
+    - The reporter identifies public-registry assumptions they say do not align with typical enterprise setups: public npm instead of Artifactory/Nexus, `github.com` URLs instead of GitHub Enterprise, and DB schema migrations on startup.
+    - The issue asks whether enterprises should build a separate implementation from the spec, customize the official registry app internally, and what the project vision is for enterprise MCP registries.
+  - Reported opinions:
+    - The reporter says adapting the official app internally would require changes that feel like maintaining a fork.
+  - Analysis:
+    - This supports internal-registry deployment friction, not a broad claim that MCP lacks any path for private registry.
+    - Closure as not planned means this should be treated as unresolved issue evidence rather than accepted roadmap commitment.
+- Direct quotation under 25 words: "feel like maintaining a fork"
+- Relevance:
+  - Supports retaining a narrowed practitioner criticism about enterprise private-registry deployment friction.
+  - Useful for separating official public registry limits from enterprise self-hosting/deployment concerns.
+- Reliability assessment:
+  - Low-medium. Primary issue evidence in the official registry repository; no population-level measurement.
+- Sections where this source may be cited:
+  - `04-technical-critiques-and-mitigations.md`
+  - `09-government-local-authority-ai-hub.md`
+
+### DC-010 - Registry-to-GitHub MCP UI discoverability issues
+
+- Citation key: `mcp-registry-github-ui-discoverability-issues-2025-2026`
+- Titles:
+  - Published MCP server not appearing in GitHub MCP Registry
+  - Server visible in Official Registry API but not discoverable on github.com/mcp search
+- Author/organisation: modelcontextprotocol/registry GitHub issue participants
+- Publication/update dates:
+  - Issue #521 opened 2025-09-21; closed as of 2026-04-30 source extraction.
+  - Issue #1107 opened 2026-04-01; open as of 2026-04-30 source extraction.
+- Date accessed: 2026-04-30
+- URLs:
+  - https://github.com/modelcontextprotocol/registry/issues/521
+  - https://github.com/modelcontextprotocol/registry/issues/1107
+- Source type: forum
+- Key claims:
+  - Facts:
+    - Issue #521 reports a server visible in the official MCP Registry API but not appearing in the GitHub MCP Registry.
+    - Issue #1107 reports a server returned by official registry API searches but not discoverable on `github.com/mcp` search.
+    - Issue #1107 is labelled as a bug and remains open as of the extraction date.
+  - Reported opinions:
+    - Issue reporters expected a server present in the official registry to be discoverable in GitHub's MCP registry UI/search.
+    - Issue #1107 reporter believes the problem is an indexing or synchronization issue between the registry backend and GitHub MCP UI.
+  - Analysis:
+    - These issues support discovery/aggregator synchronization friction, not private-registry friction.
+    - They also reinforce the official documentation's distinction between the upstream registry and downstream aggregators.
+- Direct quotation under 25 words: "visible in Official Registry API but not discoverable"
+- Relevance:
+  - Supports a narrow discovery-friction lane for registry-to-aggregator/UI discoverability.
+  - Useful residual-risk evidence for relying on public registry metadata as an operational discovery control.
+- Reliability assessment:
+  - Low-medium. Issue-level reports in the official registry repository; not independent measurement of registry quality.
+- Sections where this source may be cited:
+  - `04-technical-critiques-and-mitigations.md`
+
+### DC-011 - GitHub Copilot MCP registry and allowlist controls
+
+- Citation keys: `github-copilot-mcp-registry-allowlist-2025-11-18`; additional BibTeX keys needed for current GitHub Docs pages: `github-docs-mcp-registry-configure-2026-04-30`; `github-docs-mcp-allowlist-enforcement-2026-04-30`
+- Titles:
+  - MCP registry and allowlist controls for VS Code Stable in public preview
+  - Configure an MCP registry for your organization or enterprise
+  - MCP allowlist enforcement
+- Author/organisation: GitHub
+- Publication/update dates:
+  - Changelog: 2025-11-18.
+  - GitHub Docs pages: current documentation pages; no stable publication date visible in extracted pages.
+- Date accessed: 2026-04-30
+- URLs:
+  - https://github.blog/changelog/2025-11-18-internal-mcp-registry-and-allowlist-controls-for-vs-code-stable-in-public-preview/
+  - https://docs.github.com/en/enterprise-cloud%40latest/copilot/how-tos/administer-copilot/manage-mcp-usage/configure-mcp-registry
+  - https://docs.github.com/en/copilot/reference/mcp-allowlist-enforcement
+- Source type: primary for GitHub's own product; vendor evidence for wider MCP governance patterns.
+- Key claims:
+  - Facts:
+    - GitHub says administrators can configure an internal MCP registry URL in enterprise or organization Copilot policy.
+    - GitHub says the registry provides discovery of approved MCP servers and, with a registry-only policy, runtime allowlisting.
+    - GitHub says self-hosted registries must follow the v0.1 MCP registry specification, support URL routing, and include CORS headers.
+    - GitHub Docs say the registry URL and allowlist are in public preview and subject to change.
+    - GitHub Docs say current allowlist enforcement is based on server name/ID matching and can be bypassed by editing configuration files.
+    - GitHub Docs say strict enforcement preventing installation of non-registry servers is not yet available.
+  - Reported opinions:
+    - GitHub frames internal registries and allowlists as MCP governance controls for enterprises and organizations.
+  - Analysis:
+    - This is mitigation evidence, not criticism evidence.
+    - It supports retaining private/curated registry controls as a practical mitigation while keeping residual risk around preview status, local-server enforcement, and product-specific implementation limits.
+- Direct quotation under 25 words: "can be bypassed by editing configuration files"
+- Relevance:
+  - Supports section 04 mitigation and residual-risk language for private/curated registries.
+  - Helps distinguish a product-specific enterprise control from a protocol-level guarantee.
+- Reliability assessment:
+  - Medium-high for GitHub product behavior and docs; limited as ecosystem-wide evidence.
+- Sections where this source may be cited:
+  - `04-technical-critiques-and-mitigations.md`
+
 ## Official Mitigation / Context Extracts Used In Section 04
 
 These are not discourse sources. They are exact extractions from official pages already named in local notes, recorded here because this lane cannot edit `sources/official-specs.md`.
@@ -319,16 +465,53 @@ These are not discourse sources. They are exact extractions from official pages 
     - Supports pairing dated distributed-systems criticism with official acknowledgements of active transport and enterprise-readiness work.
 - Direct quotation under 25 words: "gaps around horizontal scaling, stateless operation, and middleware patterns"
 
+### DCO-004 - MCP Server Cards SEP issue
+
+- Citation key: `mcp-server-cards-sep-1649-2025-10-14`
+- Title: SEP-1649: MCP Server Cards - HTTP Server Discovery via .well-known
+- Author/organisation: modelcontextprotocol/modelcontextprotocol GitHub issue participants
+- Publication/update date: opened 2025-10-14; closed as of 2026-04-30 source extraction
+- Date accessed: 2026-04-30
+- URL: https://github.com/modelcontextprotocol/modelcontextprotocol/issues/1649
+- Source type: primary project proposal/discussion, not normative specification text.
+- Key claims:
+  - Facts:
+    - The issue is a draft core protocol enhancement proposal for HTTP server discovery using a `.well-known/mcp.json` endpoint.
+    - The proposal says clients currently lack efficient mechanisms to discover server information before establishing a full connection.
+    - Listed pain points include manual endpoint configuration, no domain-level discovery, and expensive initialization for basic metadata.
+    - Proposed Server Cards would expose structured metadata for capabilities, transports, authentication requirements, protocol versions, and primitives before connection.
+  - Reported opinions:
+    - None for final prose; treat the motivation text as proposal rationale.
+  - Analysis:
+    - This is strong official-project evidence that pre-connection discovery friction was a recognized design problem.
+    - It should not be cited as an accepted normative requirement unless paired with final spec or roadmap material.
+- Direct quotation under 25 words: "lack efficient mechanisms to discover information"
+- Relevance:
+  - Supports section 04 discovery-friction facts alongside roadmap and transport-future notes.
+- Reliability assessment:
+  - Medium. Primary project proposal, but draft/issue status limits normative weight.
+- Sections where this source may be cited:
+  - `04-technical-critiques-and-mitigations.md`
+
 ## Discourse Pattern Summary
 
-- Reported criticism clusters around three themes: distributed-systems maturity, prompt-injection/security boundaries, and context/tool-surface bloat.
+- Reported criticism clusters around four themes: distributed-systems maturity, prompt-injection/security boundaries, context/tool-surface bloat, and discovery/private-registry friction.
 - Positive technical assessments cluster around interoperability, reusable connector surfaces, and the possibility of centralizing permissions and audit in managed products.
-- The strongest local evidence remains security-oriented, but exact extraction now exists for the named non-security leads except the imported private-registry reading of GitHub issue #1683, which failed source verification.
+- The strongest local evidence remains security-oriented, but exact extraction now exists for named non-security leads. The imported private-registry reading of GitHub issue #1683 failed source verification and is replaced by narrower official-registry issue evidence from DC-008, DC-009, and DC-010.
 
 ## Required Source Gaps
 
-- `TODO-discourse-criticism-source-notes`: narrowed. Exact source notes and BibTeX now exist for Julien Simon, ZenMCP issue #255, and GitHub MCP Server issue #1683, but this file is still not a representative discourse sample.
-- `TODO-discourse-discovery-criticism`: narrowed/blocked. GitHub issue #1683 does not support the imported private-registry claim. Use DCO-001 for official registry limits; find a correct named practitioner source before retaining issue-level private-registry friction.
+- `TODO-discourse-criticism-source-notes`: further narrowed. Exact source notes now exist for distributed-systems criticism, context bloat, project-scoping/tool-surface friction, and discovery/private-registry friction. Remaining gap: this is still purposive sampling rather than a representative survey.
+- `TODO-discourse-discovery-criticism`: further narrowed. Retain the criticism only as issue-level evidence: DC-008 supports private package-registry backing friction; DC-009 supports enterprise internal-registry deployment friction; DC-010 supports registry-to-aggregator/UI discoverability friction. Remove GitHub issue #1683 as discovery/private-registry evidence.
 - `TODO-discourse-context-bloat`: narrowed. DC-003 has exact issue title, dates, configuration, and maintainer mitigation comments; remaining gap is independent reproduction or broader context-bloat evidence, not BibTeX.
 - `TODO-context-bloat-token-reduction`: narrowed. DC-005 and DC-006 have exact vendor token figures and BibTeX keys; remaining gap is independent/cross-vendor corroboration.
 - `TODO-vendor-adoption-source-notes`: closed for the Microsoft Dynamics note used in section 04; broad adoption claims remain out of scope for this discourse file.
+
+## BibTeX Records From 2026-04-30 Discovery-Friction Pass
+
+- `mcp-registry-private-package-registries-issue-812-2025-12-02`: GitHub issue, title "Support for Private Package Registries", author `modelcontextprotocol/registry GitHub issue participants`, date 2025-12-02, URL https://github.com/modelcontextprotocol/registry/issues/812, urldate 2026-04-30.
+- `mcp-registry-enterprise-deployment-issue-816-2025-12-03`: GitHub issue, title "Guidance for Deploying MCP Registry in Enterprise Environments", author `modelcontextprotocol/registry GitHub issue participants`, date 2025-12-03, URL https://github.com/modelcontextprotocol/registry/issues/816, urldate 2026-04-30.
+- `mcp-registry-github-ui-discoverability-issues-2025-2026`: GitHub issues #521 and #1107, combined source note for registry-to-GitHub-MCP-UI discoverability mismatch, author `modelcontextprotocol/registry GitHub issue participants`, dates 2025-09-21 and 2026-04-01, URLs https://github.com/modelcontextprotocol/registry/issues/521 and https://github.com/modelcontextprotocol/registry/issues/1107, urldate 2026-04-30.
+- `github-docs-mcp-registry-configure-2026-04-30`: GitHub Docs page, title "Configure an MCP registry for your organization or enterprise", author `GitHub`, no stable publication date visible, URL https://docs.github.com/en/enterprise-cloud%40latest/copilot/how-tos/administer-copilot/manage-mcp-usage/configure-mcp-registry, urldate 2026-04-30.
+- `github-docs-mcp-allowlist-enforcement-2026-04-30`: GitHub Docs page, title "MCP allowlist enforcement", author `GitHub`, no stable publication date visible, URL https://docs.github.com/en/copilot/reference/mcp-allowlist-enforcement, urldate 2026-04-30.
+- `mcp-server-cards-sep-1649-2025-10-14`: GitHub issue/proposal, title "SEP-1649: MCP Server Cards - HTTP Server Discovery via .well-known", author `modelcontextprotocol/modelcontextprotocol GitHub issue participants`, date 2025-10-14, URL https://github.com/modelcontextprotocol/modelcontextprotocol/issues/1649, urldate 2026-04-30.

@@ -278,10 +278,84 @@ Capture source notes on FastMCP's relationship to MCP SDKs, server ergonomics, a
   - `06-mcp-vs-alternatives.md`
   - `07-hype-vs-substance.md`
 
+### FM-009 - MCP conformance framework and FastMCP CI integration
+
+- Citation key: `mcp-conformance-framework-2026`
+- BibTeX entry added for `modelcontextprotocol/conformance`, title `MCP Conformance Test Framework`, URL `https://github.com/modelcontextprotocol/conformance`, accessed 2026-04-30.
+- Citation key: `fastmcp-conformance-ci-2026-04-25`
+- BibTeX entry added for GitHub Actions job/run entry for `PrefectHQ/fastmcp` run `24935297572`, job `MCP conformance tests`, URL `https://github.com/PrefectHQ/fastmcp/actions/runs/24935297572/job/73019727758`, accessed 2026-04-30.
+- Title: MCP Conformance Test Framework; FastMCP MCP conformance tests
+- Author/organisation: Model Context Protocol project; FastMCP maintainers / GitHub Actions
+- Publication/update date: Conformance repository created 2025-07-10T13:39:08Z and pushed 2026-04-28T12:37:57Z per GitHub API; FastMCP successful CI run observed 2026-04-25T16:24:59Z to 2026-04-25T16:25:38Z
+- Date accessed: 2026-04-30
+- URL: https://github.com/modelcontextprotocol/conformance ; https://github.com/PrefectHQ/fastmcp/blob/main/tests/conformance/test_conformance.py ; https://github.com/PrefectHQ/fastmcp/actions/runs/24935297572/job/73019727758
+- Source type: primary official test framework plus project-run public CI evidence
+- Key claims:
+  - Facts:
+    - The `modelcontextprotocol/conformance` repository describes itself as conformance tests for MCP and provides client and server testing modes.
+    - The conformance README says server testing connects to a running server as an MCP client, sends requests, captures responses, and runs checks against server behaviour.
+    - The conformance README documents expected-failure baselines, including exit-code behaviour for expected failures, unexpected regressions, stale baselines, and normal passes.
+    - The FastMCP workflow `run-tests.yml` includes a `run_conformance_tests` job named `MCP conformance tests`, sets up Node.js 22, and runs pytest with `test-type: conformance`.
+    - FastMCP's `tests/conformance/test_conformance.py` starts a FastMCP server over Streamable HTTP and runs `npx --yes @modelcontextprotocol/conformance@latest server --suite all`.
+    - The test optionally passes `tests/conformance/expected-failures.yml` when that file exists; no such file was observed in the current main-branch clone used for this note.
+    - GitHub Actions API for run `24935297572` reported the `MCP conformance tests` job completed successfully on 2026-04-25.
+  - Reported opinions:
+    - None needed.
+  - Analysis:
+    - This is stronger than a bare FastMCP release-note claim because FastMCP publicly runs an official MCP conformance package in CI.
+    - It is still not independent certification: the test harness is official/open source, but the selected FastMCP server fixture, CI wiring, and pass/fail publication are maintained by the FastMCP project.
+    - Because the CI command uses `@modelcontextprotocol/conformance@latest`, results can change as the conformance package changes; cite with the observed run date and avoid treating a past pass as permanent protocol compliance.
+- Direct quotation under 25 words: "Conformance Tests for MCP"
+- Relevance to Government / Local Authority AI Hub decision-making:
+  - Helps procurement and architecture reviewers distinguish project-run conformance test evidence from formal certification or audited compliance.
+- Reliability assessment:
+  - Medium-high for existence of official conformance tooling and FastMCP CI integration. Medium for conformance status because the result is project-run, date-specific, and not a certification programme.
+- Sections where this source may be cited:
+  - `05-timeline-and-evolution.md`
+  - `06-mcp-vs-alternatives.md`
+  - `07-hype-vs-substance.md`
+  - `09-government-local-authority-ai-hub.md`
+
+### FM-010 - Independent FastMCP adoption examples and limits
+
+- Citation key: `cisco-mcp-server-reference-architecture-2025`
+- BibTeX entry added for Cisco support/documentation page, title `Harness the Power of MCP Servers: Revolutionize Network Automation with AI-Driven Solutions`, URL `https://www.cisco.com/c/en/us/support/docs/cloud-systems-management/catalyst-center/223278-harness-the-power-of-mcp-servers.html`, published 2025-07-18, accessed 2026-04-30.
+- Citation key: `pnnl-adept-fastmcp-2025`
+- BibTeX entry added for PNNL/OSTI report, title `ADEPT: A Pedagogical Framework for Integrating Agentic AI with Deterministic Scientific Workflows`, report number `PNNL-SA-216605`, authors August George, Aivett Bilbao, Khushbu Agarwal, Daniel Mejia-Rodriguez, Suman Samantray, Hoshin Kim, Peter S. Rice, Bruno Jacob, Marcel Baer, Simone Raugei, Margaret S. Cheung, Paul Rigor, URL `https://www.osti.gov/servlets/purl/3006464`, date October 2025, accessed 2026-04-30.
+- Title: Independent FastMCP adoption examples and limits
+- Author/organisation: Cisco; Pacific Northwest National Laboratory / OSTI
+- Publication/update date: Cisco revision 1.0 published 2025-07-18; PNNL report dated October 2025
+- Date accessed: 2026-04-30
+- URL: https://www.cisco.com/c/en/us/support/docs/cloud-systems-management/catalyst-center/223278-harness-the-power-of-mcp-servers.html ; https://www.osti.gov/servlets/purl/3006464
+- Source type: independent vendor reference architecture; government-lab report
+- Key claims:
+  - Facts:
+    - Cisco's document describes a reference architecture for production-ready MCP server platforms integrating Cisco Catalyst Center, ServiceNow, GitHub, RADKit, and legacy REST systems.
+    - Cisco's core server example imports `FastMCP` and instantiates `FastMCP("Cisco Catalyst Center MCP Server")`.
+    - Cisco's architecture covers enterprise controls such as OIDC, OPA policy enforcement, Vault secret management, ELK monitoring, Temporal workflows, and container orchestration.
+    - The PNNL/OSTI ADEPT report says the framework uses MCP for tool serving and states that ADEPT uses the FastMCP library as its MCP implementation.
+    - The ADEPT report presents the work as a reference architecture and pedagogical framework, with an 11-run UI-only bioinformatics workflow evaluation.
+  - Reported opinions:
+    - Cisco frames the article as production-ready reference architecture rather than an audited deployment report.
+    - The ADEPT report frames its contribution as a learning/development reference architecture rather than proof of broad enterprise adoption.
+  - Analysis:
+    - These are independent examples that FastMCP is being used or recommended outside Prefect-maintained materials.
+    - They do not validate FastMCP's project-reported market-share claims, download counts, or claims of production deployment across named customers.
+    - No independently audited production-adoption dataset, customer deployment audit, or public certification listing for FastMCP itself was recovered in this lane.
+- Direct quotation under 25 words: "At its foundation, ADEPT uses fastmcp"
+- Relevance to Government / Local Authority AI Hub decision-making:
+  - Useful as concrete implementation examples for enterprise controls and scientific-workflow architectures, but not as proof of audited production maturity.
+- Reliability assessment:
+  - Medium-high for independent example use. Low for quantifying adoption, because these sources are examples and reference architectures rather than market measurement or audit evidence.
+- Sections where this source may be cited:
+  - `06-mcp-vs-alternatives.md`
+  - `07-hype-vs-substance.md`
+  - `09-government-local-authority-ai-hub.md`
+
 ## Required Source Gaps
 
 - `TODO-fastmcp-official-sdk-confirmation`: narrowed. The official MCP Python SDK README currently imports `mcp.server.fastmcp.FastMCP`, while FastMCP project/changelog sources report the 2024 incorporation history. No separate official historical incorporation statement was recovered in this lane.
 - `TODO-fastmcp-release-url-recovery`: closed for PyPI, GitHub v3.2.4, FastMCP 3.0 GA, Code Mode, 2.10 compliance, Apps overview, and repository/adoption leads.
 - `TODO-fastmcp-version-date-reconcile`: closed. PyPI upload is 2026-04-14T01:42:26Z and GitHub v3.2.4 is 2026-04-14T01:42:08Z; the local 2026-04-13 snippet is a display/timezone artifact.
-- `TODO-fastmcp-conformance-evidence`: narrowed. Exact 2.10 release URL and date recovered; evidence remains project-reported compliance without independent conformance tests or official certification.
-- `TODO-fastmcp-adoption-evidence`: narrowed. GitHub metadata and maintainer adoption posts recovered; no independently audited production adoption data.
+- `TODO-fastmcp-conformance-evidence`: further narrowed. FastMCP now has public CI that runs the official `@modelcontextprotocol/conformance` server suite against a FastMCP test server, and a 2026-04-25 run passed. No formal MCP certification or third-party audited conformance report for FastMCP itself was recovered.
+- `TODO-fastmcp-adoption-evidence`: further narrowed. Independent Cisco and PNNL/OSTI examples show FastMCP use/recommendation in enterprise and scientific reference architectures, but they do not independently audit production adoption or validate FastMCP-reported market-share/download claims.

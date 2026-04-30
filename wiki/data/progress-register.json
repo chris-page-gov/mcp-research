@@ -1,11 +1,31 @@
 {
-  "generated": "2026-04-29",
+  "generated": "2026-04-30",
   "sections": [
+    {
+      "path": "paper/00-executive-summary.md",
+      "status": "placeholder",
+      "next_source_file": "sources/source-register.md",
+      "blocked_by": []
+    },
+    {
+      "path": "paper/01-introduction-methodology.md",
+      "status": "started",
+      "next_source_file": "sources/source-register.md",
+      "blocked_by": []
+    },
     {
       "path": "paper/02-mcp-in-a-nutshell.md",
       "status": "source-ready",
       "next_source_file": "sources/official-specs.md",
       "blocked_by": []
+    },
+    {
+      "path": "paper/03-perceptions-and-discourse.md",
+      "status": "placeholder",
+      "next_source_file": "sources/discourse-and-criticism.md",
+      "blocked_by": [
+        "TODO-discourse-criticism-source-notes"
+      ]
     },
     {
       "path": "paper/04-technical-critiques-and-mitigations.md",
@@ -14,6 +34,15 @@
       "blocked_by": [
         "TODO-discourse-criticism-source-notes",
         "TODO-discourse-discovery-criticism"
+      ]
+    },
+    {
+      "path": "paper/05-timeline-and-evolution.md",
+      "status": "placeholder",
+      "next_source_file": "sources/vendor-adoption.md",
+      "blocked_by": [
+        "TODO-vendor-adoption-independent-use",
+        "TODO-vendor-adoption-raw-pages"
       ]
     },
     {
@@ -26,6 +55,21 @@
       ]
     },
     {
+      "path": "paper/07-hype-vs-substance.md",
+      "status": "placeholder",
+      "next_source_file": "sources/vendor-adoption.md",
+      "blocked_by": [
+        "TODO-vendor-adoption-independent-use",
+        "TODO-product-control-depth"
+      ]
+    },
+    {
+      "path": "paper/08-deeper-analyses-and-case-studies.md",
+      "status": "placeholder",
+      "next_source_file": "sources/security-research.md",
+      "blocked_by": []
+    },
+    {
       "path": "paper/09-government-local-authority-ai-hub.md",
       "status": "started",
       "next_source_file": "sources/security-research.md",
@@ -34,6 +78,18 @@
         "TODO-product-control-depth",
         "TODO-proprietary-connector-procurement-evidence"
       ]
+    },
+    {
+      "path": "paper/10-open-questions-and-future-directions.md",
+      "status": "placeholder",
+      "next_source_file": "sources/source-register.md",
+      "blocked_by": []
+    },
+    {
+      "path": "paper/11-glossary.md",
+      "status": "started",
+      "next_source_file": "sources/source-register.md",
+      "blocked_by": []
     }
   ]
 }

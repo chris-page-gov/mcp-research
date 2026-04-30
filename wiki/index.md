@@ -33,6 +33,8 @@ This wiki is the operating layer for the paper project. It keeps authoring guida
 - [Parallel Work Plan](progress/parallel-work-plan.md)
 - [Completion Dashboard](progress/completion-dashboard.md)
 - [Phase Log](progress/phase-log.md)
+- [Machine-readable section progress](data/progress-register.json)
+- [Machine-readable source TODO register](data/source-todo-register.json)
 - [Wiki Evaluation Plan](evals/wiki-evaluation-plan.md)
 - [Drift Investigation](evals/drift-investigation.md)
 - [Next Step Parallelism Test](evals/next-step-parallelism-test.md)

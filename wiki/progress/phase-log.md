@@ -42,3 +42,7 @@ related:
 | --- | --- | --- |
 | Added top-level `CHANGELOG.md`. | Give public readers a conventional change history while keeping detailed operational tracking in the wiki. | Keep changelog, phase log, completion dashboard, and validation report synchronized before commits. |
 | Added tracked VSCode Python workspace settings. | Avoid the isort language-server `EPIPE` failure and keep import organization under Ruff, matching repo checks. | Reload VSCode window if the old isort server keeps running. |
+| Expanded progress tracking to every paper section. | The latest wiki evaluation showed the register only tracked priority sections. | Keep `wiki/data/progress-register.json`, acceptance criteria, and dashboard synchronized for all 12 sections. |
+| Added machine-readable source TODO register. | Source-note TODO markers were partly prose-only and hard to validate. | Keep `wiki/data/source-todo-register.json` synchronized whenever source TODO markers are added, narrowed, closed, or removed. |
+| Ran five targeted blocker-closure lanes. | Implement the wiki answer without starting full report prose. | Treat discourse, alternatives, vendor-control, section 09, and FastMCP blockers as narrowed unless residual evidence is explicitly found. |
+| Added BibTeX records for 2026-04-30 evidence lanes. | Workers added new source-note citation keys that needed normalized citation records. | Keep source-note citation keys validation green before each close. |

@@ -60,11 +60,10 @@ Practical parallelism: run three high-priority evidence workers plus one section
 | Area | Current state | Evidence | Completion implication |
 | --- | --- | --- | --- |
 | Repository/method | Complete | Public repo, CI, build, citation, link, wiki validation, Node 24 workflow, and Codex project summary generation are in place. | Infrastructure is not blocking research progress. |
-| Citation mechanics | Green | `check_citations.py`: 57 used keys, 103 BibTeX entries, 0 TODO citation keys. | Citation mechanics are not blocking; evidence quality still is. |
+| Citation mechanics | Green | `check_citations.py`: 64 used keys, 138 BibTeX entries, 0 TODO citation keys after the 2026-04-30 integration. | Citation mechanics are not blocking; evidence quality still is. |
 | Wiki/repo alignment | Green | `validate_wiki_state.py`: pass, 0 errors, 0 warnings. | Guidance is usable for current planning. |
 | Source-note base | Started | Source register shows 6/6 planned source-note files started. | Source base exists but most source files still have weighting or evidence gaps. |
-| Priority sections | In progress | Progress register now tracks 4 priority sections: 1 source-ready, 3 started. | 25 percent of priority sections are source-ready; none are draft-ready. |
-| Full paper section set | Early | 12 paper section files exist; many remain placeholders or skeletons. | Final prose phase remains pending. |
+| Paper section set | In progress | Progress register now tracks all 12 paper sections: 1 source-ready, 5 started, 6 placeholders. | Final prose phase remains pending; sections 04, 06, and 09 remain the active source-first lanes. |
 | Active high-priority blockers | Open/narrowed | Dashboard and TODO scan show discourse, alternatives, vendor-control, procurement, and FastMCP conformance/adoption blockers. | These determine whether sections 04, 06, and 09 can advance. |
 | Final prose | Not started | Plan keeps executive summary and consolidation in Phase 6. | Do not draft the full report yet. |
 
@@ -87,7 +86,7 @@ The wiki answered the question well, and the completion dashboard materially imp
 | --- | --- | --- |
 | Main next step | Remaining evidence blockers and control mapping before drafting. | Same, but section 09 blockers are now explicit in the progress register. |
 | Parallelism | Four evidence workers plus integrator; optional section 09 control mapping. | Three high-priority evidence workers, one section 09 control-mapping worker, optional FastMCP worker, plus integrator. |
-| Priority sections | 1 source-ready, 3 started. | Still 1 source-ready, 3 started. |
+| Tracked sections | 4 priority sections. | All 12 paper sections, with 1 source-ready, 5 started, and 6 placeholders. |
 | TODO paper citation keys | 0. | 0. |
 | Wiki validation | Pass with 0 errors and 0 warnings. | Pass before edits with 0 errors and 0 warnings. |
 | Completion visibility | Partial, then completion dashboard added. | Better: dashboard plus corrected section 09 blockers in progress register. |
@@ -97,9 +96,12 @@ The wiki answered the question well, and the completion dashboard materially imp
 - Fixed `wiki/data/progress-register.json`: section 09 now records `TODO-vendor-adoption-independent-use`, `TODO-product-control-depth`, and `TODO-proprietary-connector-procurement-evidence`.
 - Fixed `paper/09-government-local-authority-ai-hub.md`: public registry limitation extraction is no longer listed as still missing; the remaining need is AI Hub control mapping.
 - Updated [Completion Dashboard](../progress/completion-dashboard.md) so section 09's blocker wording matches the register and section text.
+- Fixed the remaining latest-run progress gap: `wiki/data/progress-register.json` now tracks every `paper/*.md` file, not only priority sections.
+- Fixed the remaining latest-run source TODO gap: `wiki/data/source-todo-register.json` now records source-note TODO markers with status, source files, blocked sections, and decision rules.
+- Extended `scripts/validate_wiki_state.py` so future runs fail when a paper section is missing from the progress register or a source TODO marker is missing from the source TODO register.
 
 ## Remaining Gaps
 
-- The progress register still tracks only priority sections, not every paper section.
-- Source-note TODO markers remain partly prose-only rather than normalized into machine-readable task records.
-- Section 09 can map controls now, but final recommendations still wait on vendor-control, procurement, and section 04/06 evidence decisions.
+- Section 09 control mapping exists now, but final recommendations still wait on vendor-control, procurement, and section 04/06 evidence decisions.
+- Discovery/discourse, portability/procurement, product-control, independent-adoption, and FastMCP conformance/adoption blockers are narrowed, not fully closed.
+- Consolidation and executive-summary drafting remain out of scope until source-ready sections are stable.

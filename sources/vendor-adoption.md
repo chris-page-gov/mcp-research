@@ -2,14 +2,14 @@
 
 Status: started.
 
-Date accessed for all accepted source notes in this file: 2026-04-29.
+Date accessed for accepted source notes in this file: 2026-04-29 unless a source note states 2026-04-30.
 
-This file records vendor, ecosystem, and governance evidence for MCP adoption. It is based only on the local import bundle:
+This file records vendor, ecosystem, and governance evidence for MCP adoption. Initial source recovery used the local import bundle:
 
 - `import/MCP as an integration backbone for enterprise and government AI.md`
 - `import/Citations from MCP as an integration backbone for enterprise and government AI`
 
-Use notes with TODO markers only as research leads until the missing local evidence is supplied.
+Later source notes add current primary/vendor documentation and independent research checked on 2026-04-30. Use notes with TODO markers only as research leads until the missing evidence is supplied.
 
 ## Purpose
 
@@ -345,9 +345,264 @@ Capture primary vendor documentation and adoption evidence for MCP implementatio
   - `07-hype-vs-substance.md`
   - `09-government-local-authority-ai-hub.md`
 
+### VA-011 - OpenAI ChatGPT Apps and enterprise control evidence
+
+- Citation key: existing `openai-apps-sdk`; proposed additional keys `openai-business-data-2026-04-30`, `openai-compliance-platform-2026-04-30`, `openai-chatgpt-data-residency-2026-04-30`, `openai-service-terms-2026-04-30`
+- Title: OpenAI Apps SDK, business data, compliance platform, data residency, and service terms
+- Author/organisation: OpenAI
+- Publication/update date: current documentation pages; Compliance Platform and data residency help pages both showed recent updates at access time; Service Terms page current at access time
+- Date accessed: 2026-04-30
+- URLs:
+  - https://developers.openai.com/apps-sdk/build/mcp-server
+  - https://openai.com/business-data/
+  - https://help.openai.com/en/articles/9261474-openai-compliance-platform-for-enterprise-customers/
+  - https://help.openai.com/en/articles/9903489-data-residency-and-inference-residency-for-chatgpt/
+  - https://openai.com/policies/service-terms/
+- Source type: vendor
+- Key claims:
+  - Facts:
+    - The Apps SDK build guide says the developer's MCP server defines tools, enforces authentication, returns data, and points each tool to a UI bundle.
+    - The Apps SDK guide says `_meta` in tool responses reaches the widget rather than the model, requires CSP metadata before broad distribution, requires tool annotations for potential impact, and warns not to embed secrets or rely on client hints for authorization.
+    - OpenAI's business-data page says business data is not used for model training by default, is encrypted at rest and in transit, and that Enterprise/Edu/Healthcare customers get SCIM, role-based access controls, and user analytics.
+    - The same business-data page reports SOC 2 Type 2 and ISO 27001/27017/27018/27701 alignment/certification, data-processing addendum support, 24/7/365 security on-call response, and regional data residency for eligible customers.
+    - The Compliance Platform help page says Enterprise and Edu customers can access logs and metadata for eDiscovery, DLP, and SIEM integration; the Compliance Logs Platform provides append-only log events and retains data for 30 days unless customers continuously export and retain it themselves.
+    - The ChatGPT residency help page says data residency is available for eligible API customers and new ChatGPT Enterprise/Edu customers, and that Apps & MCP external integrations can store or process data outside the selected region under the external provider's terms.
+    - The Service Terms say ChatGPT Enterprise administrators may add, remove, and suspend users; access, share, and remove content; and access logging and end-user-use information.
+  - Reported opinions:
+    - OpenAI characterizes these as enterprise privacy, security, compliance, and access-management controls.
+  - Analysis:
+    - This evidence narrows the product-control blocker for an OpenAI-hosted ChatGPT Apps path: audit export, RBAC/SCIM, encryption, data residency at rest, incident-response process, and administrator powers are documented at the platform level.
+    - It does not close the blocker for arbitrary MCP Apps or external MCP servers because the residency page explicitly carves out Apps & MCP external integrations once data leaves OpenAI infrastructure.
+    - For Government / Local Authority AI Hub use, this supports a requirement to keep third-party Apps disabled unless individually approved, require server-side authorization in each MCP server, require customer-owned compliance-log export, and require supplier terms for any external MCP provider.
+- Direct quotation under 25 words: "Apps & MCP"
+- Relevance to Government / Local Authority AI Hub decision-making:
+  - Useful where ChatGPT Enterprise/Edu is the hub client surface, but control adequacy depends on Enterprise entitlement, selected residency region, log-export integration, app approval, and external-provider due diligence.
+- Reliability assessment:
+  - High for OpenAI-stated product controls and contractual/admin features. Medium for public-sector sufficiency because the evidence is vendor-reported, not a UK public-sector assurance pack, and does not prove controls for third-party MCP servers.
+- Sections where this source may be cited:
+  - `07-hype-vs-substance.md`
+  - `09-government-local-authority-ai-hub.md`
+
+### VA-012 - Microsoft Copilot Studio and Dynamics MCP control evidence
+
+- Citation key: existing `microsoft-copilot-studio-mcp` and `microsoft-dynamics365-mcp-2026-03-11`; proposed additional keys `microsoft-copilot-studio-audit-logs-2026-04-30`, `microsoft-copilot-studio-data-policies-2026-04-30`, `microsoft-copilot-studio-gcc-2026-04-30`, `microsoft-copilot-control-system-2026-04-30`
+- Title: Copilot Studio audit logs, data policies, Government Community Cloud controls, and Dynamics 365 ERP MCP controls
+- Author/organisation: Microsoft
+- Publication/update date: current Microsoft Learn pages; Dynamics MCP page last updated 2026-04-27; Copilot Control System page last updated 2026-02-25
+- Date accessed: 2026-04-30
+- URLs:
+  - https://learn.microsoft.com/en-us/microsoft-copilot-studio/admin-logging-copilot-studio
+  - https://learn.microsoft.com/en-us/microsoft-copilot-studio/admin-data-loss-prevention
+  - https://learn.microsoft.com/en-us/microsoft-copilot-studio/requirements-licensing-gcc
+  - https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/management-controls
+  - https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/copilot/copilot-mcp
+- Source type: vendor
+- Key claims:
+  - Facts:
+    - Copilot Studio logs administrative and maker/user interactions with agents; administrative activity collection is enabled by default, while Purview retention policy controls can prevent retention of user message and response text.
+    - Copilot Studio audit logs do not include full interaction text or transcript; they include a transcript thread ID, and DSPM for AI can attempt to retrieve related chat text and resource links.
+    - The audit-log page says Copilot Studio audit prerequisites exclude FedRAMP tenants.
+    - Copilot Studio data policies can require Microsoft Entra ID authentication, block selected knowledge-source types, block connector tools, block HTTP requests or selected endpoints, block skills, block event triggers, and block publishing to selected channels.
+    - The US Government customer page says Copilot Studio US Government stores customer content at rest only in US datacenters, uses separate Azure Government infrastructure for a secondary physical segregation layer, restricts Microsoft administrator access to US-citizen screened personnel, and is authorized as a service within the Azure Government FedRAMP ATO.
+    - The Copilot Control System page places agent management controls in Microsoft 365 admin center, Power Platform admin center, and Copilot Studio, including licensing/metering, connector control, sharing control, DLP policies, ALM, and lifecycle approval.
+    - The Dynamics 365 ERP MCP page says the dynamic MCP server filters returned view models, menu items, entities, and APIs by the authenticated user's security role and rejects calls outside that role.
+    - The Dynamics 365 ERP MCP page requires administrators to configure allowed MCP clients; by default only Copilot Studio and VS Code client IDs are allowed.
+    - Dynamics licensing docs distinguish Copilot Studio billing from other agent-client billing, and list MCP tool-call charges for non-Copilot Studio agent clients.
+    - Dynamics known limitations exclude some system administration forms and state that Microsoft support does not guarantee assistance for adding the MCP server to the Copilot for finance and operations apps sidecar scenario.
+  - Reported opinions:
+    - Microsoft frames the control set as part of agent lifecycle, security, compliance, and operational management.
+  - Analysis:
+    - This is the strongest accepted vendor lane for controlled MCP deployment because it combines platform audit, DLP/admin controls, role-based backend filtering, allowed-client registration, and clear licensing mechanics.
+    - It still does not prove audit-log retention duration for all relevant MCP tool events, UK/EU public-sector data-residency commitments for Copilot Studio MCP use, or control sufficiency for non-Microsoft MCP servers connected through Copilot Studio.
+    - The Government Community Cloud evidence is directly relevant to US public-sector deployment, but it should not be generalized to UK Local Authority requirements without UK/EU residency and contract evidence.
+- Direct quotation under 25 words: "only the transcript thread ID"
+- Relevance to Government / Local Authority AI Hub decision-making:
+  - Supports Microsoft-first hub patterns where tenant admins can require authentication, block risky connectors/channels, limit allowed MCP clients, and align agent access with existing application security roles.
+- Reliability assessment:
+  - High for Microsoft-documented controls and limitations. Medium for Government / Local Authority sufficiency because controls are spread across products/entitlements and several public-sector-relevant assurances are region- or tenant-specific.
+- Sections where this source may be cited:
+  - `07-hype-vs-substance.md`
+  - `09-government-local-authority-ai-hub.md`
+
+### VA-013 - GitHub Copilot MCP admin, audit, and residency controls
+
+- Citation key: existing `github-copilot-mcp-registry-allowlist-2025-11-18`; proposed additional keys `github-copilot-audit-logs-2026-04-30`, `github-copilot-data-residency-2026-04-30`, `github-mcp-allowlist-enforcement-2026-04-30`
+- Title: GitHub Copilot MCP server access, allowlist enforcement, audit logs, and data residency
+- Author/organisation: GitHub
+- Publication/update date: current GitHub Docs pages; changelog source date remains 2025-11-18
+- Date accessed: 2026-04-30
+- URLs:
+  - https://docs.github.com/en/copilot/how-tos/administer-copilot/manage-mcp-usage/configure-mcp-server-access
+  - https://docs.github.com/en/copilot/reference/mcp-allowlist-enforcement
+  - https://docs.github.com/en/enterprise-cloud@latest/copilot/how-tos/administer-copilot/manage-for-enterprise/review-audit-logs
+  - https://docs.github.com/en/enterprise-cloud@latest/admin/data-residency/github-copilot-with-data-residency
+  - https://docs.github.com/en/enterprise-cloud@latest/rest/enterprise-admin/audit-log
+- Source type: vendor
+- Key claims:
+  - Facts:
+    - Enterprise and organization owners with Copilot Enterprise or Copilot Business can configure an MCP registry URL and access control policy for supported IDEs.
+    - GitHub labels the MCP registry URL and allowlist feature as public preview.
+    - The enforcement reference says current MCP allowlist enforcement is based only on server name/ID matching, can be bypassed by editing configuration files, and strict prevention of non-registry server installation is not yet available.
+    - GitHub recommends disabling MCP servers in Copilot for the highest level of security until strict enforcement is available.
+    - Copilot audit logs include settings/policy changes, license changes, and agent activity on GitHub; they do not include local client session prompts.
+    - GitHub says Copilot audit events are retained for 180 days and recommends streaming to SIEM for longer history and alerting.
+    - GitHub Enterprise Cloud with data residency can enforce Copilot inference and associated data in the United States or European Union, with region-specific endpoints, region-certified model availability, and region-appropriate logs/telemetry storage.
+    - GitHub's REST API supports enterprise audit-log retrieval and streaming configuration to Azure Blob Storage, Azure Event Hubs, Amazon S3, Splunk, Google Cloud Storage, and Datadog.
+  - Reported opinions:
+    - GitHub positions MCP registry and allowlist features as administrative mechanisms for controlling which MCP servers developers discover and use.
+  - Analysis:
+    - This substantially narrows the product-control blocker for GitHub Copilot as a managed developer client: audit retention, SIEM export, regional Copilot processing, and MCP registry policy all have vendor documentation.
+    - It does not close the blocker for high-assurance government use because GitHub documents that current allowlist enforcement can be bypassed and local prompts are not in audit logs.
+    - For a Government / Local Authority AI Hub, GitHub MCP should be treated as suitable only behind compensating controls such as managed device policy, locked IDE configuration, network controls, SIEM streaming, and disabling MCP where strict registry enforcement is required.
+- Direct quotation under 25 words: "can be bypassed by editing configuration files"
+- Relevance to Government / Local Authority AI Hub decision-making:
+  - Supports a "curated registry plus compensating controls" pattern for developer environments, while making clear that current enforcement is not a complete security boundary.
+- Reliability assessment:
+  - High for GitHub-documented capabilities and limitations. Medium for suitability because the most important limitation is explicitly acknowledged by the vendor.
+- Sections where this source may be cited:
+  - `07-hype-vs-substance.md`
+  - `09-government-local-authority-ai-hub.md`
+
+### VA-014 - Google Cloud remote MCP server audit and preview controls
+
+- Citation key: existing `google-cloud-assist-remote-mcp-2026-04`; proposed additional keys `google-cloud-mcp-audit-logging-2026-04-30`, `google-cloud-assist-audit-logging-2026-04-30`, `google-cloud-mcp-prevent-read-write-2026-04-30`
+- Title: Google Cloud MCP servers audit logging and Gemini Cloud Assist audit logging
+- Author/organisation: Google Cloud
+- Publication/update date: Google Cloud MCP audit logging page last updated 2026-01-02; Gemini Cloud Assist audit logging page current documentation page
+- Date accessed: 2026-04-30
+- URLs:
+  - https://docs.cloud.google.com/mcp/audit-logging
+  - https://cloud.google.com/gemini/docs/cloud-assist/audit-logging
+  - https://docs.cloud.google.com/mcp/prevent-read-write-tool-use
+  - https://docs.cloud.google.com/cloud-assist/configure-mcp
+- Source type: vendor
+- Key claims:
+  - Facts:
+    - Google Cloud labels remote MCP server audit logging as Preview and subject to Pre-GA Offerings Terms, which are available as-is and might have limited support.
+    - Google Cloud MCP audit logs are generated per service and use a service-name format ending in `/mcp`.
+    - Data Access audit logs for Google Cloud remote MCP server use are disabled by default and must be explicitly enabled for `mcp.googleapis.com`; additional log usage can create charges.
+    - The Gemini Cloud Assist audit page lists Admin Activity and Data Access audit logging for `geminicloudassist.googleapis.com` methods, including investigation create, update, run, delete, get, list, and IAM policy operations.
+    - The Google Cloud Assist MCP integration page says the MCP integration is in private preview and the tools should not be treated as stable APIs.
+  - Reported opinions:
+    - Google Cloud presents MCP audit logging as part of normal Cloud Audit Logs coverage for remote MCP use.
+  - Analysis:
+    - Google now has MCP-specific audit documentation, which narrows the control-depth gap more than the earlier private-preview Cloud Assist page alone.
+    - The blocker remains open for production public-sector use because the relevant MCP control evidence is preview/private preview, Data Access logging is opt-in, and support/SLA/residency terms for the specific remote MCP path are not established in the accepted evidence.
+- Direct quotation under 25 words: "Data Access audit logs for MCP are disabled by default"
+- Relevance to Government / Local Authority AI Hub decision-making:
+  - Useful as a technical audit-control lead for Google Cloud estates, but procurement should require GA status, support terms, logging defaults, log-retention design, and residency commitments before relying on managed remote MCP servers.
+- Reliability assessment:
+  - High for Google Cloud documentation and stated preview status. Medium-low for production sufficiency because the core MCP evidence is preview/private preview.
+- Sections where this source may be cited:
+  - `07-hype-vs-substance.md`
+  - `09-government-local-authority-ai-hub.md`
+
+### VA-015 - Cloudflare MCP governance and remote-server controls
+
+- Citation key: existing `cloudflare-mcp-servers`; proposed additional keys `cloudflare-mcp-governance-2026-04-30`, `cloudflare-mcp-authorization-2026-04-30`
+- Title: Cloudflare MCP governance, authorization, and managed remote MCP servers
+- Author/organisation: Cloudflare
+- Publication/update date: current Cloudflare Developers pages; MCP servers page last updated 2026-04-20 in accepted VA-010
+- Date accessed: 2026-04-30
+- URLs:
+  - https://developers.cloudflare.com/agents/model-context-protocol/governance/
+  - https://developers.cloudflare.com/agents/model-context-protocol/authorization/
+  - https://developers.cloudflare.com/agents/model-context-protocol/
+  - https://developers.cloudflare.com/agents/model-context-protocol/mcp-servers-for-cloudflare/
+- Source type: vendor
+- Key claims:
+  - Facts:
+    - Cloudflare's MCP governance page says administrators can use Cloudflare Access to vet, authorize, and audit interactions between users and MCP servers.
+    - The governance page says administrators can define identity, conditions such as device health or location, and tool scope, and that Access logs MCP server requests and tool executions made through the portal.
+    - Cloudflare recommends remote MCP servers over local installations because local servers create "Shadow MCP" risks and are harder to audit for data flow and code integrity.
+    - The authorization page describes OAuth 2.1-based patterns with Cloudflare Access, third-party OAuth providers, bring-your-own OAuth providers, or a self-handled MCP-server OAuth flow.
+    - Cloudflare says permissions can map directly to MCP tools, users can see a consent page, and servers can enforce that agents invoke only permitted tools.
+    - Cloudflare's own MCP server page says the generated Cloudflare API code runs in an isolated Dynamic Worker sandbox and that Cloudflare provides a dedicated Audit Logs MCP server.
+  - Reported opinions:
+    - Cloudflare positions remote MCP servers and MCP portals as a governance layer for controlling and auditing organizational MCP use.
+  - Analysis:
+    - Cloudflare provides strong design-pattern evidence for identity, device/location conditions, scoped tool permissioning, and audit visibility in a remote-MCP architecture.
+    - This is not enough by itself for Government / Local Authority adoption because the accepted evidence does not include product-specific SLA/support terms, UK public-sector procurement terms, detailed retention commitments for MCP portal/tool execution logs, or independent verification of Cloudflare MCP governance effectiveness.
+- Direct quotation under 25 words: "audit every interaction between users and MCP servers"
+- Relevance to Government / Local Authority AI Hub decision-making:
+  - Supports requiring remote, centrally governed MCP over unmanaged local servers, especially where a hub wants per-tool authorization and request/tool-execution logging.
+- Reliability assessment:
+  - High for Cloudflare-documented architecture and available controls. Medium for procurement sufficiency because key assurance artefacts and retention/SLA commitments are outside the accepted MCP-specific docs.
+- Sections where this source may be cited:
+  - `07-hype-vs-substance.md`
+  - `09-government-local-authority-ai-hub.md`
+
+### VA-016 - Independent MCP adoption and production-readiness evidence
+
+- Citation key: proposed `srinivasan-mcp-production-2026`, `li-mcp-privilege-management-2025`, `mastouri-rest-to-mcp-2026`, `huang-mcp-sec-audit-2026`, `kumar-mcp-sos-risk-2026`
+- Title: Independent empirical and research evidence on MCP adoption, production gaps, and privilege risk
+- Author/organisation: Vasundra Srinivasan; Zhihao Li et al.; Meriem Mastouri et al.; Charoes Huang et al.; Pratyay Kumar et al.
+- Publication/update date: arXiv submissions and versions from 2025-07 through 2026-04
+- Date accessed: 2026-04-30
+- URLs:
+  - https://arxiv.org/abs/2603.13417
+  - https://arxiv.org/abs/2507.06250
+  - https://arxiv.org/abs/2507.16044
+  - https://arxiv.org/abs/2603.21641
+  - https://arxiv.org/abs/2603.10194
+- Source type: independent research / preprint
+- Key claims:
+  - Facts:
+    - One production-pattern preprint reports field lessons from an enterprise deployment integrated with a major cloud provider's MCP servers, but the client is redacted.
+    - That preprint reports over 10,000 active servers and 97 million monthly SDK downloads as of early 2026, while arguing that identity propagation, adaptive tool budgeting, and structured error semantics remain outside the core protocol.
+    - A privilege-management preprint reports static analysis of 2,562 MCP applications and identifies broad system privileges, minimal isolation, and high-risk API usage as ecosystem risks.
+    - A REST-to-MCP preprint analyzes 116 official servers and reports that most are fully or partly REST-backed, with many tools operating as API wrappers.
+    - Two 2026 security preprints present MCP-specific security assessment or risk frameworks for over-privileged tools and open-source MCP server weaknesses.
+  - Reported opinions:
+    - These papers generally treat MCP as increasingly adopted but not yet production-complete without additional broker, identity, observability, error-handling, and privilege controls.
+  - Analysis:
+    - This lane narrows `TODO-vendor-adoption-independent-use` from "no independent evidence" to "some independent ecosystem and field-study evidence exists, but not audited vendor product adoption or public-sector production metrics."
+    - The evidence should be used cautiously: these are preprints, not procurement assurance, and the most deployment-relevant case study redacts the customer and does not prove vendor-specific SLA/control performance.
+- Direct quotation under 25 words: "identity propagation, adaptive tool budgeting, and structured error semantics"
+- Relevance to Government / Local Authority AI Hub decision-making:
+  - Supports treating MCP adoption as real but immature, and requiring gateway/broker controls, privilege review, observability, and contractual assurance rather than relying on protocol adoption alone.
+- Reliability assessment:
+  - Medium. Independent of the named vendors, useful for triangulating risk and ecosystem breadth, but preprint status and missing audited deployment figures limit assurance value.
+- Sections where this source may be cited:
+  - `07-hype-vs-substance.md`
+  - `09-government-local-authority-ai-hub.md`
+
+## Control-Depth Assessment for Government / Local Authority AI Hub
+
+- Facts:
+  - Audit evidence:
+    - OpenAI documents Enterprise/Edu compliance logs and metadata for eDiscovery, DLP, and SIEM use, but customer-side export is needed for retention beyond 30 days.
+    - Microsoft documents Copilot Studio audit events for administrative and maker/user interaction activity, but the audit log does not include full interaction text.
+    - GitHub documents Copilot audit logs, 180-day retention, and audit-log streaming, but local client prompts are excluded.
+    - Google Cloud documents MCP-specific Cloud Audit Logs, but Data Access logs are opt-in and the MCP audit feature is Preview.
+    - Cloudflare documents Access logging of MCP requests and tool executions through MCP portals, but the accepted MCP-specific docs do not state retention/SLA details.
+  - Tenant isolation and residency evidence:
+    - OpenAI documents data residency for eligible ChatGPT Enterprise/Edu/API customers and inference residency in limited regions, while explicitly excluding Apps & MCP external-provider handling after data leaves OpenAI.
+    - Microsoft documents US Government Copilot Studio physical segregation and US-only customer-content storage for GCC/GCC High, but this is not UK/EU Local Authority residency evidence.
+    - GitHub documents Copilot data residency for GitHub Enterprise Cloud with data residency in the United States and European Union.
+    - Google and Cloudflare MCP-specific evidence in this file does not establish a complete public-sector residency position for managed remote MCP use.
+  - Admin and allowed-client evidence:
+    - Dynamics 365 ERP MCP has explicit allowed-client registration and role-filtered tool/data visibility.
+    - GitHub Copilot MCP has registry and allowlist policy, but current enforcement is server-name/ID based and bypassable by configuration edits.
+    - Copilot Studio provides DLP/data policies for authentication, connectors, HTTP endpoints, skills, event triggers, and publishing channels.
+    - Cloudflare Access can apply user/group, device/location, and tool-scope policy for MCP portal traffic.
+    - OpenAI Apps SDK requires server-side auth enforcement and app CSP/tool-impact metadata but leaves backing-server authorization to the app provider.
+  - SLA/support/licensing evidence:
+    - Dynamics 365 ERP MCP documents tool-call billing and agent-license treatment, including differences between Copilot Studio and other clients.
+    - Copilot Studio and GitHub Copilot evidence is tied to specific enterprise/business/GCC entitlements.
+    - The accepted MCP-specific evidence remains thin for explicit SLA, support escalation, incident notification, and public-sector contract terms across all vendors.
+- Reported opinions:
+  - Vendors consistently present these controls as enterprise governance, security, and compliance features.
+  - Independent preprints frame MCP as adopted but still needing additional production mechanisms around identity, privilege, observability, errors, and tool budgeting.
+- Analysis:
+  - `TODO-product-control-depth` is narrowed but not fully closed. Enough product-control evidence exists to distinguish higher-control deployment lanes from unmanaged local MCP use, especially Microsoft/Dynamics, GitHub with compensating controls, Google Cloud with opt-in audit, Cloudflare Access-governed remote servers, and OpenAI Enterprise with strict external-app controls.
+  - For a Government / Local Authority AI Hub, accepted evidence supports a conditional pattern: no unmanaged local MCP servers; curated registries/allowed clients; per-tool authorization; enterprise audit export to SIEM; data-residency review per client and external MCP server; explicit DLP/channel restrictions; and supplier terms for incident response, support, licensing, and data processing.
+  - The evidence does not yet support a blanket claim that vendor MCP products are sufficient for government use. Each product path needs an entitlement-specific assurance pack and a documented operating model.
+  - `TODO-vendor-adoption-independent-use` is narrowed but not closed. Independent preprints and empirical studies show ecosystem adoption and production field lessons, but not audited vendor product deployment counts, public-sector case studies, or usage metrics for the accepted vendor MCP products.
+
 ## Required Source Gaps
 
-- `TODO-vendor-adoption-independent-use`: local materials do not provide independently audited adoption numbers, production-deployment counts, or usage metrics for vendor MCP products.
+- `TODO-vendor-adoption-independent-use`: narrowed by VA-016. Independent preprints and empirical studies provide ecosystem and production-readiness evidence, but still do not provide audited vendor product deployment counts, public-sector case studies, or usage metrics for the accepted vendor MCP products.
 - `TODO-vendor-adoption-raw-pages`: narrowed. Exact URLs recovered for Linux Foundation AAIF announcement and GitHub Copilot registry/allowlist changelog/docs. The Google Cloud Assist lead maps to `https://docs.cloud.google.com/cloud-assist/configure-mcp`, but the exact imported title "Use the Gemini Cloud Assist remote MCP server" was not recovered.
 - `TODO-governance-source-notes`: narrowed by VA-001 and VA-002 for donation, foundation launch, membership, and vendor-neutral positioning; still needs source text for foundation governance process, maintainer authority, technical steering, and change-control rules.
-- `TODO-product-control-depth`: vendor docs show product support, but local materials are insufficient for detailed claims about audit log retention, tenant isolation, data residency, SLAs, incident response, and procurement terms.
+- `TODO-product-control-depth`: narrowed by VA-011 through VA-015 and the control-depth assessment. Accepted vendor docs now provide meaningful evidence for audit, admin controls, allowed-client/registry policy, role filtering, data residency in some entitlements, licensing in Dynamics, and remote-governance patterns. Remaining gaps are entitlement-specific SLA/support terms, incident notification commitments, UK/EU public-sector residency/processor terms for each product path, audit retention for all MCP tool events, strict GitHub MCP enforcement, GA/support status for Google remote MCP, and independent assurance of control effectiveness.

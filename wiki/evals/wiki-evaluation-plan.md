@@ -30,11 +30,14 @@ Measure whether the wiki helps agents retrieve the right guidance and avoid cont
 ## Implemented Checks
 
 - Structured progress register in `wiki/data/progress-register.json`.
+- Source-note TODO register in `wiki/data/source-todo-register.json`.
 - Wiki link validation through `scripts/check_links.py` and `scripts/validate_wiki_state.py`.
 - TODO citation key reporting through `scripts/check_citations.py`.
 - Wiki/repo alignment report through `scripts/validate_wiki_state.py`.
 - Source-note citation-key coverage: non-TODO `Citation key` and `Proposed citation key` entries in `sources/*.md` must exist in `latex/references.bib`.
+- Source-note TODO coverage: every `TODO-...` marker in `sources/*.md` must appear in `wiki/data/source-todo-register.json`.
 - Section-acceptance coverage: tracked paper sections in `wiki/data/progress-register.json` must appear in `wiki/guidance/section-acceptance.md`.
+- Section-progress coverage: every `paper/*.md` file must appear in `wiki/data/progress-register.json`.
 - Parallel work-plan note for safe write scopes in `wiki/progress/parallel-work-plan.md`.
 - Completion dashboard for paper-section state, source-note state, active evidence blockers, and current parallel capacity.
 

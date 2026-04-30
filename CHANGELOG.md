@@ -13,10 +13,14 @@ The intent is to keep public readers oriented without duplicating every source-n
 
 - Added this top-level changelog as the public entry point for repository history.
 - Added tracked VSCode workspace settings that disable the isort language server and use Ruff for Python formatting/import organization.
+- Added `wiki/data/source-todo-register.json` and validation coverage for source-note TODO markers.
+- Added 2026-04-30 source evidence lanes for discourse discovery friction, alternatives portability/procurement, vendor control depth, FastMCP conformance/adoption, and section 09 control mapping.
 
 ### Changed
 
 - Expanded documentation lockstep checks so the changelog participates in internal link validation and wiki-state validation.
+- Expanded the progress register, completion dashboard, and section acceptance criteria to track all 12 paper sections.
+- Normalized new 2026-04-30 evidence keys in `latex/references.bib` while keeping final report prose gated.
 
 ## 2026-04-29
 

@@ -1,6 +1,6 @@
 # Alternatives: Skills and Agents
 
-Date accessed for local imported source set and targeted official documentation checks: 2026-04-29.
+Date accessed for local imported source set and targeted official documentation checks: 2026-04-29 and 2026-04-30.
 
 Status: source-note draft. This file converts locally imported research material into structured source notes and records targeted verification against official vendor documentation already present in, or directly implied by, the local imports. The exact Semantic Kernel, OpenAI tools, and OpenAI app-submission entries now have BibTeX records.
 
@@ -17,6 +17,9 @@ Capture sources on direct APIs/function calling, agent frameworks, skills, propr
 - Targeted official documentation checks, all accessed 2026-04-29:
   - OpenAI developer docs only for OpenAI taxonomy, Apps SDK, and app submission evidence.
   - Microsoft Learn pages already present in, or directly implied by, local Microsoft source leads.
+- Targeted public-sector and non-vendor checks, all accessed 2026-04-30:
+  - GOV.UK open standards guidance for interoperability, procurement, exit, and lock-in evidence.
+  - NCSC and NIST application-vetting guidance for third-party app marketplace/catalogue approval evidence.
 - The imported report is used only for orientation and gap-finding. Final paper prose should cite durable source notes and BibTeX keys, not Deep Research turn markers.
 - Future entries marked "candidate" have enough local signal to preserve as source leads, but still need exact page verification before final prose.
 
@@ -357,6 +360,109 @@ Capture sources on direct APIs/function calling, agent frameworks, skills, propr
   - `06-mcp-vs-alternatives.md`
   - `09-government-local-authority-ai-hub.md`
 
+### ASA-013 - GOV.UK Open Standards Principles and Procurement Guidance
+
+- Proposed citation keys: `govuk-open-standards-principles-2018-04-05`; `govuk-make-use-open-standards-2021-03-31`
+- Titles: Open Standards principles; Make use of open standards
+- Author/organisation: Cabinet Office / Government Digital Service / Central Digital and Data Office
+- Publication/update dates:
+  - Open Standards principles: published 2013-04-09; last updated 2018-04-05
+  - Make use of open standards: published 2017-11-06; last updated 2021-03-31
+- Date accessed: 2026-04-30
+- URLs:
+  - https://www.gov.uk/government/publications/open-standards-principles/open-standards-principles
+  - https://www.gov.uk/guidance/make-use-of-open-standards
+- Source type: public-sector policy/guidance; non-vendor
+- Key claims:
+  - Facts:
+    - GOV.UK says the Open Standards Principles apply to software interoperability, data, and document formats in government IT.
+    - The principles apply to UK central government departments and agencies, and GOV.UK encourages local government, the wider public sector, and devolved administrations to adopt them.
+    - GOV.UK says selected open standards should enable software interoperability through open protocols and data exchange between software and data stores.
+    - GOV.UK says open standards must be well documented, publicly available, free to use, mature unless used for innovation, market-supported, royalty-free, and compatible with open source and proprietary licensed solutions.
+    - GOV.UK says open standards can help avoid vendor lock-in, support interoperability, support component reuse, support sharing of data, and reduce overall programme cost.
+    - GOV.UK says open standards help suppliers by being neutral and flexible, reducing unintentional contract lock-ins, and helping break large IT contracts into smaller components.
+    - GOV.UK says organisations specifying IT requirements should specify open standards unless there is a clear reason why this is not possible.
+    - GOV.UK says open-standards selection considers interoperability needs, market support, potential vendor lock-in, maturity, security/legal requirements, operational needs, and economic efficiency.
+    - GOV.UK says teams should estimate exit and migration costs at the start of a new IT project or programme.
+    - The Technology Code guidance says using open standards increases interoperability, can save time and money through reuse, increases compatibility with stakeholders, and helps avoid vendor lock-in.
+  - Reported opinions:
+    - GOV.UK presents openness as supporting affordable, secure, innovative, better connected public technology.
+  - Analysis:
+    - This narrows `TODO-framework-portability-evidence`: there is now non-vendor public-sector evidence that open standards and open protocols are procurement-relevant mechanisms for portability, interoperability, reuse, exit planning, and lock-in reduction.
+    - It does not close the narrower comparison between framework-only agent runtimes and MCP-based connectors because it does not mention MCP, LangChain, Semantic Kernel, Skills, or current AI agent frameworks.
+    - Final section 06 can use this as a policy baseline: any portability recommendation should be framed as an open-standards/exit-planning requirement, not as proof that MCP is automatically portable in deployment.
+- Direct quotation under 25 words: "avoid vendor lock-in"
+- Relevance to Government / Local Authority AI Hub decision-making:
+  - Strong baseline for procurement criteria: prefer open, documented, market-supported interface standards where they meet user needs; document exemptions, interoperability constraints, and exit/migration costs.
+- Reliability assessment:
+  - High for UK public-sector policy/guidance on open standards and procurement. Low for direct technical comparison among AI agent frameworks and MCP.
+- Sections where this source may be cited:
+  - `06-mcp-vs-alternatives.md`
+  - `09-government-local-authority-ai-hub.md`
+
+### ASA-014 - NCSC Guidance on Third-Party Applications and App Catalogues
+
+- Proposed citation key: `ncsc-third-party-applications-devices`
+- Title: Using third-party applications on devices
+- Author/organisation: National Cyber Security Centre
+- Publication/update date: NCSC page reviewed/published as part of device security guidance; exact visible date not captured in page text
+- Date accessed: 2026-04-30
+- URL: https://www.ncsc.gov.uk/collection/device-security-guidance/policies-and-settings/using-third-party-applications-on-devices
+- Source type: public-sector cyber guidance
+- Key claims:
+  - Facts:
+    - NCSC says modern devices often support third-party applications and many platforms offer online marketplaces for installation.
+    - NCSC says third-party applications may access user and organisational data, and once an app has accessed data it can be difficult to know what was done with that data.
+    - NCSC recommends organisational policies for third-party applications that balance productivity and information risk.
+    - NCSC says application allow lists can be joined up with software licensing and procurement activities in a lightweight approvals process.
+    - NCSC says application approval should include procurement, legal, security, IT administration, and user representatives as required.
+    - NCSC says approval should be integrated with software asset management, handle software updates, and regularly re-review approved apps.
+    - NCSC says application-store checks can reduce malicious-app risk but are not a guarantee and may permit behaviour that conflicts with enterprise policy.
+    - NCSC says most regular business apps can be approved into an app catalogue, while risky apps may be limited to users with a strong business need.
+  - Reported opinions:
+    - NCSC presents a fast, lightweight, responsive app-approval process as a way to balance user productivity and risk.
+  - Analysis:
+    - This narrows `TODO-proprietary-connector-procurement-evidence`: there is public-sector evidence for marketplace/app catalogue approval, procurement involvement, re-review, update handling, and limits of app-store checks.
+    - It does not close the blocker for AI-specific proprietary connector ecosystems because the guidance is about device applications, not ChatGPT apps, Copilot connectors, MCP servers, SaaS connectors, SLAs, data residency, audit retention, or public-sector framework terms.
+    - Section 06 should avoid procurement recommendations that treat vendor app-store approval as sufficient assurance. Use this source only to require local approval/catalogue, asset-management, update, and re-review controls around any proprietary app or connector ecosystem.
+- Direct quotation under 25 words: "not a guarantee"
+- Relevance to Government / Local Authority AI Hub decision-making:
+  - Useful for modelling proprietary AI app/connectors as third-party application approvals: marketplace review is a signal, not a replacement for local risk assessment, app catalogue control, and re-review.
+- Reliability assessment:
+  - High for UK public-sector cyber guidance on third-party applications. Medium for analogy to AI connector/app ecosystems; the analogy must be stated as analysis.
+- Sections where this source may be cited:
+  - `06-mcp-vs-alternatives.md`
+  - `09-government-local-authority-ai-hub.md`
+
+### ASA-015 - NIST SP 800-163 Rev. 1 App Vetting
+
+- Proposed citation key: `nist-sp-800-163r1-app-vetting-2019-04`
+- Title: Vetting the Security of Mobile Applications
+- Author/organisation: National Institute of Standards and Technology
+- Publication/update date: 2019-04
+- Date accessed: 2026-04-30
+- URL: https://csrc.nist.gov/pubs/sp/800/163/r1/final
+- Source type: public-sector technical guidance
+- Key claims:
+  - Facts:
+    - NIST says public and private organisations increasingly rely on mobile applications, making security of those applications more important.
+    - NIST says SP 800-163 Rev. 1 outlines and details a mobile application vetting process.
+    - NIST says the process can ensure mobile applications conform to an organisation's security requirements and are reasonably free from vulnerabilities.
+    - NIST identifies app vetting, app vetting systems, malware, security requirements, software assurance, software vulnerabilities, and software testing as keywords/topics for the publication.
+  - Reported opinions:
+    - None needed for section 06.
+  - Analysis:
+    - This further narrows `TODO-proprietary-connector-procurement-evidence` by adding a public-sector vetting-process baseline for third-party applications.
+    - It remains mobile-application-specific and should not be cited as direct evidence for AI connector procurement, marketplace SLAs, licensing, data residency, or audit retention.
+- Direct quotation under 25 words: "conform to an organization's security requirements"
+- Relevance to Government / Local Authority AI Hub decision-making:
+  - Useful as a supporting assurance baseline when treating proprietary apps/connectors as third-party software that needs local security requirements and vetting, rather than vendor-store approval alone.
+- Reliability assessment:
+  - High for NIST app-vetting guidance. Low for direct proprietary AI connector procurement evidence.
+- Sections where this source may be cited:
+  - `06-mcp-vs-alternatives.md`
+  - `09-government-local-authority-ai-hub.md`
+
 ## Known Alternatives Evidence Gaps
 
 These gaps should be filled before converting section 06 into final report prose.
@@ -366,5 +472,6 @@ These gaps should be filled before converting section 06 into final report prose
 | BibTeX entries for accepted alternative notes above, especially newly verified ASA-003 and ASA-010 through ASA-012 | `TODO-alternatives-source-bibtex` | Closed for current accepted notes; `semantic-kernel-plugins-2024-12-10`, `semantic-kernel-overview-2024-06-24`, `openai-using-tools`, `openai-app-submission-guidelines`, and `openai-app-submission-flow` now exist |
 | Exact Semantic Kernel plugin and agent-framework URLs/wording | `TODO-semantic-kernel-source-note` | Closed for source-note evidence and BibTeX-backed section 06 citation |
 | Exact OpenAI "Using tools" page key for remote MCP servers and Skills as separate tool categories | `TODO-openai-tools-taxonomy` | Closed/narrowed: Using tools verifies built-in tools, function calling, tool search, and remote MCP; Skills/MCP separation is verified via OpenAI docs navigation and model tool matrix |
-| Independent or non-vendor evidence comparing framework-only and MCP-based portability | `TODO-framework-portability-evidence` | Still open and narrowed: allowed source set contains primary/vendor and official-protocol evidence but no independent direct comparison; blocks strong lock-in or portability claims |
-| Public-sector procurement evidence for proprietary app-store style connectors | `TODO-proprietary-connector-procurement-evidence` | Still open and narrowed: OpenAI/Microsoft vendor process, publication, licensing, and connector-control evidence exists, but no public-sector procurement-specific source in this lane; blocks procurement recommendations about app ecosystems |
+| Independent or non-vendor evidence comparing framework-only and MCP-based portability | `TODO-framework-portability-evidence` | Further narrowed: ASA-013 adds public-sector open-standards/lock-in/exit evidence, but no independent direct comparison of framework-only AI agent runtimes with MCP connectors was found; blocks strong MCP-over-framework portability claims |
+| Public-sector procurement evidence for proprietary app-store style connectors | `TODO-proprietary-connector-procurement-evidence` | Further narrowed: ASA-014 and ASA-015 add public-sector third-party application approval/vetting evidence, but no public-sector procurement-specific source for proprietary AI app/connectors, marketplace SLAs, data residency, audit retention, or connector licensing was found; blocks app-ecosystem procurement recommendations beyond local approval/re-review controls |
+| BibTeX entries for newly added public-sector evidence | `TODO-alternatives-public-sector-bibtex` | Closed; BibTeX records now exist for `govuk-open-standards-principles-2018-04-05`, `govuk-make-use-open-standards-2021-03-31`, `ncsc-third-party-applications-devices`, and `nist-sp-800-163r1-app-vetting-2019-04` |
