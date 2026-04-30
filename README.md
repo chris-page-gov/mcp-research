@@ -6,6 +6,7 @@ The current state is a rigorous skeleton, not the full report. Source notes, cit
 
 ## Layout
 
+- `CHANGELOG.md`: public change summary and pointers into the wiki tracking system.
 - `paper/`: section files for the paper.
 - `sources/`: structured source notes and source registers.
 - `latex/`: BibTeX and LaTeX support files.
@@ -80,12 +81,23 @@ The Makefile runs these through `uv run python` by default.
 
 The citation checker verifies that every used citation key exists in `latex/references.bib` and reports remaining `TODO-...` keys. The link checker validates internal Markdown and wiki links and ignores external URLs. The wiki-state validator checks that the wiki's progress register, source register, TODO blockers, required guidance files, and build artefacts match the current repository state.
 
+## Change Tracking
+
+Use [CHANGELOG.md](CHANGELOG.md) for a public, top-level summary of repository changes. Use the wiki for operational tracking:
+
+- [Phase Log](wiki/progress/phase-log.md): detailed work history.
+- [Completion Dashboard](wiki/progress/completion-dashboard.md): current progress and blockers.
+- [Parallel Work Plan](wiki/progress/parallel-work-plan.md): safe parallel write scopes.
+- [Wiki State Report](wiki/wiki-state-report.md): latest validation state.
+
 Developer quality checks:
 
 ```bash
 make lint
 make typecheck
 ```
+
+VSCode workspace settings use the Ruff extension for formatting and import organization. The Microsoft isort language server is disabled for this workspace because Ruff is the repository authority for import sorting.
 
 Generate the Codex project summary card and supporting report:
 

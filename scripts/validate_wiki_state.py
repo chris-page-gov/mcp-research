@@ -24,6 +24,7 @@ PROGRESS_REGISTER = WIKI / "data" / "progress-register.json"
 SOURCE_REGISTER = ROOT / "sources" / "source-register.md"
 DASHBOARD = WIKI / "progress" / "completion-dashboard.md"
 BIB = ROOT / "latex" / "references.bib"
+CHANGELOG = ROOT / "CHANGELOG.md"
 DIST_FILES = [
     ROOT / "dist" / "mcp-research-paper.md",
     ROOT / "dist" / "mcp-research-paper.tex",
@@ -46,6 +47,10 @@ REQUIRED_WIKI_FILES = [
     WIKI / "templates" / "source-note.md",
     WIKI / "templates" / "section-skeleton.md",
     PROGRESS_REGISTER,
+]
+REQUIRED_DOC_FILES = [
+    ROOT / "README.md",
+    CHANGELOG,
 ]
 
 MARKDOWN_LINK_RE = re.compile(r"(?<!!)\[[^\]\n]+\]\(([^)\n]+)\)")
@@ -164,6 +169,9 @@ def all_todo_markers(path: Path) -> set[str]:
 def check_required_files(errors: list[Issue]) -> None:
     errors.extend(
         issue("missing_required_wiki_file", file=rel(path)) for path in REQUIRED_WIKI_FILES if not path.exists()
+    )
+    errors.extend(
+        issue("missing_required_doc_file", file=rel(path)) for path in REQUIRED_DOC_FILES if not path.exists()
     )
 
 

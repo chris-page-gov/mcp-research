@@ -23,6 +23,7 @@ This wiki is the operating layer for the paper project. It keeps authoring guida
 
 ## Start Here
 
+- [Top-level changelog](../CHANGELOG.md)
 - [Authoring Contract](guidance/authoring-contract.md)
 - [Citation Conventions](guidance/citation-conventions.md)
 - [Source Discipline](guidance/source-discipline.md)

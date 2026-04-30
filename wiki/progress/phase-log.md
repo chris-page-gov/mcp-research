@@ -35,3 +35,10 @@ related:
 | Ran next-step parallelism progress test. | Check whether the wiki can answer planning plus progress-to-completion questions after the close procedure. | Added completion dashboard after finding completion visibility was partial. |
 | Closed roots/tasks official extraction and promoted section 02. | Complete the next official-spec blocker from the progress test. | Use section 02 as the first source-ready section when drafting begins. |
 | Added completion dashboard. | Make progress-to-completion visible without ad hoc synthesis across several wiki notes. | Keep it synchronized during session close. |
+
+## 2026-04-30
+
+| Change | Reason | Follow-up |
+| --- | --- | --- |
+| Added top-level `CHANGELOG.md`. | Give public readers a conventional change history while keeping detailed operational tracking in the wiki. | Keep changelog, phase log, completion dashboard, and validation report synchronized before commits. |
+| Added tracked VSCode Python workspace settings. | Avoid the isort language-server `EPIPE` failure and keep import organization under Ruff, matching repo checks. | Reload VSCode window if the old isort server keeps running. |

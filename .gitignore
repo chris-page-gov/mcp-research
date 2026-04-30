@@ -6,7 +6,9 @@
 Icon?
 .Spotlight-V100/
 .Trashes/
-.vscode/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
 .idea/
 .obsidian/
 *.swp

@@ -43,6 +43,7 @@ The main integrator owns these files during close:
 - `wiki/progress/parallel-work-plan.md`
 - `wiki/progress/completion-dashboard.md`
 - `wiki/evals/wiki-evaluation-plan.md`
+- `CHANGELOG.md`
 - generated wiki-state reports
 
 Do not leave worker-owned source edits without reconciling these shared files.
@@ -69,6 +70,7 @@ Before commit:
 
 - inspect `git status --short`;
 - review `git diff --stat`;
+- update `CHANGELOG.md` for material public-facing changes;
 - confirm `scripts/check_citations.py` has no unexpected TODO citations;
 - confirm `scripts/validate_wiki_state.py` still accepts source-note citation keys, progress blockers, section-acceptance coverage, and source-register state;
 - commit only after local validation passes.
