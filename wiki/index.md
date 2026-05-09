@@ -42,6 +42,7 @@ This wiki is the operating layer for the paper project. It keeps authoring guida
 - [Next Step Parallelism Progress Test](evals/next-step-parallelism-progress-test.md)
 - [Next Step Parallelism Completion Retest](evals/next-step-parallelism-completion-retest.md)
 - [Next Step Parallelism Post-Integration Test](evals/next-step-parallelism-post-integration-test.md)
+- [Assistant Postmortem Wiki](../postmortem-public/wiki/index.md)
 - [Wiki State Report](wiki-state-report.md)
 
 ## Paper Entry Points

@@ -1,0 +1,1077 @@
+[
+  {
+    "id": "index",
+    "kind": "index",
+    "label": "Postmortem index"
+  },
+  {
+    "id": "session:019dd7bc-6891-77a1-babe-f0161328e69d",
+    "kind": "session",
+    "label": "Main Codex session"
+  },
+  {
+    "id": "session:019dd7bd-23e2-7b81-9026-4c658d72a808",
+    "kind": "session",
+    "label": "guardian session"
+  },
+  {
+    "id": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "kind": "session",
+    "label": "Main Codex session"
+  },
+  {
+    "id": "session:019dd7d8-151c-7bf3-8741-093334f243e4",
+    "kind": "session",
+    "label": "Confucius explorer session"
+  },
+  {
+    "id": "session:019dd7d8-1539-7ba2-9fbe-5967a8299ff1",
+    "kind": "session",
+    "label": "Descartes explorer session"
+  },
+  {
+    "id": "session:019dd7d8-1553-7730-9059-5093edc4b6a7",
+    "kind": "session",
+    "label": "Newton explorer session"
+  },
+  {
+    "id": "session:019dd82f-2709-7f01-bae1-53eaddd32aaa",
+    "kind": "session",
+    "label": "Leibniz worker session"
+  },
+  {
+    "id": "session:019dd869-4399-74e2-9870-e97b3097da33",
+    "kind": "session",
+    "label": "Anscombe worker session"
+  },
+  {
+    "id": "session:019dd869-43c5-7ff3-b984-88011dee5e2d",
+    "kind": "session",
+    "label": "Avicenna worker session"
+  },
+  {
+    "id": "session:019dd869-9b9c-7750-9174-be30289c196f",
+    "kind": "session",
+    "label": "Mencius worker session"
+  },
+  {
+    "id": "session:019dd869-9bce-7452-86f5-ab369b43d0bc",
+    "kind": "session",
+    "label": "McClintock worker session"
+  },
+  {
+    "id": "session:019dd87b-6140-7072-aacd-72e07943b268",
+    "kind": "session",
+    "label": "Boole worker session"
+  },
+  {
+    "id": "session:019dd87b-6172-7ef3-b9cc-d400e2776603",
+    "kind": "session",
+    "label": "Mendel worker session"
+  },
+  {
+    "id": "session:019dd87b-61a3-73b0-b421-313d86d01cd9",
+    "kind": "session",
+    "label": "Carver worker session"
+  },
+  {
+    "id": "session:019dd87b-6233-7941-8ce0-fc9870e9d8ed",
+    "kind": "session",
+    "label": "Aquinas worker session"
+  },
+  {
+    "id": "session:019ddd31-d2c0-7761-8e19-e619f36a8f15",
+    "kind": "session",
+    "label": "Poincare worker session"
+  },
+  {
+    "id": "session:019ddd32-0255-7063-b2f4-77c116c1d65e",
+    "kind": "session",
+    "label": "Maxwell worker session"
+  },
+  {
+    "id": "session:019ddd32-302a-7d71-9292-94eeabc9908c",
+    "kind": "session",
+    "label": "Euler worker session"
+  },
+  {
+    "id": "session:019ddd32-491d-7dd0-af9c-ac0dbd4c032a",
+    "kind": "session",
+    "label": "Schrodinger worker session"
+  },
+  {
+    "id": "session:019ddd32-619b-7060-8e6c-297e440d7a99",
+    "kind": "session",
+    "label": "Godel worker session"
+  },
+  {
+    "id": "turn:turn-0001",
+    "kind": "turn",
+    "label": "Main Codex session turn 1"
+  },
+  {
+    "id": "turn:turn-0002",
+    "kind": "turn",
+    "label": "Main Codex session turn 2"
+  },
+  {
+    "id": "turn:turn-0003",
+    "kind": "turn",
+    "label": "Main Codex session turn 3"
+  },
+  {
+    "id": "turn:turn-0004",
+    "kind": "turn",
+    "label": "guardian session turn 1"
+  },
+  {
+    "id": "turn:turn-0005",
+    "kind": "turn",
+    "label": "guardian session turn 2"
+  },
+  {
+    "id": "turn:turn-0006",
+    "kind": "turn",
+    "label": "Main Codex session turn 1"
+  },
+  {
+    "id": "turn:turn-0007",
+    "kind": "turn",
+    "label": "Main Codex session turn 2"
+  },
+  {
+    "id": "turn:turn-0008",
+    "kind": "turn",
+    "label": "Main Codex session turn 3"
+  },
+  {
+    "id": "turn:turn-0009",
+    "kind": "turn",
+    "label": "Main Codex session turn 4"
+  },
+  {
+    "id": "turn:turn-0010",
+    "kind": "turn",
+    "label": "Main Codex session turn 5"
+  },
+  {
+    "id": "turn:turn-0011",
+    "kind": "turn",
+    "label": "Main Codex session turn 6"
+  },
+  {
+    "id": "turn:turn-0012",
+    "kind": "turn",
+    "label": "Main Codex session turn 7"
+  },
+  {
+    "id": "turn:turn-0013",
+    "kind": "turn",
+    "label": "Main Codex session turn 8"
+  },
+  {
+    "id": "turn:turn-0014",
+    "kind": "turn",
+    "label": "Main Codex session turn 9"
+  },
+  {
+    "id": "turn:turn-0015",
+    "kind": "turn",
+    "label": "Main Codex session turn 10"
+  },
+  {
+    "id": "turn:turn-0016",
+    "kind": "turn",
+    "label": "Main Codex session turn 11"
+  },
+  {
+    "id": "turn:turn-0017",
+    "kind": "turn",
+    "label": "Main Codex session turn 12"
+  },
+  {
+    "id": "turn:turn-0018",
+    "kind": "turn",
+    "label": "Main Codex session turn 13"
+  },
+  {
+    "id": "turn:turn-0019",
+    "kind": "turn",
+    "label": "Main Codex session turn 14"
+  },
+  {
+    "id": "turn:turn-0020",
+    "kind": "turn",
+    "label": "Main Codex session turn 15"
+  },
+  {
+    "id": "turn:turn-0021",
+    "kind": "turn",
+    "label": "Main Codex session turn 16"
+  },
+  {
+    "id": "turn:turn-0022",
+    "kind": "turn",
+    "label": "Main Codex session turn 17"
+  },
+  {
+    "id": "turn:turn-0023",
+    "kind": "turn",
+    "label": "Main Codex session turn 18"
+  },
+  {
+    "id": "turn:turn-0024",
+    "kind": "turn",
+    "label": "Main Codex session turn 19"
+  },
+  {
+    "id": "turn:turn-0025",
+    "kind": "turn",
+    "label": "Main Codex session turn 20"
+  },
+  {
+    "id": "turn:turn-0026",
+    "kind": "turn",
+    "label": "Main Codex session turn 21"
+  },
+  {
+    "id": "turn:turn-0027",
+    "kind": "turn",
+    "label": "Main Codex session turn 22"
+  },
+  {
+    "id": "turn:turn-0028",
+    "kind": "turn",
+    "label": "Main Codex session turn 23"
+  },
+  {
+    "id": "turn:turn-0029",
+    "kind": "turn",
+    "label": "Main Codex session turn 24"
+  },
+  {
+    "id": "turn:turn-0030",
+    "kind": "turn",
+    "label": "Main Codex session turn 25"
+  },
+  {
+    "id": "turn:turn-0031",
+    "kind": "turn",
+    "label": "Main Codex session turn 26"
+  },
+  {
+    "id": "turn:turn-0032",
+    "kind": "turn",
+    "label": "Main Codex session turn 27"
+  },
+  {
+    "id": "turn:turn-0033",
+    "kind": "turn",
+    "label": "Main Codex session turn 28"
+  },
+  {
+    "id": "turn:turn-0034",
+    "kind": "turn",
+    "label": "Main Codex session turn 29"
+  },
+  {
+    "id": "turn:turn-0035",
+    "kind": "turn",
+    "label": "Main Codex session turn 30"
+  },
+  {
+    "id": "turn:turn-0036",
+    "kind": "turn",
+    "label": "Main Codex session turn 31"
+  },
+  {
+    "id": "turn:turn-0037",
+    "kind": "turn",
+    "label": "Main Codex session turn 32"
+  },
+  {
+    "id": "turn:turn-0038",
+    "kind": "turn",
+    "label": "Main Codex session turn 33"
+  },
+  {
+    "id": "turn:turn-0039",
+    "kind": "turn",
+    "label": "Main Codex session turn 34"
+  },
+  {
+    "id": "turn:turn-0040",
+    "kind": "turn",
+    "label": "Main Codex session turn 35"
+  },
+  {
+    "id": "turn:turn-0041",
+    "kind": "turn",
+    "label": "Main Codex session turn 36"
+  },
+  {
+    "id": "turn:turn-0042",
+    "kind": "turn",
+    "label": "Main Codex session turn 37"
+  },
+  {
+    "id": "turn:turn-0043",
+    "kind": "turn",
+    "label": "Main Codex session turn 38"
+  },
+  {
+    "id": "turn:turn-0044",
+    "kind": "turn",
+    "label": "Main Codex session turn 39"
+  },
+  {
+    "id": "turn:turn-0045",
+    "kind": "turn",
+    "label": "Main Codex session turn 40"
+  },
+  {
+    "id": "turn:turn-0046",
+    "kind": "turn",
+    "label": "Main Codex session turn 41"
+  },
+  {
+    "id": "turn:turn-0047",
+    "kind": "turn",
+    "label": "Main Codex session turn 42"
+  },
+  {
+    "id": "turn:turn-0048",
+    "kind": "turn",
+    "label": "Main Codex session turn 43"
+  },
+  {
+    "id": "turn:turn-0049",
+    "kind": "turn",
+    "label": "Main Codex session turn 44"
+  },
+  {
+    "id": "turn:turn-0050",
+    "kind": "turn",
+    "label": "Main Codex session turn 45"
+  },
+  {
+    "id": "turn:turn-0051",
+    "kind": "turn",
+    "label": "Main Codex session turn 46"
+  },
+  {
+    "id": "turn:turn-0052",
+    "kind": "turn",
+    "label": "Main Codex session turn 47"
+  },
+  {
+    "id": "turn:turn-0053",
+    "kind": "turn",
+    "label": "Main Codex session turn 48"
+  },
+  {
+    "id": "turn:turn-0054",
+    "kind": "turn",
+    "label": "Main Codex session turn 49"
+  },
+  {
+    "id": "turn:turn-0055",
+    "kind": "turn",
+    "label": "Confucius explorer session turn 1"
+  },
+  {
+    "id": "turn:turn-0056",
+    "kind": "turn",
+    "label": "Confucius explorer session turn 2"
+  },
+  {
+    "id": "turn:turn-0057",
+    "kind": "turn",
+    "label": "Descartes explorer session turn 1"
+  },
+  {
+    "id": "turn:turn-0058",
+    "kind": "turn",
+    "label": "Descartes explorer session turn 2"
+  },
+  {
+    "id": "turn:turn-0059",
+    "kind": "turn",
+    "label": "Newton explorer session turn 1"
+  },
+  {
+    "id": "turn:turn-0060",
+    "kind": "turn",
+    "label": "Newton explorer session turn 2"
+  },
+  {
+    "id": "turn:turn-0061",
+    "kind": "turn",
+    "label": "Leibniz worker session turn 1"
+  },
+  {
+    "id": "turn:turn-0062",
+    "kind": "turn",
+    "label": "Leibniz worker session turn 2"
+  },
+  {
+    "id": "turn:turn-0063",
+    "kind": "turn",
+    "label": "Anscombe worker session turn 1"
+  },
+  {
+    "id": "turn:turn-0064",
+    "kind": "turn",
+    "label": "Anscombe worker session turn 2"
+  },
+  {
+    "id": "turn:turn-0065",
+    "kind": "turn",
+    "label": "Avicenna worker session turn 1"
+  },
+  {
+    "id": "turn:turn-0066",
+    "kind": "turn",
+    "label": "Avicenna worker session turn 2"
+  },
+  {
+    "id": "turn:turn-0067",
+    "kind": "turn",
+    "label": "Mencius worker session turn 1"
+  },
+  {
+    "id": "turn:turn-0068",
+    "kind": "turn",
+    "label": "Mencius worker session turn 2"
+  },
+  {
+    "id": "turn:turn-0069",
+    "kind": "turn",
+    "label": "McClintock worker session turn 1"
+  },
+  {
+    "id": "turn:turn-0070",
+    "kind": "turn",
+    "label": "McClintock worker session turn 2"
+  },
+  {
+    "id": "turn:turn-0071",
+    "kind": "turn",
+    "label": "Boole worker session turn 1"
+  },
+  {
+    "id": "turn:turn-0072",
+    "kind": "turn",
+    "label": "Boole worker session turn 2"
+  },
+  {
+    "id": "turn:turn-0073",
+    "kind": "turn",
+    "label": "Mendel worker session turn 1"
+  },
+  {
+    "id": "turn:turn-0074",
+    "kind": "turn",
+    "label": "Mendel worker session turn 2"
+  },
+  {
+    "id": "turn:turn-0075",
+    "kind": "turn",
+    "label": "Carver worker session turn 1"
+  },
+  {
+    "id": "turn:turn-0076",
+    "kind": "turn",
+    "label": "Carver worker session turn 2"
+  },
+  {
+    "id": "turn:turn-0077",
+    "kind": "turn",
+    "label": "Aquinas worker session turn 1"
+  },
+  {
+    "id": "turn:turn-0078",
+    "kind": "turn",
+    "label": "Aquinas worker session turn 2"
+  },
+  {
+    "id": "turn:turn-0079",
+    "kind": "turn",
+    "label": "Poincare worker session turn 1"
+  },
+  {
+    "id": "turn:turn-0080",
+    "kind": "turn",
+    "label": "Poincare worker session turn 2"
+  },
+  {
+    "id": "turn:turn-0081",
+    "kind": "turn",
+    "label": "Maxwell worker session turn 1"
+  },
+  {
+    "id": "turn:turn-0082",
+    "kind": "turn",
+    "label": "Maxwell worker session turn 2"
+  },
+  {
+    "id": "turn:turn-0083",
+    "kind": "turn",
+    "label": "Euler worker session turn 1"
+  },
+  {
+    "id": "turn:turn-0084",
+    "kind": "turn",
+    "label": "Euler worker session turn 2"
+  },
+  {
+    "id": "turn:turn-0085",
+    "kind": "turn",
+    "label": "Schrodinger worker session turn 1"
+  },
+  {
+    "id": "turn:turn-0086",
+    "kind": "turn",
+    "label": "Schrodinger worker session turn 2"
+  },
+  {
+    "id": "turn:turn-0087",
+    "kind": "turn",
+    "label": "Godel worker session turn 1"
+  },
+  {
+    "id": "turn:turn-0088",
+    "kind": "turn",
+    "label": "Godel worker session turn 2"
+  },
+  {
+    "id": "exchange:exchange-0001",
+    "kind": "exchange",
+    "label": "Main Codex session turn 1 exchange"
+  },
+  {
+    "id": "exchange:exchange-0002",
+    "kind": "exchange",
+    "label": "Main Codex session turn 2 exchange"
+  },
+  {
+    "id": "exchange:exchange-0003",
+    "kind": "exchange",
+    "label": "Main Codex session turn 3 exchange"
+  },
+  {
+    "id": "exchange:exchange-0004",
+    "kind": "exchange",
+    "label": "guardian session turn 1 exchange"
+  },
+  {
+    "id": "exchange:exchange-0005",
+    "kind": "exchange",
+    "label": "guardian session turn 2 exchange"
+  },
+  {
+    "id": "exchange:exchange-0006",
+    "kind": "exchange",
+    "label": "Main Codex session turn 1 exchange"
+  },
+  {
+    "id": "exchange:exchange-0007",
+    "kind": "exchange",
+    "label": "Main Codex session turn 2 exchange"
+  },
+  {
+    "id": "exchange:exchange-0008",
+    "kind": "exchange",
+    "label": "Main Codex session turn 3 exchange"
+  },
+  {
+    "id": "exchange:exchange-0009",
+    "kind": "exchange",
+    "label": "Main Codex session turn 4 exchange"
+  },
+  {
+    "id": "exchange:exchange-0010",
+    "kind": "exchange",
+    "label": "Main Codex session turn 5 exchange"
+  },
+  {
+    "id": "exchange:exchange-0011",
+    "kind": "exchange",
+    "label": "Main Codex session turn 6 exchange"
+  },
+  {
+    "id": "exchange:exchange-0012",
+    "kind": "exchange",
+    "label": "Main Codex session turn 7 exchange"
+  },
+  {
+    "id": "exchange:exchange-0013",
+    "kind": "exchange",
+    "label": "Main Codex session turn 8 exchange"
+  },
+  {
+    "id": "exchange:exchange-0014",
+    "kind": "exchange",
+    "label": "Main Codex session turn 9 exchange"
+  },
+  {
+    "id": "exchange:exchange-0015",
+    "kind": "exchange",
+    "label": "Main Codex session turn 10 exchange"
+  },
+  {
+    "id": "exchange:exchange-0016",
+    "kind": "exchange",
+    "label": "Main Codex session turn 11 exchange"
+  },
+  {
+    "id": "exchange:exchange-0017",
+    "kind": "exchange",
+    "label": "Main Codex session turn 12 exchange"
+  },
+  {
+    "id": "exchange:exchange-0018",
+    "kind": "exchange",
+    "label": "Main Codex session turn 13 exchange"
+  },
+  {
+    "id": "exchange:exchange-0019",
+    "kind": "exchange",
+    "label": "Main Codex session turn 14 exchange"
+  },
+  {
+    "id": "exchange:exchange-0020",
+    "kind": "exchange",
+    "label": "Main Codex session turn 15 exchange"
+  },
+  {
+    "id": "exchange:exchange-0021",
+    "kind": "exchange",
+    "label": "Main Codex session turn 16 exchange"
+  },
+  {
+    "id": "exchange:exchange-0022",
+    "kind": "exchange",
+    "label": "Main Codex session turn 17 exchange"
+  },
+  {
+    "id": "exchange:exchange-0023",
+    "kind": "exchange",
+    "label": "Main Codex session turn 18 exchange"
+  },
+  {
+    "id": "exchange:exchange-0024",
+    "kind": "exchange",
+    "label": "Main Codex session turn 19 exchange"
+  },
+  {
+    "id": "exchange:exchange-0025",
+    "kind": "exchange",
+    "label": "Main Codex session turn 20 exchange"
+  },
+  {
+    "id": "exchange:exchange-0026",
+    "kind": "exchange",
+    "label": "Main Codex session turn 21 exchange"
+  },
+  {
+    "id": "exchange:exchange-0027",
+    "kind": "exchange",
+    "label": "Main Codex session turn 22 exchange"
+  },
+  {
+    "id": "exchange:exchange-0028",
+    "kind": "exchange",
+    "label": "Main Codex session turn 23 exchange"
+  },
+  {
+    "id": "exchange:exchange-0029",
+    "kind": "exchange",
+    "label": "Main Codex session turn 24 exchange"
+  },
+  {
+    "id": "exchange:exchange-0030",
+    "kind": "exchange",
+    "label": "Main Codex session turn 25 exchange"
+  },
+  {
+    "id": "exchange:exchange-0031",
+    "kind": "exchange",
+    "label": "Main Codex session turn 26 exchange"
+  },
+  {
+    "id": "exchange:exchange-0032",
+    "kind": "exchange",
+    "label": "Main Codex session turn 27 exchange"
+  },
+  {
+    "id": "exchange:exchange-0033",
+    "kind": "exchange",
+    "label": "Main Codex session turn 28 exchange"
+  },
+  {
+    "id": "exchange:exchange-0034",
+    "kind": "exchange",
+    "label": "Main Codex session turn 29 exchange"
+  },
+  {
+    "id": "exchange:exchange-0035",
+    "kind": "exchange",
+    "label": "Main Codex session turn 30 exchange"
+  },
+  {
+    "id": "exchange:exchange-0036",
+    "kind": "exchange",
+    "label": "Main Codex session turn 31 exchange"
+  },
+  {
+    "id": "exchange:exchange-0037",
+    "kind": "exchange",
+    "label": "Main Codex session turn 32 exchange"
+  },
+  {
+    "id": "exchange:exchange-0038",
+    "kind": "exchange",
+    "label": "Main Codex session turn 33 exchange"
+  },
+  {
+    "id": "exchange:exchange-0039",
+    "kind": "exchange",
+    "label": "Main Codex session turn 34 exchange"
+  },
+  {
+    "id": "exchange:exchange-0040",
+    "kind": "exchange",
+    "label": "Main Codex session turn 35 exchange"
+  },
+  {
+    "id": "exchange:exchange-0041",
+    "kind": "exchange",
+    "label": "Main Codex session turn 36 exchange"
+  },
+  {
+    "id": "exchange:exchange-0042",
+    "kind": "exchange",
+    "label": "Main Codex session turn 37 exchange"
+  },
+  {
+    "id": "exchange:exchange-0043",
+    "kind": "exchange",
+    "label": "Main Codex session turn 38 exchange"
+  },
+  {
+    "id": "exchange:exchange-0044",
+    "kind": "exchange",
+    "label": "Main Codex session turn 39 exchange"
+  },
+  {
+    "id": "exchange:exchange-0045",
+    "kind": "exchange",
+    "label": "Main Codex session turn 40 exchange"
+  },
+  {
+    "id": "exchange:exchange-0046",
+    "kind": "exchange",
+    "label": "Main Codex session turn 41 exchange"
+  },
+  {
+    "id": "exchange:exchange-0047",
+    "kind": "exchange",
+    "label": "Main Codex session turn 42 exchange"
+  },
+  {
+    "id": "exchange:exchange-0048",
+    "kind": "exchange",
+    "label": "Main Codex session turn 43 exchange"
+  },
+  {
+    "id": "exchange:exchange-0049",
+    "kind": "exchange",
+    "label": "Main Codex session turn 44 exchange"
+  },
+  {
+    "id": "exchange:exchange-0050",
+    "kind": "exchange",
+    "label": "Main Codex session turn 45 exchange"
+  },
+  {
+    "id": "exchange:exchange-0051",
+    "kind": "exchange",
+    "label": "Main Codex session turn 46 exchange"
+  },
+  {
+    "id": "exchange:exchange-0052",
+    "kind": "exchange",
+    "label": "Main Codex session turn 47 exchange"
+  },
+  {
+    "id": "exchange:exchange-0053",
+    "kind": "exchange",
+    "label": "Main Codex session turn 48 exchange"
+  },
+  {
+    "id": "exchange:exchange-0054",
+    "kind": "exchange",
+    "label": "Main Codex session turn 49 exchange"
+  },
+  {
+    "id": "exchange:exchange-0055",
+    "kind": "exchange",
+    "label": "Confucius explorer session turn 1 exchange"
+  },
+  {
+    "id": "exchange:exchange-0056",
+    "kind": "exchange",
+    "label": "Confucius explorer session turn 2 exchange"
+  },
+  {
+    "id": "exchange:exchange-0057",
+    "kind": "exchange",
+    "label": "Descartes explorer session turn 1 exchange"
+  },
+  {
+    "id": "exchange:exchange-0058",
+    "kind": "exchange",
+    "label": "Descartes explorer session turn 2 exchange"
+  },
+  {
+    "id": "exchange:exchange-0059",
+    "kind": "exchange",
+    "label": "Newton explorer session turn 1 exchange"
+  },
+  {
+    "id": "exchange:exchange-0060",
+    "kind": "exchange",
+    "label": "Newton explorer session turn 2 exchange"
+  },
+  {
+    "id": "exchange:exchange-0061",
+    "kind": "exchange",
+    "label": "Leibniz worker session turn 1 exchange"
+  },
+  {
+    "id": "exchange:exchange-0062",
+    "kind": "exchange",
+    "label": "Leibniz worker session turn 2 exchange"
+  },
+  {
+    "id": "exchange:exchange-0063",
+    "kind": "exchange",
+    "label": "Anscombe worker session turn 1 exchange"
+  },
+  {
+    "id": "exchange:exchange-0064",
+    "kind": "exchange",
+    "label": "Anscombe worker session turn 2 exchange"
+  },
+  {
+    "id": "exchange:exchange-0065",
+    "kind": "exchange",
+    "label": "Avicenna worker session turn 1 exchange"
+  },
+  {
+    "id": "exchange:exchange-0066",
+    "kind": "exchange",
+    "label": "Avicenna worker session turn 2 exchange"
+  },
+  {
+    "id": "exchange:exchange-0067",
+    "kind": "exchange",
+    "label": "Mencius worker session turn 1 exchange"
+  },
+  {
+    "id": "exchange:exchange-0068",
+    "kind": "exchange",
+    "label": "Mencius worker session turn 2 exchange"
+  },
+  {
+    "id": "exchange:exchange-0069",
+    "kind": "exchange",
+    "label": "McClintock worker session turn 1 exchange"
+  },
+  {
+    "id": "exchange:exchange-0070",
+    "kind": "exchange",
+    "label": "McClintock worker session turn 2 exchange"
+  },
+  {
+    "id": "exchange:exchange-0071",
+    "kind": "exchange",
+    "label": "Boole worker session turn 1 exchange"
+  },
+  {
+    "id": "exchange:exchange-0072",
+    "kind": "exchange",
+    "label": "Boole worker session turn 2 exchange"
+  },
+  {
+    "id": "exchange:exchange-0073",
+    "kind": "exchange",
+    "label": "Mendel worker session turn 1 exchange"
+  },
+  {
+    "id": "exchange:exchange-0074",
+    "kind": "exchange",
+    "label": "Mendel worker session turn 2 exchange"
+  },
+  {
+    "id": "exchange:exchange-0075",
+    "kind": "exchange",
+    "label": "Carver worker session turn 1 exchange"
+  },
+  {
+    "id": "exchange:exchange-0076",
+    "kind": "exchange",
+    "label": "Carver worker session turn 2 exchange"
+  },
+  {
+    "id": "exchange:exchange-0077",
+    "kind": "exchange",
+    "label": "Aquinas worker session turn 1 exchange"
+  },
+  {
+    "id": "exchange:exchange-0078",
+    "kind": "exchange",
+    "label": "Aquinas worker session turn 2 exchange"
+  },
+  {
+    "id": "exchange:exchange-0079",
+    "kind": "exchange",
+    "label": "Poincare worker session turn 1 exchange"
+  },
+  {
+    "id": "exchange:exchange-0080",
+    "kind": "exchange",
+    "label": "Poincare worker session turn 2 exchange"
+  },
+  {
+    "id": "exchange:exchange-0081",
+    "kind": "exchange",
+    "label": "Maxwell worker session turn 1 exchange"
+  },
+  {
+    "id": "exchange:exchange-0082",
+    "kind": "exchange",
+    "label": "Maxwell worker session turn 2 exchange"
+  },
+  {
+    "id": "exchange:exchange-0083",
+    "kind": "exchange",
+    "label": "Euler worker session turn 1 exchange"
+  },
+  {
+    "id": "exchange:exchange-0084",
+    "kind": "exchange",
+    "label": "Euler worker session turn 2 exchange"
+  },
+  {
+    "id": "exchange:exchange-0085",
+    "kind": "exchange",
+    "label": "Schrodinger worker session turn 1 exchange"
+  },
+  {
+    "id": "exchange:exchange-0086",
+    "kind": "exchange",
+    "label": "Schrodinger worker session turn 2 exchange"
+  },
+  {
+    "id": "exchange:exchange-0087",
+    "kind": "exchange",
+    "label": "Godel worker session turn 1 exchange"
+  },
+  {
+    "id": "exchange:exchange-0088",
+    "kind": "exchange",
+    "label": "Godel worker session turn 2 exchange"
+  },
+  {
+    "id": "artifact:readme",
+    "kind": "artifact",
+    "label": "README"
+  },
+  {
+    "id": "artifact:changelog",
+    "kind": "artifact",
+    "label": "Changelog"
+  },
+  {
+    "id": "artifact:makefile",
+    "kind": "artifact",
+    "label": "Makefile"
+  },
+  {
+    "id": "artifact:paper-skeleton",
+    "kind": "artifact",
+    "label": "Paper skeleton"
+  },
+  {
+    "id": "artifact:technical-critiques-skeleton",
+    "kind": "artifact",
+    "label": "Technical critiques skeleton"
+  },
+  {
+    "id": "artifact:alternatives-skeleton",
+    "kind": "artifact",
+    "label": "Alternatives skeleton"
+  },
+  {
+    "id": "artifact:ai-hub-skeleton",
+    "kind": "artifact",
+    "label": "AI Hub skeleton"
+  },
+  {
+    "id": "artifact:source-register",
+    "kind": "artifact",
+    "label": "Source register"
+  },
+  {
+    "id": "artifact:official-specs",
+    "kind": "artifact",
+    "label": "Official specs"
+  },
+  {
+    "id": "artifact:security-research",
+    "kind": "artifact",
+    "label": "Security research"
+  },
+  {
+    "id": "artifact:vendor-adoption",
+    "kind": "artifact",
+    "label": "Vendor adoption"
+  },
+  {
+    "id": "artifact:wiki-index",
+    "kind": "artifact",
+    "label": "Wiki index"
+  },
+  {
+    "id": "artifact:completion-dashboard",
+    "kind": "artifact",
+    "label": "Completion dashboard"
+  },
+  {
+    "id": "artifact:parallel-work-plan",
+    "kind": "artifact",
+    "label": "Parallel work plan"
+  },
+  {
+    "id": "artifact:drift-investigation",
+    "kind": "artifact",
+    "label": "Drift investigation"
+  },
+  {
+    "id": "artifact:post-integration-evaluation",
+    "kind": "artifact",
+    "label": "Post-integration evaluation"
+  },
+  {
+    "id": "artifact:project-summary-report",
+    "kind": "artifact",
+    "label": "Project summary report"
+  },
+  {
+    "id": "source:local-codex-session-logs",
+    "kind": "source",
+    "label": "Local Codex session logs"
+  }
+]

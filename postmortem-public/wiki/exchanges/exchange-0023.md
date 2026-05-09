@@ -1,0 +1,16 @@
+# Main Codex session turn 18 exchange
+
+- Exchange id: `exchange-0023`
+- Kind: `redacted-turn-summary`
+- Publication status: `public-redacted`
+- Content status: raw content private; public page contains structural counts only
+- Turn: [Main Codex session turn 18](../turns/turn-0023.md)
+- Session: [Main Codex session](../sessions/0003-20260429-aa927515.md)
+- First timestamp: `2026-04-29T08:49:20.387Z`
+- Last timestamp: `2026-04-29T08:49:51.556Z`
+- Summary: 1 user message(s); 1 assistant message(s); 4 tool call(s); 4 tool output(s)
+- Tool names: `exec_command, wait_agent`
+
+Raw prompt, assistant response, and tool payload text are private-only in the local archive.
+
+[Back to surrogate catalogue](../surrogate-catalogue.md)

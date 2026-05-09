@@ -12,6 +12,7 @@ The current state is a rigorous skeleton, not the full report. Source notes, cit
 - `latex/`: BibTeX and LaTeX support files.
 - `scripts/`: build and validation scripts.
 - `wiki/`: Obsidian-friendly LLM-Wiki for guidance, progress, and evaluation planning.
+- `postmortem-public/`: public-safe assistant collaboration postmortem wiki.
 - `import/`: imported Deep Research artefacts for orientation only.
 - `reports/`: generated project telemetry summaries.
 - `dist/`: generated build artefacts.
@@ -79,7 +80,7 @@ Or run checks individually:
 
 The Makefile runs these through `uv run python` by default.
 
-The citation checker verifies that every used citation key exists in `latex/references.bib` and reports remaining `TODO-...` keys. The link checker validates internal Markdown and wiki links and ignores external URLs. The wiki-state validator checks that the wiki's progress register, source register, TODO blockers, required guidance files, and build artefacts match the current repository state.
+The citation checker verifies that every used citation key exists in `latex/references.bib` and reports remaining `TODO-...` keys. The link checker validates internal Markdown and wiki links and ignores external URLs. The wiki-state validator checks that the wiki's progress register, source register, TODO blockers, required guidance files, and build artefacts match the current repository state. If `postmortem-public/` exists, `make check` also validates its public publication lint report.
 
 ## Change Tracking
 
@@ -112,6 +113,17 @@ Output:
 - `reports/mcp_research_codex_project_summary_<date>.svg`
 - `reports/mcp_research_codex_project_summary_<date>.pdf`
 - `reports/mcp_research_codex_project_summary_<date>.png`
+
+Generate the assistant postmortem archive and public derivative:
+
+```bash
+make postmortem
+```
+
+Output:
+
+- `postmortem/`: private local archive, ignored by Git
+- `postmortem-public/wiki/`: public-safe postmortem wiki
 
 To write a browsable validation report:
 

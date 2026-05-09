@@ -47,3 +47,9 @@ related:
 | Ran five targeted blocker-closure lanes. | Implement the wiki answer without starting full report prose. | Treat discourse, alternatives, vendor-control, section 09, and FastMCP blockers as narrowed unless residual evidence is explicitly found. |
 | Added BibTeX records for 2026-04-30 evidence lanes. | Workers added new source-note citation keys that needed normalized citation records. | Keep source-note citation keys validation green before each close. |
 | Ran post-integration next-step parallelism test. | Check whether the wiki answer changed after the five blocker lanes were integrated. | Add semantic guidance-alignment validation; structural validation does not catch stale current-bias prose. |
+
+## 2026-05-09
+
+| Change | Reason | Follow-up |
+| --- | --- | --- |
+| Added assistant postmortem wiki generator and public derivative. | Preserve a public-safe collaboration postmortem while keeping raw Codex sessions private. | Keep `postmortem/` ignored and regenerate with `make postmortem` when the project state changes materially. |

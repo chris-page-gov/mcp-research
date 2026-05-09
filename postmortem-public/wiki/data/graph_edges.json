@@ -1,0 +1,1072 @@
+[
+  {
+    "kind": "contains",
+    "source": "index",
+    "target": "session:019dd7bc-6891-77a1-babe-f0161328e69d"
+  },
+  {
+    "kind": "contains",
+    "source": "index",
+    "target": "session:019dd7bd-23e2-7b81-9026-4c658d72a808"
+  },
+  {
+    "kind": "contains",
+    "source": "index",
+    "target": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515"
+  },
+  {
+    "kind": "contains",
+    "source": "index",
+    "target": "session:019dd7d8-151c-7bf3-8741-093334f243e4"
+  },
+  {
+    "kind": "contains",
+    "source": "index",
+    "target": "session:019dd7d8-1539-7ba2-9fbe-5967a8299ff1"
+  },
+  {
+    "kind": "contains",
+    "source": "index",
+    "target": "session:019dd7d8-1553-7730-9059-5093edc4b6a7"
+  },
+  {
+    "kind": "contains",
+    "source": "index",
+    "target": "session:019dd82f-2709-7f01-bae1-53eaddd32aaa"
+  },
+  {
+    "kind": "contains",
+    "source": "index",
+    "target": "session:019dd869-4399-74e2-9870-e97b3097da33"
+  },
+  {
+    "kind": "contains",
+    "source": "index",
+    "target": "session:019dd869-43c5-7ff3-b984-88011dee5e2d"
+  },
+  {
+    "kind": "contains",
+    "source": "index",
+    "target": "session:019dd869-9b9c-7750-9174-be30289c196f"
+  },
+  {
+    "kind": "contains",
+    "source": "index",
+    "target": "session:019dd869-9bce-7452-86f5-ab369b43d0bc"
+  },
+  {
+    "kind": "contains",
+    "source": "index",
+    "target": "session:019dd87b-6140-7072-aacd-72e07943b268"
+  },
+  {
+    "kind": "contains",
+    "source": "index",
+    "target": "session:019dd87b-6172-7ef3-b9cc-d400e2776603"
+  },
+  {
+    "kind": "contains",
+    "source": "index",
+    "target": "session:019dd87b-61a3-73b0-b421-313d86d01cd9"
+  },
+  {
+    "kind": "contains",
+    "source": "index",
+    "target": "session:019dd87b-6233-7941-8ce0-fc9870e9d8ed"
+  },
+  {
+    "kind": "contains",
+    "source": "index",
+    "target": "session:019ddd31-d2c0-7761-8e19-e619f36a8f15"
+  },
+  {
+    "kind": "contains",
+    "source": "index",
+    "target": "session:019ddd32-0255-7063-b2f4-77c116c1d65e"
+  },
+  {
+    "kind": "contains",
+    "source": "index",
+    "target": "session:019ddd32-302a-7d71-9292-94eeabc9908c"
+  },
+  {
+    "kind": "contains",
+    "source": "index",
+    "target": "session:019ddd32-491d-7dd0-af9c-ac0dbd4c032a"
+  },
+  {
+    "kind": "contains",
+    "source": "index",
+    "target": "session:019ddd32-619b-7060-8e6c-297e440d7a99"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7bc-6891-77a1-babe-f0161328e69d",
+    "target": "turn:turn-0001"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7bc-6891-77a1-babe-f0161328e69d",
+    "target": "turn:turn-0002"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7bc-6891-77a1-babe-f0161328e69d",
+    "target": "turn:turn-0003"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7bd-23e2-7b81-9026-4c658d72a808",
+    "target": "turn:turn-0004"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7bd-23e2-7b81-9026-4c658d72a808",
+    "target": "turn:turn-0005"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0006"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0007"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0008"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0009"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0010"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0011"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0012"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0013"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0014"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0015"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0016"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0017"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0018"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0019"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0020"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0021"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0022"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0023"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0024"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0025"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0026"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0027"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0028"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0029"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0030"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0031"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0032"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0033"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0034"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0035"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0036"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0037"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0038"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0039"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0040"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0041"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0042"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0043"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0044"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0045"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0046"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0047"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0048"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0049"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0050"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0051"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0052"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0053"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d4-6e6a-7f03-9719-85a1aa927515",
+    "target": "turn:turn-0054"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d8-151c-7bf3-8741-093334f243e4",
+    "target": "turn:turn-0055"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d8-151c-7bf3-8741-093334f243e4",
+    "target": "turn:turn-0056"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d8-1539-7ba2-9fbe-5967a8299ff1",
+    "target": "turn:turn-0057"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d8-1539-7ba2-9fbe-5967a8299ff1",
+    "target": "turn:turn-0058"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d8-1553-7730-9059-5093edc4b6a7",
+    "target": "turn:turn-0059"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd7d8-1553-7730-9059-5093edc4b6a7",
+    "target": "turn:turn-0060"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd82f-2709-7f01-bae1-53eaddd32aaa",
+    "target": "turn:turn-0061"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd82f-2709-7f01-bae1-53eaddd32aaa",
+    "target": "turn:turn-0062"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd869-4399-74e2-9870-e97b3097da33",
+    "target": "turn:turn-0063"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd869-4399-74e2-9870-e97b3097da33",
+    "target": "turn:turn-0064"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd869-43c5-7ff3-b984-88011dee5e2d",
+    "target": "turn:turn-0065"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd869-43c5-7ff3-b984-88011dee5e2d",
+    "target": "turn:turn-0066"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd869-9b9c-7750-9174-be30289c196f",
+    "target": "turn:turn-0067"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd869-9b9c-7750-9174-be30289c196f",
+    "target": "turn:turn-0068"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd869-9bce-7452-86f5-ab369b43d0bc",
+    "target": "turn:turn-0069"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd869-9bce-7452-86f5-ab369b43d0bc",
+    "target": "turn:turn-0070"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd87b-6140-7072-aacd-72e07943b268",
+    "target": "turn:turn-0071"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd87b-6140-7072-aacd-72e07943b268",
+    "target": "turn:turn-0072"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd87b-6172-7ef3-b9cc-d400e2776603",
+    "target": "turn:turn-0073"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd87b-6172-7ef3-b9cc-d400e2776603",
+    "target": "turn:turn-0074"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd87b-61a3-73b0-b421-313d86d01cd9",
+    "target": "turn:turn-0075"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd87b-61a3-73b0-b421-313d86d01cd9",
+    "target": "turn:turn-0076"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd87b-6233-7941-8ce0-fc9870e9d8ed",
+    "target": "turn:turn-0077"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019dd87b-6233-7941-8ce0-fc9870e9d8ed",
+    "target": "turn:turn-0078"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019ddd31-d2c0-7761-8e19-e619f36a8f15",
+    "target": "turn:turn-0079"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019ddd31-d2c0-7761-8e19-e619f36a8f15",
+    "target": "turn:turn-0080"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019ddd32-0255-7063-b2f4-77c116c1d65e",
+    "target": "turn:turn-0081"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019ddd32-0255-7063-b2f4-77c116c1d65e",
+    "target": "turn:turn-0082"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019ddd32-302a-7d71-9292-94eeabc9908c",
+    "target": "turn:turn-0083"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019ddd32-302a-7d71-9292-94eeabc9908c",
+    "target": "turn:turn-0084"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019ddd32-491d-7dd0-af9c-ac0dbd4c032a",
+    "target": "turn:turn-0085"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019ddd32-491d-7dd0-af9c-ac0dbd4c032a",
+    "target": "turn:turn-0086"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019ddd32-619b-7060-8e6c-297e440d7a99",
+    "target": "turn:turn-0087"
+  },
+  {
+    "kind": "contains",
+    "source": "session:019ddd32-619b-7060-8e6c-297e440d7a99",
+    "target": "turn:turn-0088"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0001",
+    "target": "exchange:exchange-0001"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0002",
+    "target": "exchange:exchange-0002"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0003",
+    "target": "exchange:exchange-0003"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0004",
+    "target": "exchange:exchange-0004"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0005",
+    "target": "exchange:exchange-0005"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0006",
+    "target": "exchange:exchange-0006"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0007",
+    "target": "exchange:exchange-0007"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0008",
+    "target": "exchange:exchange-0008"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0009",
+    "target": "exchange:exchange-0009"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0010",
+    "target": "exchange:exchange-0010"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0011",
+    "target": "exchange:exchange-0011"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0012",
+    "target": "exchange:exchange-0012"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0013",
+    "target": "exchange:exchange-0013"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0014",
+    "target": "exchange:exchange-0014"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0015",
+    "target": "exchange:exchange-0015"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0016",
+    "target": "exchange:exchange-0016"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0017",
+    "target": "exchange:exchange-0017"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0018",
+    "target": "exchange:exchange-0018"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0019",
+    "target": "exchange:exchange-0019"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0020",
+    "target": "exchange:exchange-0020"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0021",
+    "target": "exchange:exchange-0021"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0022",
+    "target": "exchange:exchange-0022"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0023",
+    "target": "exchange:exchange-0023"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0024",
+    "target": "exchange:exchange-0024"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0025",
+    "target": "exchange:exchange-0025"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0026",
+    "target": "exchange:exchange-0026"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0027",
+    "target": "exchange:exchange-0027"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0028",
+    "target": "exchange:exchange-0028"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0029",
+    "target": "exchange:exchange-0029"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0030",
+    "target": "exchange:exchange-0030"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0031",
+    "target": "exchange:exchange-0031"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0032",
+    "target": "exchange:exchange-0032"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0033",
+    "target": "exchange:exchange-0033"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0034",
+    "target": "exchange:exchange-0034"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0035",
+    "target": "exchange:exchange-0035"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0036",
+    "target": "exchange:exchange-0036"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0037",
+    "target": "exchange:exchange-0037"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0038",
+    "target": "exchange:exchange-0038"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0039",
+    "target": "exchange:exchange-0039"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0040",
+    "target": "exchange:exchange-0040"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0041",
+    "target": "exchange:exchange-0041"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0042",
+    "target": "exchange:exchange-0042"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0043",
+    "target": "exchange:exchange-0043"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0044",
+    "target": "exchange:exchange-0044"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0045",
+    "target": "exchange:exchange-0045"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0046",
+    "target": "exchange:exchange-0046"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0047",
+    "target": "exchange:exchange-0047"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0048",
+    "target": "exchange:exchange-0048"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0049",
+    "target": "exchange:exchange-0049"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0050",
+    "target": "exchange:exchange-0050"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0051",
+    "target": "exchange:exchange-0051"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0052",
+    "target": "exchange:exchange-0052"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0053",
+    "target": "exchange:exchange-0053"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0054",
+    "target": "exchange:exchange-0054"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0055",
+    "target": "exchange:exchange-0055"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0056",
+    "target": "exchange:exchange-0056"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0057",
+    "target": "exchange:exchange-0057"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0058",
+    "target": "exchange:exchange-0058"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0059",
+    "target": "exchange:exchange-0059"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0060",
+    "target": "exchange:exchange-0060"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0061",
+    "target": "exchange:exchange-0061"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0062",
+    "target": "exchange:exchange-0062"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0063",
+    "target": "exchange:exchange-0063"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0064",
+    "target": "exchange:exchange-0064"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0065",
+    "target": "exchange:exchange-0065"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0066",
+    "target": "exchange:exchange-0066"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0067",
+    "target": "exchange:exchange-0067"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0068",
+    "target": "exchange:exchange-0068"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0069",
+    "target": "exchange:exchange-0069"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0070",
+    "target": "exchange:exchange-0070"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0071",
+    "target": "exchange:exchange-0071"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0072",
+    "target": "exchange:exchange-0072"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0073",
+    "target": "exchange:exchange-0073"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0074",
+    "target": "exchange:exchange-0074"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0075",
+    "target": "exchange:exchange-0075"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0076",
+    "target": "exchange:exchange-0076"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0077",
+    "target": "exchange:exchange-0077"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0078",
+    "target": "exchange:exchange-0078"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0079",
+    "target": "exchange:exchange-0079"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0080",
+    "target": "exchange:exchange-0080"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0081",
+    "target": "exchange:exchange-0081"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0082",
+    "target": "exchange:exchange-0082"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0083",
+    "target": "exchange:exchange-0083"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0084",
+    "target": "exchange:exchange-0084"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0085",
+    "target": "exchange:exchange-0085"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0086",
+    "target": "exchange:exchange-0086"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0087",
+    "target": "exchange:exchange-0087"
+  },
+  {
+    "kind": "summarizes",
+    "source": "turn:turn-0088",
+    "target": "exchange:exchange-0088"
+  },
+  {
+    "kind": "evidences",
+    "source": "index",
+    "target": "artifact:readme"
+  },
+  {
+    "kind": "evidences",
+    "source": "index",
+    "target": "artifact:changelog"
+  },
+  {
+    "kind": "evidences",
+    "source": "index",
+    "target": "artifact:makefile"
+  },
+  {
+    "kind": "evidences",
+    "source": "index",
+    "target": "artifact:paper-skeleton"
+  },
+  {
+    "kind": "evidences",
+    "source": "index",
+    "target": "artifact:technical-critiques-skeleton"
+  },
+  {
+    "kind": "evidences",
+    "source": "index",
+    "target": "artifact:alternatives-skeleton"
+  },
+  {
+    "kind": "evidences",
+    "source": "index",
+    "target": "artifact:ai-hub-skeleton"
+  },
+  {
+    "kind": "evidences",
+    "source": "index",
+    "target": "artifact:source-register"
+  },
+  {
+    "kind": "evidences",
+    "source": "index",
+    "target": "artifact:official-specs"
+  },
+  {
+    "kind": "evidences",
+    "source": "index",
+    "target": "artifact:security-research"
+  },
+  {
+    "kind": "evidences",
+    "source": "index",
+    "target": "artifact:vendor-adoption"
+  },
+  {
+    "kind": "evidences",
+    "source": "index",
+    "target": "artifact:wiki-index"
+  },
+  {
+    "kind": "evidences",
+    "source": "index",
+    "target": "artifact:completion-dashboard"
+  },
+  {
+    "kind": "evidences",
+    "source": "index",
+    "target": "artifact:parallel-work-plan"
+  },
+  {
+    "kind": "evidences",
+    "source": "index",
+    "target": "artifact:drift-investigation"
+  },
+  {
+    "kind": "evidences",
+    "source": "index",
+    "target": "artifact:post-integration-evaluation"
+  },
+  {
+    "kind": "evidences",
+    "source": "index",
+    "target": "artifact:project-summary-report"
+  },
+  {
+    "kind": "documents",
+    "source": "index",
+    "target": "source:local-codex-session-logs"
+  }
+]

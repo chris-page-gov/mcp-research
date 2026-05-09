@@ -1,0 +1,111 @@
+{
+  "entities": [
+    {
+      "id": "codex",
+      "title": "Codex"
+    },
+    {
+      "id": "mcp-research",
+      "title": "mcp-research"
+    },
+    {
+      "id": "llm-wiki",
+      "title": "LLM-Wiki"
+    }
+  ],
+  "kinds": [
+    {
+      "id": "session-summary",
+      "title": "Session summary"
+    },
+    {
+      "id": "turn-summary",
+      "title": "Turn summary"
+    },
+    {
+      "id": "redacted-turn-summary",
+      "title": "Redacted turn summary"
+    },
+    {
+      "id": "repository-artifact",
+      "title": "Repository artifact"
+    },
+    {
+      "id": "decision",
+      "title": "Decision"
+    }
+  ],
+  "phases": [
+    {
+      "id": "scaffold",
+      "status": "complete",
+      "title": "Repository and method scaffold"
+    },
+    {
+      "id": "official-specs",
+      "status": "source-ready for section 02",
+      "title": "Primary-source MCP foundation"
+    },
+    {
+      "id": "parallel-source-lanes",
+      "status": "integrated",
+      "title": "Parallel source-note and section skeleton lanes"
+    },
+    {
+      "id": "wiki-evaluation",
+      "status": "active",
+      "title": "LLM-Wiki guidance evaluation"
+    },
+    {
+      "id": "postmortem",
+      "status": "created",
+      "title": "Assistant postmortem wiki"
+    }
+  ],
+  "roles": [
+    {
+      "id": "explorer",
+      "title": "explorer"
+    },
+    {
+      "id": "main",
+      "title": "main"
+    },
+    {
+      "id": "worker",
+      "title": "worker"
+    }
+  ],
+  "topics": [
+    {
+      "id": "source-discipline",
+      "title": "Source discipline"
+    },
+    {
+      "id": "parallel-work",
+      "title": "Parallel work"
+    },
+    {
+      "id": "semantic-drift",
+      "title": "Semantic drift"
+    },
+    {
+      "id": "public-private-split",
+      "title": "Public/private split"
+    }
+  ],
+  "turn_positions": [
+    {
+      "id": "user-prompt",
+      "title": "User prompt"
+    },
+    {
+      "id": "pre-user-context",
+      "title": "Pre-user context"
+    },
+    {
+      "id": "session-summary",
+      "title": "Session summary"
+    }
+  ]
+}

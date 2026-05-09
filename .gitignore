@@ -84,6 +84,7 @@ test-results/
 
 # Generated project artifacts
 dist/
+postmortem/
 
 # Local scratch
 .tmp/

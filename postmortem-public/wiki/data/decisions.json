@@ -1,0 +1,32 @@
+[
+  {
+    "decision": "Keep raw assistant transcript evidence in ignored postmortem/ and publish only redacted registers and synthesis.",
+    "evidence": "skills/assistant-postmortem-wiki/SKILL.md",
+    "id": "private-public-split",
+    "reason": "The skill requires a full audit archive while keeping raw prompts, local paths, and transcript bodies out of GitHub."
+  },
+  {
+    "decision": "Delay full report prose until source notes and section-level acceptance criteria are stable.",
+    "evidence": "wiki/guidance/source-discipline.md",
+    "id": "source-first-paper",
+    "reason": "The project started from a failed deep-research report and needed citation discipline before prose."
+  },
+  {
+    "decision": "Use a linked LLM-Wiki for guidance, progress, evaluation, and close procedures.",
+    "evidence": "wiki/index.md",
+    "id": "llm-wiki",
+    "reason": "Large agent files and session context were becoming too broad; small linked notes support targeted retrieval."
+  },
+  {
+    "decision": "Track paper progress and source TODOs in JSON registers.",
+    "evidence": "wiki/data/progress-register.json and wiki/data/source-todo-register.json",
+    "id": "machine-readable-state",
+    "reason": "Prose-only progress tracking caused drift after parallel worker lanes."
+  },
+  {
+    "decision": "Split source-note and section-skeleton work into disjoint worker lanes, then integrate centrally.",
+    "evidence": "wiki/progress/parallel-work-plan.md",
+    "id": "parallel-workers",
+    "reason": "Context limits made broad single-agent source extraction brittle."
+  }
+]

@@ -1,0 +1,155 @@
+[
+  {
+    "evidence": "Project setup and build entry point.",
+    "id": "readme",
+    "path": "README.md",
+    "public_page": "artifacts/readme.md",
+    "public_url": "https://github.com/chris-page-gov/mcp-research/blob/d11eac67297ab1e29f5b98531df739f8ed4cdef7/README.md",
+    "publication_status": "public",
+    "title": "README"
+  },
+  {
+    "evidence": "Public change history and wiki tracking explanation.",
+    "id": "changelog",
+    "path": "CHANGELOG.md",
+    "public_page": "artifacts/changelog.md",
+    "public_url": "https://github.com/chris-page-gov/mcp-research/blob/d11eac67297ab1e29f5b98531df739f8ed4cdef7/CHANGELOG.md",
+    "publication_status": "public",
+    "title": "Changelog"
+  },
+  {
+    "evidence": "Build, validation, and reporting commands.",
+    "id": "makefile",
+    "path": "Makefile",
+    "public_page": "artifacts/makefile.md",
+    "public_url": "https://github.com/chris-page-gov/mcp-research/blob/d11eac67297ab1e29f5b98531df739f8ed4cdef7/Makefile",
+    "publication_status": "public",
+    "title": "Makefile"
+  },
+  {
+    "evidence": "First source-ready paper section.",
+    "id": "paper-skeleton",
+    "path": "paper/02-mcp-in-a-nutshell.md",
+    "public_page": "artifacts/paper-skeleton.md",
+    "public_url": "https://github.com/chris-page-gov/mcp-research/blob/d11eac67297ab1e29f5b98531df739f8ed4cdef7/paper/02-mcp-in-a-nutshell.md",
+    "publication_status": "public",
+    "title": "Paper skeleton"
+  },
+  {
+    "evidence": "Criticism/evidence/mitigation matrix.",
+    "id": "technical-critiques-skeleton",
+    "path": "paper/04-technical-critiques-and-mitigations.md",
+    "public_page": "artifacts/technical-critiques-skeleton.md",
+    "public_url": "https://github.com/chris-page-gov/mcp-research/blob/d11eac67297ab1e29f5b98531df739f8ed4cdef7/paper/04-technical-critiques-and-mitigations.md",
+    "publication_status": "public",
+    "title": "Technical critiques skeleton"
+  },
+  {
+    "evidence": "Alternatives comparison skeleton.",
+    "id": "alternatives-skeleton",
+    "path": "paper/06-mcp-vs-alternatives.md",
+    "public_page": "artifacts/alternatives-skeleton.md",
+    "public_url": "https://github.com/chris-page-gov/mcp-research/blob/d11eac67297ab1e29f5b98531df739f8ed4cdef7/paper/06-mcp-vs-alternatives.md",
+    "publication_status": "public",
+    "title": "Alternatives skeleton"
+  },
+  {
+    "evidence": "Government/local authority risk and control mapping.",
+    "id": "ai-hub-skeleton",
+    "path": "paper/09-government-local-authority-ai-hub.md",
+    "public_page": "artifacts/ai-hub-skeleton.md",
+    "public_url": "https://github.com/chris-page-gov/mcp-research/blob/d11eac67297ab1e29f5b98531df739f8ed4cdef7/paper/09-government-local-authority-ai-hub.md",
+    "publication_status": "public",
+    "title": "AI Hub skeleton"
+  },
+  {
+    "evidence": "Source-note status map.",
+    "id": "source-register",
+    "path": "sources/source-register.md",
+    "public_page": "artifacts/source-register.md",
+    "public_url": "https://github.com/chris-page-gov/mcp-research/blob/d11eac67297ab1e29f5b98531df739f8ed4cdef7/sources/source-register.md",
+    "publication_status": "public",
+    "title": "Source register"
+  },
+  {
+    "evidence": "Primary MCP source notes.",
+    "id": "official-specs",
+    "path": "sources/official-specs.md",
+    "public_page": "artifacts/official-specs.md",
+    "public_url": "https://github.com/chris-page-gov/mcp-research/blob/d11eac67297ab1e29f5b98531df739f8ed4cdef7/sources/official-specs.md",
+    "publication_status": "public",
+    "title": "Official specs"
+  },
+  {
+    "evidence": "Security source notes.",
+    "id": "security-research",
+    "path": "sources/security-research.md",
+    "public_page": "artifacts/security-research.md",
+    "public_url": "https://github.com/chris-page-gov/mcp-research/blob/d11eac67297ab1e29f5b98531df739f8ed4cdef7/sources/security-research.md",
+    "publication_status": "public",
+    "title": "Security research"
+  },
+  {
+    "evidence": "Vendor and control-depth source notes.",
+    "id": "vendor-adoption",
+    "path": "sources/vendor-adoption.md",
+    "public_page": "artifacts/vendor-adoption.md",
+    "public_url": "https://github.com/chris-page-gov/mcp-research/blob/d11eac67297ab1e29f5b98531df739f8ed4cdef7/sources/vendor-adoption.md",
+    "publication_status": "public",
+    "title": "Vendor adoption"
+  },
+  {
+    "evidence": "LLM-Wiki entry point.",
+    "id": "wiki-index",
+    "path": "wiki/index.md",
+    "public_page": "artifacts/wiki-index.md",
+    "public_url": "https://github.com/chris-page-gov/mcp-research/blob/d11eac67297ab1e29f5b98531df739f8ed4cdef7/wiki/index.md",
+    "publication_status": "public",
+    "title": "Wiki index"
+  },
+  {
+    "evidence": "Current progress dashboard.",
+    "id": "completion-dashboard",
+    "path": "wiki/progress/completion-dashboard.md",
+    "public_page": "artifacts/completion-dashboard.md",
+    "public_url": "https://github.com/chris-page-gov/mcp-research/blob/d11eac67297ab1e29f5b98531df739f8ed4cdef7/wiki/progress/completion-dashboard.md",
+    "publication_status": "public",
+    "title": "Completion dashboard"
+  },
+  {
+    "evidence": "Safe parallel write scopes.",
+    "id": "parallel-work-plan",
+    "path": "wiki/progress/parallel-work-plan.md",
+    "public_page": "artifacts/parallel-work-plan.md",
+    "public_url": "https://github.com/chris-page-gov/mcp-research/blob/d11eac67297ab1e29f5b98531df739f8ed4cdef7/wiki/progress/parallel-work-plan.md",
+    "publication_status": "public",
+    "title": "Parallel work plan"
+  },
+  {
+    "evidence": "Coordination-drift analysis.",
+    "id": "drift-investigation",
+    "path": "wiki/evals/drift-investigation.md",
+    "public_page": "artifacts/drift-investigation.md",
+    "public_url": "https://github.com/chris-page-gov/mcp-research/blob/d11eac67297ab1e29f5b98531df739f8ed4cdef7/wiki/evals/drift-investigation.md",
+    "publication_status": "public",
+    "title": "Drift investigation"
+  },
+  {
+    "evidence": "Latest wiki-guidance evaluation.",
+    "id": "post-integration-evaluation",
+    "path": "wiki/evals/next-step-parallelism-post-integration-test.md",
+    "public_page": "artifacts/post-integration-evaluation.md",
+    "public_url": "https://github.com/chris-page-gov/mcp-research/blob/d11eac67297ab1e29f5b98531df739f8ed4cdef7/wiki/evals/next-step-parallelism-post-integration-test.md",
+    "publication_status": "public",
+    "title": "Post-integration evaluation"
+  },
+  {
+    "evidence": "Public aggregate Codex metrics.",
+    "id": "project-summary-report",
+    "path": "reports/mcp_research_codex_project_summary_2026-04-29.md",
+    "public_page": "artifacts/project-summary-report.md",
+    "public_url": "https://github.com/chris-page-gov/mcp-research/blob/d11eac67297ab1e29f5b98531df739f8ed4cdef7/reports/mcp_research_codex_project_summary_2026-04-29.md",
+    "publication_status": "public",
+    "title": "Project summary report"
+  }
+]

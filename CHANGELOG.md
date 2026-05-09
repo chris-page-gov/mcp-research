@@ -11,6 +11,7 @@ The intent is to keep public readers oriented without duplicating every source-n
 
 ### Added
 
+- Added an assistant postmortem public wiki under `postmortem-public/` and a repeatable `make postmortem` generator.
 - Added this top-level changelog as the public entry point for repository history.
 - Added tracked VSCode workspace settings that disable the isort language server and use Ruff for Python formatting/import organization.
 - Added `wiki/data/source-todo-register.json` and validation coverage for source-note TODO markers.

@@ -9,7 +9,7 @@ from pathlib import Path
 from urllib.parse import unquote, urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
-SCAN_DIRS = [ROOT / "paper", ROOT / "sources", ROOT / "wiki"]
+SCAN_DIRS = [ROOT / "paper", ROOT / "sources", ROOT / "wiki", ROOT / "postmortem-public" / "wiki"]
 SCAN_FILES = [ROOT / "README.md", ROOT / "CHANGELOG.md"]
 
 MARKDOWN_LINK_RE = re.compile(r"(?<!!)\[[^\]\n]+\]\(([^)\n]+)\)")

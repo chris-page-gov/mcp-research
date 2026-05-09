@@ -1,0 +1,94 @@
+# Surrogate Catalogue
+
+Public session and turn pages are surrogates for private transcript evidence. They preserve order, metadata, and links without exposing raw prompts.
+
+| Turn | Exchange | Session | Role |
+| --- | --- | --- | --- |
+| [1](turns/turn-0001.md) | [exchange-0001](exchanges/exchange-0001.md) | [Main Codex session](sessions/0001-20260429-1328e69d.md) | `main` |
+| [2](turns/turn-0002.md) | [exchange-0002](exchanges/exchange-0002.md) | [Main Codex session](sessions/0001-20260429-1328e69d.md) | `main` |
+| [3](turns/turn-0003.md) | [exchange-0003](exchanges/exchange-0003.md) | [Main Codex session](sessions/0001-20260429-1328e69d.md) | `main` |
+| [4](turns/turn-0004.md) | [exchange-0004](exchanges/exchange-0004.md) | [guardian session](sessions/0002-20260429-8d72a808.md) | `main` |
+| [5](turns/turn-0005.md) | [exchange-0005](exchanges/exchange-0005.md) | [guardian session](sessions/0002-20260429-8d72a808.md) | `main` |
+| [6](turns/turn-0006.md) | [exchange-0006](exchanges/exchange-0006.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [7](turns/turn-0007.md) | [exchange-0007](exchanges/exchange-0007.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [8](turns/turn-0008.md) | [exchange-0008](exchanges/exchange-0008.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [9](turns/turn-0009.md) | [exchange-0009](exchanges/exchange-0009.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [10](turns/turn-0010.md) | [exchange-0010](exchanges/exchange-0010.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [11](turns/turn-0011.md) | [exchange-0011](exchanges/exchange-0011.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [12](turns/turn-0012.md) | [exchange-0012](exchanges/exchange-0012.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [13](turns/turn-0013.md) | [exchange-0013](exchanges/exchange-0013.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [14](turns/turn-0014.md) | [exchange-0014](exchanges/exchange-0014.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [15](turns/turn-0015.md) | [exchange-0015](exchanges/exchange-0015.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [16](turns/turn-0016.md) | [exchange-0016](exchanges/exchange-0016.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [17](turns/turn-0017.md) | [exchange-0017](exchanges/exchange-0017.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [18](turns/turn-0018.md) | [exchange-0018](exchanges/exchange-0018.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [19](turns/turn-0019.md) | [exchange-0019](exchanges/exchange-0019.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [20](turns/turn-0020.md) | [exchange-0020](exchanges/exchange-0020.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [21](turns/turn-0021.md) | [exchange-0021](exchanges/exchange-0021.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [22](turns/turn-0022.md) | [exchange-0022](exchanges/exchange-0022.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [23](turns/turn-0023.md) | [exchange-0023](exchanges/exchange-0023.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [24](turns/turn-0024.md) | [exchange-0024](exchanges/exchange-0024.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [25](turns/turn-0025.md) | [exchange-0025](exchanges/exchange-0025.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [26](turns/turn-0026.md) | [exchange-0026](exchanges/exchange-0026.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [27](turns/turn-0027.md) | [exchange-0027](exchanges/exchange-0027.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [28](turns/turn-0028.md) | [exchange-0028](exchanges/exchange-0028.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [29](turns/turn-0029.md) | [exchange-0029](exchanges/exchange-0029.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [30](turns/turn-0030.md) | [exchange-0030](exchanges/exchange-0030.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [31](turns/turn-0031.md) | [exchange-0031](exchanges/exchange-0031.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [32](turns/turn-0032.md) | [exchange-0032](exchanges/exchange-0032.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [33](turns/turn-0033.md) | [exchange-0033](exchanges/exchange-0033.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [34](turns/turn-0034.md) | [exchange-0034](exchanges/exchange-0034.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [35](turns/turn-0035.md) | [exchange-0035](exchanges/exchange-0035.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [36](turns/turn-0036.md) | [exchange-0036](exchanges/exchange-0036.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [37](turns/turn-0037.md) | [exchange-0037](exchanges/exchange-0037.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [38](turns/turn-0038.md) | [exchange-0038](exchanges/exchange-0038.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [39](turns/turn-0039.md) | [exchange-0039](exchanges/exchange-0039.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [40](turns/turn-0040.md) | [exchange-0040](exchanges/exchange-0040.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [41](turns/turn-0041.md) | [exchange-0041](exchanges/exchange-0041.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [42](turns/turn-0042.md) | [exchange-0042](exchanges/exchange-0042.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [43](turns/turn-0043.md) | [exchange-0043](exchanges/exchange-0043.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [44](turns/turn-0044.md) | [exchange-0044](exchanges/exchange-0044.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [45](turns/turn-0045.md) | [exchange-0045](exchanges/exchange-0045.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [46](turns/turn-0046.md) | [exchange-0046](exchanges/exchange-0046.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [47](turns/turn-0047.md) | [exchange-0047](exchanges/exchange-0047.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [48](turns/turn-0048.md) | [exchange-0048](exchanges/exchange-0048.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [49](turns/turn-0049.md) | [exchange-0049](exchanges/exchange-0049.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [50](turns/turn-0050.md) | [exchange-0050](exchanges/exchange-0050.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [51](turns/turn-0051.md) | [exchange-0051](exchanges/exchange-0051.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [52](turns/turn-0052.md) | [exchange-0052](exchanges/exchange-0052.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [53](turns/turn-0053.md) | [exchange-0053](exchanges/exchange-0053.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [54](turns/turn-0054.md) | [exchange-0054](exchanges/exchange-0054.md) | [Main Codex session](sessions/0003-20260429-aa927515.md) | `main` |
+| [55](turns/turn-0055.md) | [exchange-0055](exchanges/exchange-0055.md) | [Confucius explorer session](sessions/0004-20260429-34f243e4.md) | `explorer` |
+| [56](turns/turn-0056.md) | [exchange-0056](exchanges/exchange-0056.md) | [Confucius explorer session](sessions/0004-20260429-34f243e4.md) | `explorer` |
+| [57](turns/turn-0057.md) | [exchange-0057](exchanges/exchange-0057.md) | [Descartes explorer session](sessions/0005-20260429-a8299ff1.md) | `explorer` |
+| [58](turns/turn-0058.md) | [exchange-0058](exchanges/exchange-0058.md) | [Descartes explorer session](sessions/0005-20260429-a8299ff1.md) | `explorer` |
+| [59](turns/turn-0059.md) | [exchange-0059](exchanges/exchange-0059.md) | [Newton explorer session](sessions/0006-20260429-edc4b6a7.md) | `explorer` |
+| [60](turns/turn-0060.md) | [exchange-0060](exchanges/exchange-0060.md) | [Newton explorer session](sessions/0006-20260429-edc4b6a7.md) | `explorer` |
+| [61](turns/turn-0061.md) | [exchange-0061](exchanges/exchange-0061.md) | [Leibniz worker session](sessions/0007-20260429-ddd32aaa.md) | `worker` |
+| [62](turns/turn-0062.md) | [exchange-0062](exchanges/exchange-0062.md) | [Leibniz worker session](sessions/0007-20260429-ddd32aaa.md) | `worker` |
+| [63](turns/turn-0063.md) | [exchange-0063](exchanges/exchange-0063.md) | [Anscombe worker session](sessions/0008-20260429-3097da33.md) | `worker` |
+| [64](turns/turn-0064.md) | [exchange-0064](exchanges/exchange-0064.md) | [Anscombe worker session](sessions/0008-20260429-3097da33.md) | `worker` |
+| [65](turns/turn-0065.md) | [exchange-0065](exchanges/exchange-0065.md) | [Avicenna worker session](sessions/0009-20260429-1dee5e2d.md) | `worker` |
+| [66](turns/turn-0066.md) | [exchange-0066](exchanges/exchange-0066.md) | [Avicenna worker session](sessions/0009-20260429-1dee5e2d.md) | `worker` |
+| [67](turns/turn-0067.md) | [exchange-0067](exchanges/exchange-0067.md) | [Mencius worker session](sessions/0010-20260429-289c196f.md) | `worker` |
+| [68](turns/turn-0068.md) | [exchange-0068](exchanges/exchange-0068.md) | [Mencius worker session](sessions/0010-20260429-289c196f.md) | `worker` |
+| [69](turns/turn-0069.md) | [exchange-0069](exchanges/exchange-0069.md) | [McClintock worker session](sessions/0011-20260429-9b43d0bc.md) | `worker` |
+| [70](turns/turn-0070.md) | [exchange-0070](exchanges/exchange-0070.md) | [McClintock worker session](sessions/0011-20260429-9b43d0bc.md) | `worker` |
+| [71](turns/turn-0071.md) | [exchange-0071](exchanges/exchange-0071.md) | [Boole worker session](sessions/0012-20260429-7943b268.md) | `worker` |
+| [72](turns/turn-0072.md) | [exchange-0072](exchanges/exchange-0072.md) | [Boole worker session](sessions/0012-20260429-7943b268.md) | `worker` |
+| [73](turns/turn-0073.md) | [exchange-0073](exchanges/exchange-0073.md) | [Mendel worker session](sessions/0013-20260429-e2776603.md) | `worker` |
+| [74](turns/turn-0074.md) | [exchange-0074](exchanges/exchange-0074.md) | [Mendel worker session](sessions/0013-20260429-e2776603.md) | `worker` |
+| [75](turns/turn-0075.md) | [exchange-0075](exchanges/exchange-0075.md) | [Carver worker session](sessions/0014-20260429-86d01cd9.md) | `worker` |
+| [76](turns/turn-0076.md) | [exchange-0076](exchanges/exchange-0076.md) | [Carver worker session](sessions/0014-20260429-86d01cd9.md) | `worker` |
+| [77](turns/turn-0077.md) | [exchange-0077](exchanges/exchange-0077.md) | [Aquinas worker session](sessions/0015-20260429-70e9d8ed.md) | `worker` |
+| [78](turns/turn-0078.md) | [exchange-0078](exchanges/exchange-0078.md) | [Aquinas worker session](sessions/0015-20260429-70e9d8ed.md) | `worker` |
+| [79](turns/turn-0079.md) | [exchange-0079](exchanges/exchange-0079.md) | [Poincare worker session](sessions/0016-20260430-f36a8f15.md) | `worker` |
+| [80](turns/turn-0080.md) | [exchange-0080](exchanges/exchange-0080.md) | [Poincare worker session](sessions/0016-20260430-f36a8f15.md) | `worker` |
+| [81](turns/turn-0081.md) | [exchange-0081](exchanges/exchange-0081.md) | [Maxwell worker session](sessions/0017-20260430-16c1d65e.md) | `worker` |
+| [82](turns/turn-0082.md) | [exchange-0082](exchanges/exchange-0082.md) | [Maxwell worker session](sessions/0017-20260430-16c1d65e.md) | `worker` |
+| [83](turns/turn-0083.md) | [exchange-0083](exchanges/exchange-0083.md) | [Euler worker session](sessions/0018-20260430-abc9908c.md) | `worker` |
+| [84](turns/turn-0084.md) | [exchange-0084](exchanges/exchange-0084.md) | [Euler worker session](sessions/0018-20260430-abc9908c.md) | `worker` |
+| [85](turns/turn-0085.md) | [exchange-0085](exchanges/exchange-0085.md) | [Schrodinger worker session](sessions/0019-20260430-bd4c032a.md) | `worker` |
+| [86](turns/turn-0086.md) | [exchange-0086](exchanges/exchange-0086.md) | [Schrodinger worker session](sessions/0019-20260430-bd4c032a.md) | `worker` |
+| [87](turns/turn-0087.md) | [exchange-0087](exchanges/exchange-0087.md) | [Godel worker session](sessions/0020-20260430-440d7a99.md) | `worker` |
+| [88](turns/turn-0088.md) | [exchange-0088](exchanges/exchange-0088.md) | [Godel worker session](sessions/0020-20260430-440d7a99.md) | `worker` |
